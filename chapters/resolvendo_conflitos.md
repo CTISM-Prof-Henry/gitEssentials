@@ -34,3 +34,4 @@ do tutorial correspondente.
 
 * [Primeira tela](resolvendo_conflitos_tela_1.md)
 * [Segunda tela](resolvendo_conflitos_tela_2.md)
+* [Nenhuma das duas](resolvendo_conflitos_tela_3.md)
