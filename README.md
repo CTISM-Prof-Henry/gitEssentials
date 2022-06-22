@@ -6,7 +6,7 @@ Este repositório organiza o conhecimento sobre o uso de git e Github.
 
 * [Introdução](#introdução)
 * [Comandos do git](#comandos-do-git)
-* [Resolvendo conflitos](resolvendo_conflitos.md)
+* [Resolvendo conflitos](chapters/resolvendo_conflitos.md)
 
 ## Introdução
 
