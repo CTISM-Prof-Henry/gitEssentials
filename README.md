@@ -5,6 +5,7 @@ Este repositório organiza o conhecimento sobre o uso de git e Github.
 ## Sumário
 
 * [Introdução](#introdução)
+* [Conceitos](chapters/conceitos.md)
 * [Comandos do git](#comandos-do-git)
 * [Resolvendo conflitos](chapters/resolvendo_conflitos.md)
 
@@ -12,6 +13,9 @@ Este repositório organiza o conhecimento sobre o uso de git e Github.
 
 Em breve.
 
+
 ## Comandos do git
 
-Em breve.
+| Comando | Efeito |
+|:--------|:-------|
+| 
