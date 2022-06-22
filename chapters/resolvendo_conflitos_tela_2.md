@@ -1,6 +1,6 @@
 ## Resolvendo conflitos: finalizando
 
-![](imagens/conflito_3.png)
+![](../imagens/conflito_3.png)
 
 A mensagem _Automatic merge failed; fix conflicts and then commit the result_
 quer dizer que você terá que abrir os arquivos que resultaram em conflitos e
@@ -11,7 +11,7 @@ no arquivo README.md.
 Abrindo o arquivo README.md pelo Sublime Text, vemos que ele está da seguinte 
 maneira:
 
-![](imagens/conflito_4.png)
+![](../imagens/conflito_4.png)
 
 O arquivo está organizado da seguinte maneira: os caracteres `<<<<` marcam
 o começo da região que resultou em um conflito; os caracteres `>>>>` marcam
@@ -23,13 +23,13 @@ do repositório do Github (na verdade, esta hash é o ID do commit no Github).
 Arrume o arquivo de maneira que ele concilie as modificações que você fez, e
 as que seu colega fez (e já estão no Github):
 
-![](imagens/conflito_5.png)
+![](../imagens/conflito_5.png)
 
 Após a correção, volte para a linha de comando e envie as modificações para o
 Github:
 
-![](imagens/conflito_6.png)
+![](../imagens/conflito_6.png)
 
 Pronto! Com isso, tanto seu código, quando o do seu colega, estarão no Github:
 
-![](imagens/conflito_7.png)
+![](../imagens/conflito_7.png)
