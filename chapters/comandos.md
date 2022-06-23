@@ -1,6 +1,6 @@
-## Comandos
+# Comandos
 
-### Sumário
+## Sumário
 
 * [Comandos do sistema operacional](#comandos-do-sistema-operacional)
     * [Acessar um novo diretório](
@@ -20,9 +20,9 @@
     * [git branch](#git-branch-🟦)
     * [git checkout](#git-checkout-🟦)
 
-#### Comandos do sistema operacional
+### Comandos do sistema operacional
 
-##### Acessar um novo diretório
+#### Acessar um novo diretório
 
 Windows, Linux:
 
@@ -36,7 +36,7 @@ Exemplo:
 cd Downloads
 ```
 
-##### Listar arquivos em um diretório
+#### Listar arquivos em um diretório
 
 Windows:
 
@@ -66,7 +66,7 @@ ls
 ls Downloads
 ```
 
-##### Limpar tela
+#### Limpar tela
 
 Exemplo:
 
@@ -82,7 +82,7 @@ Linux:
 clear
 ```
 
-##### Abrir uma janela do navegador de arquivos
+#### Abrir uma janela do navegador de arquivos
 
 Windows:
 
@@ -128,7 +128,7 @@ sequência correta, ele não terá o efeito desejado. Por outro lado, os comando
 que **não dependem de estado** são relativamente inofensivos caso foram usados
 fora da ordem correta.
 
-##### git clone
+#### git clone
 
 **Copia** um repositório remoto para a máquina local, **se o repositório não 
 existir na máquina local.** Não confundir com a funcionalidade do 
@@ -146,7 +146,7 @@ Exemplo:
 git clone https://github.com/CTISM-Prof-Henry/gitEssentials
 ```
 
-##### git status
+#### git status
 
 Mostra o status do repositório na máquina local.
 
@@ -156,7 +156,7 @@ Sintaxe e exemplo:
 git status
 ```
 
-##### git add 🟦
+#### git add 🟦
 
 Adiciona arquivos à lista de modificações-candidatas a serem salvas. Não confundir
 com a funcionalidade do [git commit](#git-commit).
@@ -176,9 +176,11 @@ git add README.md  # adiciona apenas o arquivo README.md
 git add README.md main.py estilo.css  # adiciona uma lista de arquivos
 ```
 
-##### git restore
+#### git restore
 
-##### git commit 🟦
+
+
+#### git commit 🟦
 
 **Salva** as modificações feitas no repositório local, em um checkpoint (também
 chamado de commit).
@@ -191,10 +193,10 @@ Sintaxe e exemplo:
 git commit -m "mensagem explicando o que foi feito neste commit"
 ```
 
-##### git push 🟦
+#### git push 🟦
 
-Envia modificações da atual branch local para uma branch do repositório remoto, 
-dado que as modificações já foram salvas.
+**Uso 1:** Envia modificações da atual branch local para uma branch do repositório 
+remoto, dado que as modificações já foram salvas.
 
 **Nota 1:** só pode ser utilizado após um [git commit](#git-commit).
 
@@ -218,7 +220,22 @@ git push origin top  # envia para a branch remota top
 git push origin -u top  # envia para a branch remota top que referencia outro repo
 ```
 
-##### git pull 🟦
+**Uso 2:** deleta uma branch remota. Veja [git branch](#git-branch-🟦) para ver
+como deletar uma branch local.
+
+Sintaxe:
+
+```bash
+git push origin --delete <nome da branch remota>
+```
+
+Exemplo:
+
+```bash
+git push origin --delete top  # deleta a branch remota top
+```
+
+#### git pull 🟦
 
 **Baixa** as modificações da branch de um repositório remoto para a atual branch
 da máquina local, **se o repositório já existir na máquina local.** Não confundir 
@@ -237,8 +254,48 @@ git pull origin main  # baixa da branch remota main
 git pull origin top  # baixa da branch remota top
 ```
 
+#### git checkout 🟦
 
-##### git checkout 🟦
+Muda de uma branch local para outra.
 
-##### git branch 🟦
+Sintaxe:
 
+```bash
+git checkout <nome da branch local>
+```
+
+Exemplo:
+
+```bash
+git checkout top  # troca da branch atual para a branch top
+git checkout main  # troca da branch atual para a branch main
+```
+
+#### git branch 🟦
+
+**Uso 1:** lista as branches locais.
+
+Sintaxe e exemplo:
+
+```bash
+git branch
+```
+
+**Uso 2:** deleta uma branch local. Veja [git push](#git-push-🟦) para deletar
+uma branch remota.
+
+**Nota:** tenha certeza que você **não está dentro da branch que será deletada.**
+Veja [git checkout](#git-checkout-🟦) para ver como trocar de uma branch para 
+outra.
+
+Sintaxe:
+
+```bash
+git branch -d <nome da branch local>
+```
+
+Exemplo:
+
+```bash
+git branch -d top  # deleta a branch local top
+```
