@@ -12,13 +12,13 @@
 * [Comandos do git](#comandos-do-git)
     * [git clone](#git-clone)
     * [git status](#git-status)
-    * [git add](#git-add-🟦)
+    * [git add](#git-add)
     * [git restore](#git-restore)
-    * [git commit](#git-commit-🟦)
-    * [git push](#git-push-🟦)
-    * [git pull](#git-pull-🟦)
-    * [git branch](#git-branch-🟦)
-    * [git checkout](#git-checkout-🟦)
+    * [git commit](#git-commit)
+    * [git push](#git-push)
+    * [git pull](#git-pull)
+    * [git branch](#git-branch)
+    * [git checkout](#git-checkout)
 
 ### Comandos do sistema operacional
 
@@ -156,10 +156,10 @@ Sintaxe e exemplo:
 git status
 ```
 
-#### git add 🟦
+#### git add
 
-Adiciona arquivos à lista de modificações-candidatas a serem salvas. Não confundir
-com a funcionalidade do [git commit](#git-commit).
+🟦 Adiciona arquivos à lista de modificações-candidatas a serem salvas. Não 
+confundir com a funcionalidade do [git commit](#git-commit).
 
 Sintaxe:
 
@@ -193,9 +193,9 @@ git restore README.md  # descarta modificações que foram feitas no README.md
 git restore .  # descarta modificações que foram feitas nos arquivos da pasta atual
 ```
 
-#### git commit 🟦
+#### git commit
 
-**Salva** as modificações feitas no repositório local, em um checkpoint (também
+🟦 **Salva** as modificações feitas no repositório local, em um checkpoint (também
 chamado de commit).
 
 **Nota:** só pode ser utilizado após um [git add](#git-add).
@@ -206,9 +206,9 @@ Sintaxe e exemplo:
 git commit -m "mensagem explicando o que foi feito neste commit"
 ```
 
-#### git push 🟦
+#### git push 
 
-**Uso 1:** Envia modificações da atual branch local para uma branch do repositório 
+🟦 **Uso 1:** Envia modificações da atual branch local para uma branch do repositório 
 remoto, dado que as modificações já foram salvas.
 
 **Nota 1:** só pode ser utilizado após um [git commit](#git-commit).
@@ -233,7 +233,7 @@ git push origin top  # envia para a branch remota top
 git push origin -u top  # envia para a branch remota top que referencia outro repo
 ```
 
-**Uso 2:** deleta uma branch remota. Veja [git branch](#git-branch-🟦) para ver
+**Uso 2:** deleta uma branch remota. Veja [git branch](#git-branch) para ver
 como deletar uma branch local.
 
 Sintaxe:
@@ -248,9 +248,9 @@ Exemplo:
 git push origin --delete top  # deleta a branch remota top
 ```
 
-#### git pull 🟦
+#### git pull
 
-**Baixa** as modificações da branch de um repositório remoto para a atual branch
+🟦 **Baixa** as modificações da branch de um repositório remoto para a atual branch
 da máquina local, **se o repositório já existir na máquina local.** Não confundir 
 com a funcionalidade do [git clone](#git-clone).
 
@@ -267,9 +267,9 @@ git pull origin main  # baixa da branch remota main
 git pull origin top  # baixa da branch remota top
 ```
 
-#### git checkout 🟦
+#### git checkout
 
-Muda de uma branch local para outra.
+🟦 Muda de uma branch local para outra.
 
 Sintaxe:
 
@@ -284,9 +284,9 @@ git checkout top  # troca da branch atual para a branch top
 git checkout main  # troca da branch atual para a branch main
 ```
 
-#### git branch 🟦
+#### git branch 
 
-**Uso 1:** lista as branches locais.
+🟦 **Uso 1:** lista as branches locais.
 
 Sintaxe e exemplo:
 
@@ -294,11 +294,11 @@ Sintaxe e exemplo:
 git branch
 ```
 
-**Uso 2:** deleta uma branch local. Veja [git push](#git-push-🟦) para deletar
+**Uso 2:** deleta uma branch local. Veja [git push](#git-push) para deletar
 uma branch remota.
 
 **Nota:** tenha certeza que você **não está dentro da branch que será deletada.**
-Veja [git checkout](#git-checkout-🟦) para ver como trocar de uma branch para 
+Veja [git checkout](#git-checkout) para ver como trocar de uma branch para 
 outra.
 
 Sintaxe:
