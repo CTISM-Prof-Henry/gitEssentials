@@ -178,7 +178,20 @@ git add README.md main.py estilo.css  # adiciona uma lista de arquivos
 
 #### git restore
 
+Descarta modificações que foram feitas em um arquivo.
 
+Sintaxe:
+
+```bash
+git restore <parâmetro>
+```
+
+Exemplo:
+
+```bash
+git restore README.md  # descarta modificações que foram feitas no README.md
+git restore .  # descarta modificações que foram feitas nos arquivos da pasta atual
+```
 
 #### git commit 🟦
 
