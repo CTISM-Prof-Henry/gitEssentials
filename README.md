@@ -3,10 +3,12 @@
 ## Sumário
 
 * [Introdução](#introdução)
+* [Quick start](chapters/quick_start.md)
 * [Conceitos](chapters/conceitos.md)
 * [Comandos do git](chapters/comandos.md)
 * [Resolvendo conflitos](chapters/resolvendo_conflitos.md)
 * [Fazendo fork e pull requests](chapters/fork_pull_request.md)
+* [Recursos adicionais](#recursos_adicionais)
 
 ## Introdução
 
@@ -39,3 +41,10 @@ bem como podemos utilizá-lo dentro de IDEs, como o VS Code, Pycharm, dentre
 outros. Todavia, neste repositório, será ensinado como usar o git a partir da 
 linha de comando, que é, na visão do autor, a maneira que funciona em qualquer 
 situação: seja programando sozinho, em grupo, com ou sem uma IDE.
+
+## Recursos adicionais
+
+* [StackEdit](https://stackedit.io)
+* [Guia Básico de Markdown](
+https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open)
+* [Biblioteca para grafos em Markdown](https://mermaid-js.github.io/mermaid/#/)
