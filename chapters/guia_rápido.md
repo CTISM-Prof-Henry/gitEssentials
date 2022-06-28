@@ -1,4 +1,4 @@
-## Quick start
+## Guia rápido
 
 O fluxo de trabalho mais comum quando trabalhamos com git é o seguinte:
 

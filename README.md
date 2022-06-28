@@ -3,7 +3,7 @@
 ## Sumário
 
 * [Introdução](#introdução)
-* [Quick start](chapters/quick_start.md)
+* [Guia rápido](chapters/guia_rápido.md)
 * [Conceitos](chapters/conceitos.md)
 * [Comandos do git](chapters/comandos.md)
 * [Resolvendo conflitos](chapters/resolvendo_conflitos.md)
