@@ -8,7 +8,7 @@
 * [Comandos do git](chapters/comandos.md)
 * [Resolvendo conflitos](chapters/resolvendo_conflitos.md)
 * [Fazendo fork e pull requests](chapters/fork_pull_request.md)
-* [Recursos adicionais](#recursos_adicionais)
+* [Recursos adicionais](#recursos-adicionais)
 
 ## Introdução
 
@@ -35,7 +35,7 @@ tem as ferramentas necessárias para integrar as modificações.
 
 O git foi desenvolvido por 
 [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) em 2005 para 
-desenvolver o Linux. O git é uma ferramenta da linha de comando, originalmente
+desenvolver o Linux. É uma ferramenta da linha de comando, originalmente
 sem interface gráfica. Hoje em dia, já existe uma interface gráfica para o git,
 bem como podemos utilizá-lo dentro de IDEs, como o VS Code, Pycharm, dentre 
 outros. Todavia, neste repositório, será ensinado como usar o git a partir da 
