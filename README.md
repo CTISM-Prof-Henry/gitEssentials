@@ -4,6 +4,7 @@
 
 * [Introdução](#introdução)
 * [Guia rápido](chapters/guia_rápido.md)
+* [Criando um repositório do zero](chapters/criando_repositórios.md)
 * [Conceitos](chapters/conceitos.md)
 * [Comandos do git](chapters/comandos.md)
 * [Resolvendo conflitos](chapters/resolvendo_conflitos.md)
