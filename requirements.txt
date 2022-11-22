@@ -1,0 +1,3 @@
+pip
+sphinx==5.3.*
+sphinxcontrib-mermaid==0.7.*
