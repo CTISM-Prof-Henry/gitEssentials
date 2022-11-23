@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Conceitos &#8212; documentação pythonEssentials 1.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Buscar" href="../search.html" />
+    <link rel="next" title="Comandos" href="comandos.html" />
+    <link rel="prev" title="Criando repositórios" href="criando_reposit%C3%B3rios.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="comandos.html" title="Comandos"
+             accesskey="N">próximo</a> |</li>
+        <li class="right" >
+          <a href="criando_reposit%C3%B3rios.html" title="Criando repositórios"
+             accesskey="P">anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Conceitos</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="conceitos">
+<span id="id1"></span><h1>Conceitos<a class="headerlink" href="#conceitos" title="Link permanente para este cabeçalho">¶</a></h1>
+<section id="repositorio">
+<h2>Repositório<a class="headerlink" href="#repositorio" title="Link permanente para este cabeçalho">¶</a></h2>
+<p>Também conhecido como repo ou repository, um repositório é um local para
+armazenar código-fonte, ou informações textuais, sobre o desenvolvimento
+de uma aplicação, algoritmo, ou software.</p>
+<p>Não se deve guardar arquivos binários (e.g. .exe) em um repositório de
+código-fonte, pois não é este o objetivo dessas ferramentas. Arquivos
+binários são melhor armazenados em drives online (e.g. Google Drive, One
+Drive, Dropbox, etc).</p>
+<p>Para verificar se um arquivo é binário, tente abri-lo pelo bloco de
+notas: se o texto não for legível, então o arquivo é binário.</p>
+</section>
+<section id="branch">
+<h2>Branch<a class="headerlink" href="#branch" title="Link permanente para este cabeçalho">¶</a></h2>
+<p>Uma branch é um recurso do git para manter um código-fonte paralelo ao
+código-fonte principal. No Github, a branch principal é chamada de
+<strong>main</strong>; este é o mesmo main que escrevemos quando damos os comandos
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">main</span></code> e <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span> <span class="pre">main</span></code>.</p>
+<p>Contudo, se tivéssemos outra branch em um dado repositório, vamos supor
+que de nome <strong>teste</strong>, e quiséssemos baixar ou enviar código para esta
+branch, faríamos <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span> <span class="pre">teste</span></code> e <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">teste</span></code>.</p>
+<p>A ideia de usar branches é isolar códigos-fonte que estão sendo
+desenvolvidos por equipes (ou pessoas) diferentes. Por exemplo, se
+levássemos em consideração a equipe que desenvolve o aplicativo
+Instagram, existem diversas equipes de desenvolvedores trabalhando ao
+mesmo tempo neste aplicativo. Uma equipe poderia ser responsável por
+atualizar o software da câmera, enquanto outra muda uma parte do layout
+do app. Portanto, usar branches neste cenário é vantajoso, pois as
+modificações feitas pela equipe do layout não irão interferir no código
+das outras equipes.</p>
+<p>Por costume, mantemos sempre na branch main o código-fonte de
+<strong>produção</strong> (ou seja, o código-fonte que está pronto para ser entregue
+ao cliente). Como neste curso não temos clientes para os quais vender um
+produto, não tem problema usar a branch main para desenvolver todo o
+código-fonte de um trabalho. Mas tenha em mente que em uma empresa, esta
+é a filosofia adotada.</p>
+<p>Você pode criar quantas branches quiser, com os nomes que quiser.
+Inclusive, você pode ter branches que são branches de outras branches,
+como mostrado na figura abaixo.</p>
+<p><img alt="image0" src="../_images/branches.png" /></p>
+</section>
+<section id="commit">
+<h2>Commit<a class="headerlink" href="#commit" title="Link permanente para este cabeçalho">¶</a></h2>
+<p>Um commit é um <em>checkpoint</em>, uma versão do código-fonte em uma
+determinada branch. Ele possui um identificador único, um código
+gigante, chamado de hash.</p>
+<p>Commits são salvos no repositório (tanto local quanto remoto) para
+sempre, a menos que sejam explicitamente deletados por alguém. Com isso,
+os arquivos daquele commit estão salvos, mesmo que posteriormente sejam
+modificados ou deletados. Esta é uma das maiores vantagens de
+utilizar-se o git, pois podemos ver o histórico de um arquivo, podendo
+inclusive ver quem escreveu cada linha de cada arquivo.</p>
+<p>Você pode ver a lista de commits de uma determinada branch clicando no
+botão de commits, na página inicial de um repositório:</p>
+<p><img alt="image1" src="../_images/commits_button.png" /></p>
+<p>Você pode ver os commits da branch main deste repositório <a class="reference external" href="https://github.com/CTISM-Prof-Henry/gitEssentials/commits/main">neste
+link</a>.
+Para cada um dos commits neste link, existem três botões:</p>
+<p><img alt="image2" src="../_images/commit_buttons.png" /></p>
+<p>O primeiro botão copia a hash do commit; o segundo botão mostrará uma
+lista das modificações que foram feitas naquele commit. O terceiro link
+mostra a estrutura do repositório como estava na época deste commit.</p>
+</section>
+<section id="qual-a-diferenca-entre-repositorio-remoto-e-local">
+<h2>Qual a diferença entre repositório remoto e local?<a class="headerlink" href="#qual-a-diferenca-entre-repositorio-remoto-e-local" title="Link permanente para este cabeçalho">¶</a></h2>
+<p>Primeiro, vamos por partes: um <strong>repositório</strong> é uma <strong>pasta</strong> que por
+sua vez possui outra pasta dentro de si, oculta, chamada <code class="docutils literal notranslate"><span class="pre">.git</span></code>.
+Dentro da pasta oculta <code class="docutils literal notranslate"><span class="pre">.git</span></code>, existem diversos meta-arquivos que
+fazem o controle dos arquivos do <strong>repositório.</strong></p>
+<p>Um repositório é um repositório independentemente de onde ele esteja:
+seja na máquina local (e daí vem o termo <strong>repositório local</strong>), ou seja
+em algum site (daí vem o termo <strong>repositório remoto</strong>). Sites que
+armazenam repositórios são, por exemplo, o
+<a class="reference external" href="https://github.com">Github</a>,
+<a class="reference external" href="https://www.gitkraken.com">GitKraken</a>,
+<a class="reference external" href="https://bitbucket.org">BitBucket</a>,
+<a class="reference external" href="https://about.gitlab.com">Gitlab</a>, dentre outros.</p>
+<p>É possível trabalhar com git sem nunca criar uma conta num repositório
+remoto, porém isso é perigoso, pois caso a máquina local sofra alguma
+falha (seja formatada, falte energia elétrica, etc), podemos perder os
+dados.</p>
+</section>
+<section id="boas-praticas-no-uso-do-git">
+<h2>Boas práticas no uso do git<a class="headerlink" href="#boas-praticas-no-uso-do-git" title="Link permanente para este cabeçalho">¶</a></h2>
+<p>Não é preciso seguir estritamente essa sequência de comandos, mas é
+altamente recomendado.</p>
+<ol class="arabic simple">
+<li><p>Dê um <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> para ver se existem modificações não salvas no
+seu <strong>repositório local</strong></p></li>
+<li><p>Se houverem modificações (arquivos escritos em vermelho), salve-as em
+um commit:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add &lt;param&gt;
+git commit -m <span class="s2">&quot;mensagem do commit dizendo o que foi feito&quot;</span>
+</pre></div>
+</div>
+<p>Onde <code class="docutils literal notranslate"><span class="pre">&lt;param&gt;</span></code> é um parâmetro válido do <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code> (veja a entrada do
+comando add na página <a class="reference external" href="comandos.md#git-add">Comandos</a>).</p>
+<p>Ou, alternativamente, descarte-as:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git restore &lt;param&gt;
+</pre></div>
+</div>
+<p>Onde <code class="docutils literal notranslate"><span class="pre">&lt;param&gt;</span></code> é um parâmetro válido do <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">restore</span></code> (veja a
+entrada do comando restore na página
+<a class="reference external" href="comandos.md#git-restore">Comandos</a>).</p>
+<ol class="arabic simple" start="3">
+<li><p>Dê um <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span> <span class="pre">&lt;nome</span> <span class="pre">da</span> <span class="pre">branch</span> <span class="pre">remota&gt;</span></code> para baixar
+modificações que estão no repositório remoto</p></li>
+<li><p>Dê um <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">&lt;nome</span> <span class="pre">da</span> <span class="pre">branch</span> <span class="pre">remota&gt;</span></code> para enviar as
+modificações ao repositório remoto.</p></li>
+</ol>
+<p><strong>Nota:</strong> pode ser que <strong>aconteça um conflito</strong> no passo 3. Neste caso,
+<a class="reference external" href="resolvendo_conflitos.md">consulte esta página</a> para saber como
+resolver.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../index.html">Tabela de Conteúdo</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Sumário</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="guia_r%C3%A1pido.html">Guia rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="criando_reposit%C3%B3rios.html">Criando repositórios</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Conceitos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#repositorio">Repositório</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#branch">Branch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#commit">Commit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#qual-a-diferenca-entre-repositorio-remoto-e-local">Qual a diferença entre repositório remoto e local?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#boas-praticas-no-uso-do-git">Boas práticas no uso do git</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="comandos.html">Comandos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fork_pull_request.html">Fazendo fork e pull requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resolvendo_conflitos/index.html">Resolvendo conflitos</a></li>
+</ul>
+
+  <div>
+    <h4>Tópico anterior</h4>
+    <p class="topless"><a href="criando_reposit%C3%B3rios.html"
+                          title="capítulo anterior">Criando repositórios</a></p>
+  </div>
+  <div>
+    <h4>Próximo tópico</h4>
+    <p class="topless"><a href="comandos.html"
+                          title="próximo capítulo">Comandos</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>Essa Página</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/source/conceitos.rst.txt"
+            rel="nofollow">Exibir Fonte</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Busca rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             >índice</a></li>
+        <li class="right" >
+          <a href="comandos.html" title="Comandos"
+             >próximo</a> |</li>
+        <li class="right" >
+          <a href="criando_reposit%C3%B3rios.html" title="Criando repositórios"
+             >anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Conceitos</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Henry Cagnini.
+      Criada usando <a href="https://www.sphinx-doc.org/pt_BR/master">Sphinx</a> 5.3.0.
+    </div>
+  </body>
+</html>
