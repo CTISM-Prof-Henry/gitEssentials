@@ -1,7 +1,7 @@
 .. _resolvendo-conflitos-tela-2:
 
-Resolvendo conflitos: finalizando
----------------------------------
+Finalizando
+===========
 
 |image0|
 
@@ -40,8 +40,8 @@ Github:
 
 |image4|
 
-.. |image0| image:: ../imagens/conflito_3.png
-.. |image1| image:: ../imagens/conflito_4.png
-.. |image2| image:: ../imagens/conflito_5.png
-.. |image3| image:: ../imagens/conflito_6.png
-.. |image4| image:: ../imagens/conflito_7.png
+.. |image0| image:: ../../imagens/conflito_3.png
+.. |image1| image:: ../../imagens/conflito_4.png
+.. |image2| image:: ../../imagens/conflito_5.png
+.. |image3| image:: ../../imagens/conflito_6.png
+.. |image4| image:: ../../imagens/conflito_7.png

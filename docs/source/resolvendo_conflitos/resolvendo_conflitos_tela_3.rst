@@ -1,7 +1,7 @@
 .. _resolvendo-conflitos-tela-3:
 
-Resolvendo conflitos: nenhum conflito detectado
-===============================================
+Nenhum conflito detectado
+=========================
 
 Se nenhuma das duas telas anteriores aparecer para você, quer dizer que
 com o ``git pull``, o git conseguiu com sucesso fazer o merge entre o
@@ -13,4 +13,4 @@ colega, estarão no Github:
 
 |image0|
 
-.. |image0| image:: ../imagens/conflito_7.png
+.. |image0| image:: ../../imagens/conflito_7.png

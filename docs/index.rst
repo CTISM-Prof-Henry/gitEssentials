@@ -7,15 +7,15 @@ gitEssentials
 =============
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Sumário
 
-   chapters/guia_rápido
-   chapters/criando_repositórios
-   chapters/conceitos
-   chapters/comandos
-   chapters/resolvendo_conflitos
-   chapters/fork_pull_request
+   source/guia_rápido
+   source/criando_repositórios
+   source/conceitos
+   source/comandos
+   source/fork_pull_request
+   source/resolvendo_conflitos/index
 
 Introdução
 ----------

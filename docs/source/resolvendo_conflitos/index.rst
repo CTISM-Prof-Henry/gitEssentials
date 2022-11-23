@@ -2,7 +2,15 @@
 .. _resolvendo-conflitos:
 
 Resolvendo conflitos
---------------------
+====================
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   resolvendo_conflitos_tela_1
+   resolvendo_conflitos_tela_2
+   resolvendo_conflitos_tela_3
 
 **Nota:** Você pode ver o repositório no qual eu realizei este tutorial
 por `este link <https://github.com/CTISM-Prof-Henry/gitTest>`__.
@@ -41,6 +49,6 @@ ir para a etapa do tutorial correspondente.
 -  :ref:`Segunda tela <resolvendo-conflitos-tela-2>`
 -  :ref:`Nenhuma das duas <resolvendo-conflitos-tela-3>`
 
-.. |image0| image:: ../imagens/conflito_1.png
-.. |image1| image:: ../imagens/conflito_2.png
-.. |image2| image:: ../imagens/conflito_3.png
+.. |image0| image:: ../../imagens/conflito_1.png
+.. |image1| image:: ../../imagens/conflito_2.png
+.. |image2| image:: ../../imagens/conflito_3.png

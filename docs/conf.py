@@ -48,3 +48,7 @@ html_theme_options = {
     'github_user': 'CTISM-Prof-Henry',
     'github_repo': 'gitEssentials'
 }
+
+html_sidebars = {
+    '**': ['globaltoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html']
+}

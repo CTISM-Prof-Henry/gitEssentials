@@ -3,36 +3,11 @@
 Comandos
 ========
 
-Sumário
--------
-
--  `Comandos do sistema
-   operacional <#comandos-do-sistema-operacional>`__
-
-   -  `Acessar um novo diretório <#acessar-um-novo-diretório>`__
-   -  `Listar arquivos em um
-      diretório <listar-arquivos-em-um-diretório>`__
-   -  `Limpar tela <#limpar-tela>`__
-   -  `Abrir uma janela do navegador de
-      arquivos <#abrir-uma-janela-do-navegador-de-arquivos>`__
-
--  `Comandos do git <#comandos-do-git>`__
-
-   -  `git clone <#git-clone>`__
-   -  `git status <#git-status>`__
-   -  `git add <#git-add>`__
-   -  `git restore <#git-restore>`__
-   -  `git commit <#git-commit>`__
-   -  `git push <#git-push>`__
-   -  `git pull <#git-pull>`__
-   -  `git branch <#git-branch>`__
-   -  `git checkout <#git-checkout>`__
-
 Comandos do sistema operacional
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------
 
 Acessar um novo diretório
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Windows, Linux:
 
@@ -47,7 +22,7 @@ Exemplo:
    cd Downloads
 
 Listar arquivos em um diretório
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Windows:
 
@@ -78,7 +53,7 @@ Linux:
    ls Downloads
 
 Limpar tela
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 Exemplo:
 
@@ -95,7 +70,7 @@ Linux:
    clear
 
 Abrir uma janela do navegador de arquivos
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Windows:
 
@@ -126,7 +101,7 @@ Linux:
    nautilus Downloads
 
 Comandos do git
-^^^^^^^^^^^^^^^
+---------------
 
 Esta seção apresenta apenas um **resumo** sobre os comandos do git. Cada
 um destes comandos possui muito mais parâmetros e funções do que as
@@ -144,7 +119,7 @@ lado, os comandos que **não dependem de estado** são relativamente
 inofensivos caso foram usados fora da ordem correta.
 
 git clone
-^^^^^^^^^
+~~~~~~~~~
 
 **Copia** um repositório remoto para a máquina local, **se o repositório
 não existir na máquina local.** Não confundir com a funcionalidade do
@@ -163,7 +138,7 @@ Exemplo:
    git clone https://github.com/CTISM-Prof-Henry/gitEssentials
 
 git status
-^^^^^^^^^^
+~~~~~~~~~~
 
 Mostra o status do repositório na máquina local.
 
@@ -174,7 +149,7 @@ Sintaxe e exemplo:
    git status
 
 git add
-^^^^^^^
+~~~~~~~
 
 🟦 Adiciona arquivos à lista de modificações-candidatas a serem salvas.
 Não confundir com a funcionalidade do `git commit <#git-commit>`__.
@@ -195,7 +170,7 @@ Exemplo:
    git add README.md main.py estilo.css  # adiciona uma lista de arquivos
 
 git restore
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 Descarta modificações que foram feitas em um arquivo.
 
@@ -213,7 +188,7 @@ Exemplo:
    git restore .  # descarta modificações que foram feitas nos arquivos da pasta atual
 
 git commit
-^^^^^^^^^^
+~~~~~~~~~~
 
 🟦 **Salva** as modificações feitas no repositório local, em um
 checkpoint (também chamado de commit).
@@ -227,7 +202,7 @@ Sintaxe e exemplo:
    git commit -m "mensagem explicando o que foi feito neste commit"
 
 git push
-^^^^^^^^
+~~~~~~~~
 
 🟦 **Uso 1:** Envia modificações da atual branch local para uma branch do
 repositório remoto, dado que as modificações já foram salvas.
@@ -272,7 +247,7 @@ Exemplo:
    git push origin --delete top  # deleta a branch remota top
 
 git pull
-^^^^^^^^
+~~~~~~~~
 
 🟦 **Baixa** as modificações da branch de um repositório remoto para a
 atual branch da máquina local, **se o repositório já existir na máquina
@@ -293,7 +268,7 @@ Exemplo:
    git pull origin top  # baixa da branch remota top
 
 git checkout
-^^^^^^^^^^^^
+~~~~~~~~~~~~
 
 🟦 Muda de uma branch local para outra.
 
@@ -311,7 +286,7 @@ Exemplo:
    git checkout main  # troca da branch atual para a branch main
 
 git branch
-^^^^^^^^^^
+~~~~~~~~~~
 
 🟦 **Uso 1:** lista as branches locais.
 

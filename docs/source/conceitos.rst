@@ -1,18 +1,10 @@
+.. _conceitos:
+
 Conceitos
----------
-
-Sumário
-~~~~~~~
-
--  `Repositório <#repositório>`__
--  `Branch <#branch>`__
--  `Commit <#commit>`__
--  `Qual a diferença entre repositório remoto e
-   local? <#qual-a-diferença-entre-repositório-remoto-e-local>`__
--  `Boas práticas no uso do git <#boas-práticas-no-uso-do-git>`__
+=========
 
 Repositório
-~~~~~~~~~~~
+-----------
 
 Também conhecido como repo ou repository, um repositório é um local para
 armazenar código-fonte, ou informações textuais, sobre o desenvolvimento
@@ -27,7 +19,7 @@ Para verificar se um arquivo é binário, tente abri-lo pelo bloco de
 notas: se o texto não for legível, então o arquivo é binário.
 
 Branch
-~~~~~~
+------
 
 Uma branch é um recurso do git para manter um código-fonte paralelo ao
 código-fonte principal. No Github, a branch principal é chamada de
@@ -62,7 +54,7 @@ como mostrado na figura abaixo.
 |image0|
 
 Commit
-~~~~~~
+------
 
 Um commit é um *checkpoint*, uma versão do código-fonte em uma
 determinada branch. Ele possui um identificador único, um código
@@ -91,7 +83,7 @@ lista das modificações que foram feitas naquele commit. O terceiro link
 mostra a estrutura do repositório como estava na época deste commit.
 
 Qual a diferença entre repositório remoto e local?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------------------
 
 Primeiro, vamos por partes: um **repositório** é uma **pasta** que por
 sua vez possui outra pasta dentro de si, oculta, chamada ``.git``.
@@ -113,7 +105,7 @@ falha (seja formatada, falte energia elétrica, etc), podemos perder os
 dados.
 
 Boas práticas no uso do git
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 Não é preciso seguir estritamente essa sequência de comandos, mas é
 altamente recomendado.

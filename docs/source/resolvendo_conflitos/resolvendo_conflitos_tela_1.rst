@@ -1,7 +1,7 @@
 .. _resolvendo-conflitos-tela-1:
 
-Resolvendo conflitos: definindo o método de conciliação de conflitos
---------------------------------------------------------------------
+Definindo o método de conciliação de conflitos
+==============================================
 
 |image0|
 
@@ -17,8 +17,8 @@ Rode novamente o comando ``git pull origin main``:
 
 |image1|
 
-Siga para `este link <resolvendo_conflitos_tela_2.md>`__ para continuar
+Siga para :ref:`este link <resolvendo-conflitos-tela-2>` para continuar
 o tutorial.
 
-.. |image0| image:: ../imagens/conflito_2.png
-.. |image1| image:: ../imagens/conflito_3.png
+.. |image0| image:: ../../imagens/conflito_2.png
+.. |image1| image:: ../../imagens/conflito_3.png

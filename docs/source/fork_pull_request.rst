@@ -1,15 +1,5 @@
 Fazendo fork e pull requests
-----------------------------
-
-Sumário
-~~~~~~~
-
--  `Introdução <#introdução>`__
--  `Fluxograma <#fluxograma>`__
--  `Passo-a-passo <#passo-a-passo>`__
-
-Introdução
-~~~~~~~~~~
+============================
 
 Uma das principais características do git é servir para o
 desenvolvimento de código-fonte **colaborativo**; ou seja, quando várias
@@ -29,12 +19,12 @@ nossa conta do Github. Dentro da nossa cópia do repositório, inclusive,
 várias pessoas podem estar trabalhando juntas.
 
 Fluxograma
-~~~~~~~~~~
+----------
 
 O fluxograma de trabalho quando estamos trabalhando com forks e pull
 requests é o seguinte:
 
-.. code:: mermaid
+.. mermaid::
 
    flowchart TD; 
 
@@ -76,7 +66,7 @@ requests é o seguinte:
    end
 
 Passo-a-passo
-~~~~~~~~~~~~~
+-------------
 
 1. Entrar na página do repositório que deseja-se fazer o fork, no
    github. Vamos chamá-lo de
