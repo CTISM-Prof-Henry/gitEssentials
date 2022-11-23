@@ -37,7 +37,7 @@ Ou então essa:
 Dependendo de qual tela apareceu para você, clique no link abaixo para
 ir para a etapa do tutorial correspondente.
 
--  :ref:`Primeira tela <resolvendo-conflitos-tela-1.md>`
+-  :ref:`Primeira tela <resolvendo-conflitos-tela-1>`
 -  :ref:`Segunda tela <resolvendo-conflitos-tela-2>`
 -  :ref:`Nenhuma das duas <resolvendo-conflitos-tela-3>`
 
