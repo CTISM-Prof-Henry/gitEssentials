@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Resolvendo conflitos &#8212; documentação pythonEssentials 1.0</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nature.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../search.html" />
+    <link rel="next" title="Definindo o método de conciliação de conflitos" href="resolvendo_conflitos_tela_1.html" />
+    <link rel="prev" title="Fazendo fork e pull requests" href="../fork_pull_request.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="Índice Geral"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="resolvendo_conflitos_tela_1.html" title="Definindo o método de conciliação de conflitos"
+             accesskey="N">próximo</a> |</li>
+        <li class="right" >
+          <a href="../fork_pull_request.html" title="Fazendo fork e pull requests"
+             accesskey="P">anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Resolvendo conflitos</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="resolvendo-conflitos">
+<span id="id1"></span><h1>Resolvendo conflitos<a class="headerlink" href="#resolvendo-conflitos" title="Link permanente para este cabeçalho">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p><strong>Nota:</strong> Você pode ver o repositório no qual eu realizei este tutorial
+por <a class="reference external" href="https://github.com/CTISM-Prof-Henry/gitTest">este link</a>.</p>
+<p>Quando você estiver trabalhando colaborativamente em um repositório do
+Github (ou seja, com mais de duas pessoas), pode ser que no fluxo de
+trabalho, um colega envie arquivos para o Github que você não possui na
+sua máquina local. Você descobrirá que isso aconteceu quando tentar
+enviar os arquivos para o Github com um <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>:</p>
+<p><img alt="image0" src="../../_images/conflito_1.png" /></p>
+<p>Esta janela está basicamente dizendo que você não pode enviar seu código
+para o Github porque existem modificações nos arquivos que você não
+baixou ainda. Você precisa então baixá-las, usando um <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code>.</p>
+<p>Às vezes, o git (o programa que você usa na linha de comando para mandar
+o código-fonte para o Github) consegue conciliar ambas as modificações:
+as da sua máquina local, e do repositório do Github. Porém, quando ele
+não consegue fazer isso, você mesmo terá que <strong>resolver o conflito</strong> que
+ocorreu nos arquivos.</p>
+<p>Você saberá que é essa a hora quando um <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> resultar numa
+mensagem parecida com essa:</p>
+<p><img alt="image1" src="../../_images/conflito_2.png" /></p>
+<p>Ou então essa:</p>
+<p><img alt="image2" src="../../_images/conflito_3.png" /></p>
+<p>Dependendo de qual tela apareceu para você, clique no link abaixo para
+ir para a etapa do tutorial correspondente.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="resolvendo_conflitos_tela_1.html#resolvendo-conflitos-tela-1"><span class="std std-ref">Primeira tela</span></a></p></li>
+<li><p><a class="reference internal" href="resolvendo_conflitos_tela_2.html#resolvendo-conflitos-tela-2"><span class="std std-ref">Segunda tela</span></a></p></li>
+<li><p><a class="reference internal" href="resolvendo_conflitos_tela_3.html#resolvendo-conflitos-tela-3"><span class="std std-ref">Nenhuma das duas</span></a></p></li>
+</ul>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../../index.html">Tabela de Conteúdo</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Sumário</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../guia_r%C3%A1pido.html">Guia rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../criando_reposit%C3%B3rios.html">Criando repositórios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../conceitos.html">Conceitos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../comandos.html">Comandos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fork_pull_request.html">Fazendo fork e pull requests</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Resolvendo conflitos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="resolvendo_conflitos_tela_1.html">Definindo o método de conciliação de conflitos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resolvendo_conflitos_tela_2.html">Finalizando</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resolvendo_conflitos_tela_3.html">Nenhum conflito detectado</a></li>
+</ul>
+</li>
+</ul>
+
+  <div>
+    <h4>Tópico anterior</h4>
+    <p class="topless"><a href="../fork_pull_request.html"
+                          title="capítulo anterior">Fazendo fork e pull requests</a></p>
+  </div>
+  <div>
+    <h4>Próximo tópico</h4>
+    <p class="topless"><a href="resolvendo_conflitos_tela_1.html"
+                          title="próximo capítulo">Definindo o método de conciliação de conflitos</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>Essa Página</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/source/resolvendo_conflitos/index.rst.txt"
+            rel="nofollow">Exibir Fonte</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Busca rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="Índice Geral"
+             >índice</a></li>
+        <li class="right" >
+          <a href="resolvendo_conflitos_tela_1.html" title="Definindo o método de conciliação de conflitos"
+             >próximo</a> |</li>
+        <li class="right" >
+          <a href="../fork_pull_request.html" title="Fazendo fork e pull requests"
+             >anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Resolvendo conflitos</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Henry Cagnini.
+      Criada usando <a href="https://www.sphinx-doc.org/pt_BR/master">Sphinx</a> 5.3.0.
+    </div>
+  </body>
+</html>
