@@ -24,46 +24,7 @@ Fluxograma
 O fluxograma de trabalho quando estamos trabalhando com forks e pull
 requests é o seguinte:
 
-.. mermaid::
-
-   flowchart TD; 
-
-   entrou[Entrou em\num repositório]
-   clone[git clone]
-   add[git add]
-   commit[git commit]
-   pull[git pull]
-   push[git push]
-   collab{colaborativo?}
-   conflict{conflitos?}
-   solve(resolver)
-   branches_1{usando\nbranches?}
-   branches_2{usando\nbranches?}
-   fork[fork]
-   work_on_code(desenvolve\ncódigo)
-   pull_request[pull request]
-   merge_text(junta branches\ncom git merge)
-
-   subgraph fork_graph[" "]
-     fork --> entrou
-       push --> pull_request
-       
-       subgraph fluxo_normal[" "]
-           entrou --> clone --> 
-           branches_1 -- sim --> branch_text(cria branch com\n git checkout) --> work_on_code
-           branches_1 -- não --> main_text(continua na\nbranch main) --> work_on_code --> add
-
-           branches_2 -- sim --> merge_text
-
-           add --> commit  --> 
-           collab -- não --> branches_2  
-           collab -- sim --> pull --> 
-           conflict -- sim --> solve --> add
-           conflict -- não --> branches_2
-           merge_text --> push 
-       branches_2 -- não --> push
-       end
-   end
+|image6|
 
 Passo-a-passo
 -------------
@@ -164,3 +125,4 @@ original.
 .. |image3| image:: ../imagens/fork_6.png
 .. |image4| image:: ../imagens/fork_8.png
 .. |image5| image:: ../imagens/fork_9.png
+.. |image6| image:: ../imagens/fork_pull_request_diagrama.svg

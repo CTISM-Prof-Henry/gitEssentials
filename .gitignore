@@ -70,6 +70,12 @@ instance/
 
 # Sphinx documentation
 _build/
+node_modules/
+texput.log
+*.log
+package-lock.json
+main.aux
+main.idx
 
 # PyBuilder
 target/
@@ -128,3 +134,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .idea/
+
+
+

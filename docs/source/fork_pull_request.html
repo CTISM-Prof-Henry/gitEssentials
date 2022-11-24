@@ -64,46 +64,8 @@ várias pessoas podem estar trabalhando juntas.</p>
 <h2>Fluxograma<a class="headerlink" href="#fluxograma" title="Link permanente para este cabeçalho">¶</a></h2>
 <p>O fluxograma de trabalho quando estamos trabalhando com forks e pull
 requests é o seguinte:</p>
-<div class="mermaid">
-            flowchart TD;
-
-entrou[Entrou em\num repositório]
-clone[git clone]
-add[git add]
-commit[git commit]
-pull[git pull]
-push[git push]
-collab{colaborativo?}
-conflict{conflitos?}
-solve(resolver)
-branches_1{usando\nbranches?}
-branches_2{usando\nbranches?}
-fork[fork]
-work_on_code(desenvolve\ncódigo)
-pull_request[pull request]
-merge_text(junta branches\ncom git merge)
-
-subgraph fork_graph[&quot; &quot;]
-  fork --&gt; entrou
-    push --&gt; pull_request
-
-    subgraph fluxo_normal[&quot; &quot;]
-        entrou --&gt; clone --&gt;
-        branches_1 -- sim --&gt; branch_text(cria branch com\n git checkout) --&gt; work_on_code
-        branches_1 -- não --&gt; main_text(continua na\nbranch main) --&gt; work_on_code --&gt; add
-
-        branches_2 -- sim --&gt; merge_text
-
-        add --&gt; commit  --&gt;
-        collab -- não --&gt; branches_2
-        collab -- sim --&gt; pull --&gt;
-        conflict -- sim --&gt; solve --&gt; add
-        conflict -- não --&gt; branches_2
-        merge_text --&gt; push
-    branches_2 -- não --&gt; push
-    end
-end
-        </div></section>
+<p><img alt="image6" src="../_images/fork_pull_request_diagrama.svg" /></p>
+</section>
 <section id="passo-a-passo">
 <h2>Passo-a-passo<a class="headerlink" href="#passo-a-passo" title="Link permanente para este cabeçalho">¶</a></h2>
 <ol class="arabic simple">

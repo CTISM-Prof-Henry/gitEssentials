@@ -45,42 +45,12 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <p>: _guia-rapido</p>
-<section id="guia-rapido">
-<h1>Guia rápido<a class="headerlink" href="#guia-rapido" title="Link permanente para este cabeçalho">¶</a></h1>
+  <section id="guia-rapido">
+<span id="id1"></span><h1>Guia rápido<a class="headerlink" href="#guia-rapido" title="Link permanente para este cabeçalho">¶</a></h1>
 <p>O fluxo de trabalho mais comum quando trabalhamos com git é o seguinte:</p>
 <p><strong>Nota:</strong> Para resolver conflitos, confira <a class="reference internal" href="resolvendo_conflitos/index.html#resolvendo-conflitos"><span class="std std-ref">este tutorial.</span></a></p>
-<div class="mermaid">
-            flowchart TD;
-
-entrou[Entrou em\num repositório]
-clone[git clone]
-add[git add]
-commit[git commit]
-pull[git pull]
-push[git push]
-collab{colaborativo?}
-conflict{conflitos?}
-solve(resolver)
-branches_1{usando\nbranches?}
-branches_2{usando\nbranches?}
-work_on_code(desenvolve\ncódigo)
-merge_text(junta branches\ncom git merge)
-
-entrou --&gt; clone --&gt;
-branches_1 -- sim --&gt; branch_text(cria branch com\n git checkout) --&gt; work_on_code
-branches_1 -- não --&gt; main_text(continua na\nbranch main) --&gt; work_on_code --&gt; add
-
-branches_2 -- sim --&gt; merge_text
-
-add --&gt; commit  --&gt;
-collab -- não --&gt; branches_2
-collab -- sim --&gt; pull --&gt;
-conflict -- sim --&gt; solve --&gt; add
-conflict -- não --&gt; branches_2
-merge_text --&gt; push
-branches_2 -- não --&gt; push
-        </div></section>
+<p><img alt="image0" src="../_images/guia_rapido_diagrama.svg" /></p>
+</section>
 
 
             <div class="clearer"></div>

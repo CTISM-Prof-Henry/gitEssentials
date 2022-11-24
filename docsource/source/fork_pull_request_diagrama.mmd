@@ -1,0 +1,42 @@
+graph TD 
+entrou["Entrou em um repositório"]
+clone["git clone"]
+add["git add"]
+commit["git commit"]
+pull["git pull"]
+push["git push"]
+collab{"colaborativo?"}
+conflict{"conflitos?"}
+solve("resolver")
+branches_1{"usando branches?"}
+branches_2{"usando branches?"}
+fork["fork"]
+work_on_code("desenvolve código")
+pull_request["pull request"]
+merge_text("junta branches com git merge")
+branch_text("cria branch com  git checkout")
+main_text("continua na branch main")
+subgraph 
+ fork --> entrou
+ push --> pull_request
+ subgraph 
+   entrou --> clone
+   clone --> branches_1
+   branches_1 -- "sim" --> branch_text
+   branch_text --> work_on_code
+   branches_1 -- "não" --> main_text
+   main_text --> work_on_code
+   work_on_code --> add
+   branches_2 -- "sim" --> merge_text
+   add --> commit
+   commit --> collab
+   collab -- "não" --> branches_2
+   collab -- "sim" --> pull 
+   pull --> conflict
+   conflict -- "sim" --> solve 
+   solve --> add
+   conflict -- "não" --> branches_2
+   merge_text --> push
+   branches_2 -- "não" --> push
+ end
+end
