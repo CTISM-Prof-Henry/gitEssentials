@@ -125,4 +125,4 @@ original.
 .. |image3| image:: ../imagens/fork_6.png
 .. |image4| image:: ../imagens/fork_8.png
 .. |image5| image:: ../imagens/fork_9.png
-.. |image6| image:: ../imagens/fork_pull_request_diagrama.svg
+.. |image6| image:: ../imagens/fork_pull_request_diagrama.png
