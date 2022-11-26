@@ -25,11 +25,25 @@ if errorlevel 9009 (
 
 if "%1" == "" goto help
 
+if "%1" == "github" goto github
+
+if "%1" == "remove_latex_files" goto remove_latex_files
+
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
 goto end
 
 :help
 %SPHINXBUILD% -M help %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
+goto end
+
+:github
+%SPHINXBUILD% -M html %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
+@move /Y _build\html\* .\docs\
+goto end
+
+:remove_latex_files
+@del /S /Q _build\latex\*
+goto end
 
 :end
 popd
