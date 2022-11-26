@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Comandos &#8212; documentação pythonEssentials 1.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Buscar" href="../search.html" />
+    <link rel="next" title="Fazendo fork e pull requests" href="fork_pull_request.html" />
+    <link rel="prev" title="Conceitos" href="conceitos.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="fork_pull_request.html" title="Fazendo fork e pull requests"
+             accesskey="N">próximo</a> |</li>
+        <li class="right" >
+          <a href="conceitos.html" title="Conceitos"
+             accesskey="P">anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Comandos</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="comandos">
+<span id="id1"></span><h1>Comandos<a class="headerlink" href="#comandos" title="Link permanente para este cabeçalho">¶</a></h1>
+<section id="comandos-do-sistema-operacional">
+<h2>Comandos do sistema operacional<a class="headerlink" href="#comandos-do-sistema-operacional" title="Link permanente para este cabeçalho">¶</a></h2>
+<section id="acessar-um-novo-diretorio">
+<h3>Acessar um novo diretório<a class="headerlink" href="#acessar-um-novo-diretorio" title="Link permanente para este cabeçalho">¶</a></h3>
+<p>Windows, Linux:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> &lt;diretório&gt;
+</pre></div>
+</div>
+<p>Exemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> Downloads
+</pre></div>
+</div>
+</section>
+<section id="listar-arquivos-em-um-diretorio">
+<h3>Listar arquivos em um diretório<a class="headerlink" href="#listar-arquivos-em-um-diretorio" title="Link permanente para este cabeçalho">¶</a></h3>
+<p>Windows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>dir &lt;diretório&gt;
+</pre></div>
+</div>
+<p>Linux:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls &lt;diretório&gt;
+</pre></div>
+</div>
+<p>Exemplo:</p>
+<p>Windows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>dir
+dir Downloads
+</pre></div>
+</div>
+<p>Linux:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls
+ls Downloads
+</pre></div>
+</div>
+</section>
+<section id="limpar-tela">
+<h3>Limpar tela<a class="headerlink" href="#limpar-tela" title="Link permanente para este cabeçalho">¶</a></h3>
+<p>Exemplo:</p>
+<p>Windows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cls
+</pre></div>
+</div>
+<p>Linux:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clear
+</pre></div>
+</div>
+</section>
+<section id="abrir-uma-janela-do-navegador-de-arquivos">
+<h3>Abrir uma janela do navegador de arquivos<a class="headerlink" href="#abrir-uma-janela-do-navegador-de-arquivos" title="Link permanente para este cabeçalho">¶</a></h3>
+<p>Windows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>explorer &lt;parâmetro&gt;
+</pre></div>
+</div>
+<p>Linux:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nautilus &lt;parâmetro&gt;
+</pre></div>
+</div>
+<p>Exemplo:</p>
+<p>Windows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>explorer .
+explorer Downloads
+</pre></div>
+</div>
+<p>Linux:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nautilus .
+nautilus Downloads
+</pre></div>
+</div>
+</section>
+</section>
+<section id="comandos-do-git">
+<h2>Comandos do git<a class="headerlink" href="#comandos-do-git" title="Link permanente para este cabeçalho">¶</a></h2>
+<p>Esta seção apresenta apenas um <strong>resumo</strong> sobre os comandos do git. Cada
+um destes comandos possui muito mais parâmetros e funções do que as
+listadas aqui, porém espera-se que este resumo seja suficiente para o
+andamento do curso.</p>
+<p><strong>Nota 1:</strong> é preciso estar dentro de uma pasta que é um repositório git
+para estes comandos funcionarem.</p>
+<p><strong>Nota 2:</strong> Alguns destes comandos (marcados com o símbolo 🟦) dependem
+do <strong>estado atual</strong> do repositório, que pode ser consultado com um <a class="reference external" href="#git-status">git
+status</a>. Em outras palavras, se você der este comando
+fora da sequência correta, ele não terá o efeito desejado. Por outro
+lado, os comandos que <strong>não dependem de estado</strong> são relativamente
+inofensivos caso foram usados fora da ordem correta.</p>
+<section id="git-clone">
+<h3>git clone<a class="headerlink" href="#git-clone" title="Link permanente para este cabeçalho">¶</a></h3>
+<p><strong>Copia</strong> um repositório remoto para a máquina local, <strong>se o repositório
+não existir na máquina local.</strong> Não confundir com a funcionalidade do
+<a class="reference external" href="#git-pull">git pull</a>.</p>
+<p>Sintaxe:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone &lt;url <span class="k">do</span> repositório&gt;
+</pre></div>
+</div>
+<p>Exemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/CTISM-Prof-Henry/gitEssentials
+</pre></div>
+</div>
+</section>
+<section id="git-status">
+<h3>git status<a class="headerlink" href="#git-status" title="Link permanente para este cabeçalho">¶</a></h3>
+<p>Mostra o status do repositório na máquina local.</p>
+<p>Sintaxe e exemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git status
+</pre></div>
+</div>
+</section>
+<section id="git-add">
+<h3>git add<a class="headerlink" href="#git-add" title="Link permanente para este cabeçalho">¶</a></h3>
+<p>🟦 Adiciona arquivos à lista de modificações-candidatas a serem salvas.
+Não confundir com a funcionalidade do <a class="reference external" href="#git-commit">git commit</a>.</p>
+<p>Sintaxe:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add &lt;parâmetro&gt;
+</pre></div>
+</div>
+<p>Exemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add .  <span class="c1"># adiciona todos os arquivos da pasta atual</span>
+git add *  <span class="c1"># adiciona todos os arquivos da pasta atual</span>
+git add README.md  <span class="c1"># adiciona apenas o arquivo README.md</span>
+git add README.md main.py estilo.css  <span class="c1"># adiciona uma lista de arquivos</span>
+</pre></div>
+</div>
+</section>
+<section id="git-restore">
+<h3>git restore<a class="headerlink" href="#git-restore" title="Link permanente para este cabeçalho">¶</a></h3>
+<p>Descarta modificações que foram feitas em um arquivo.</p>
+<p>Sintaxe:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git restore &lt;parâmetro&gt;
+</pre></div>
+</div>
+<p>Exemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git restore README.md  <span class="c1"># descarta modificações que foram feitas no README.md</span>
+git restore .  <span class="c1"># descarta modificações que foram feitas nos arquivos da pasta atual</span>
+</pre></div>
+</div>
+</section>
+<section id="git-commit">
+<h3>git commit<a class="headerlink" href="#git-commit" title="Link permanente para este cabeçalho">¶</a></h3>
+<p>🟦 <strong>Salva</strong> as modificações feitas no repositório local, em um
+checkpoint (também chamado de commit).</p>
+<p><strong>Nota:</strong> só pode ser utilizado após um <a class="reference external" href="#git-add">git add</a>.</p>
+<p>Sintaxe e exemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git commit -m <span class="s2">&quot;mensagem explicando o que foi feito neste commit&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="git-push">
+<h3>git push<a class="headerlink" href="#git-push" title="Link permanente para este cabeçalho">¶</a></h3>
+<p>🟦 <strong>Uso 1:</strong> Envia modificações da atual branch local para uma branch do
+repositório remoto, dado que as modificações já foram salvas.</p>
+<p><strong>Nota 1:</strong> só pode ser utilizado após um <a class="reference external" href="#git-commit">git commit</a>.</p>
+<p><strong>Nota 2:</strong> é uma boa prática ser precedido por um <a class="reference external" href="#git-pull">git
+pull</a>.</p>
+<p><strong>Nota 3:</strong> caso você esteja trabalhando em um repositório que é uma
+cópia de outro repositório (vide <a class="reference external" href="chapters/fork_pull_request.md">Fazendo fork e pull
+requests</a>), você deve adicionar a flag
+<code class="docutils literal notranslate"><span class="pre">-u</span></code> ao comando.</p>
+<p>Sintaxe:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git push origin &lt;nome da branch remota&gt;
+</pre></div>
+</div>
+<p>Exemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git push origin main  <span class="c1"># envia para a branch remota main</span>
+git push origin top  <span class="c1"># envia para a branch remota top</span>
+git push origin -u top  <span class="c1"># envia para a branch remota top que referencia outro repo</span>
+</pre></div>
+</div>
+<p><strong>Uso 2:</strong> deleta uma branch remota. Veja <a class="reference external" href="#git-branch">git branch</a>
+para ver como deletar uma branch local.</p>
+<p>Sintaxe:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git push origin --delete &lt;nome da branch remota&gt;
+</pre></div>
+</div>
+<p>Exemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git push origin --delete top  <span class="c1"># deleta a branch remota top</span>
+</pre></div>
+</div>
+</section>
+<section id="git-pull">
+<h3>git pull<a class="headerlink" href="#git-pull" title="Link permanente para este cabeçalho">¶</a></h3>
+<p>🟦 <strong>Baixa</strong> as modificações da branch de um repositório remoto para a
+atual branch da máquina local, <strong>se o repositório já existir na máquina
+local.</strong> Não confundir com a funcionalidade do <a class="reference external" href="#git-clone">git
+clone</a>.</p>
+<p>Sintaxe:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git pull origin &lt;nome da branch remota&gt;
+</pre></div>
+</div>
+<p>Exemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git pull origin main  <span class="c1"># baixa da branch remota main</span>
+git pull origin top  <span class="c1"># baixa da branch remota top</span>
+</pre></div>
+</div>
+</section>
+<section id="git-checkout">
+<h3>git checkout<a class="headerlink" href="#git-checkout" title="Link permanente para este cabeçalho">¶</a></h3>
+<p>🟦 Muda de uma branch local para outra.</p>
+<p>Sintaxe:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout &lt;nome da branch local&gt;
+</pre></div>
+</div>
+<p>Exemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout top  <span class="c1"># troca da branch atual para a branch top</span>
+git checkout main  <span class="c1"># troca da branch atual para a branch main</span>
+</pre></div>
+</div>
+</section>
+<section id="git-branch">
+<h3>git branch<a class="headerlink" href="#git-branch" title="Link permanente para este cabeçalho">¶</a></h3>
+<p>🟦 <strong>Uso 1:</strong> lista as branches locais.</p>
+<p>Sintaxe e exemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git branch
+</pre></div>
+</div>
+<p><strong>Uso 2:</strong> deleta uma branch local. Veja <a class="reference external" href="#git-push">git push</a> para
+deletar uma branch remota.</p>
+<p><strong>Nota:</strong> tenha certeza que você <strong>não está dentro da branch que será
+deletada.</strong> Veja <a class="reference external" href="#git-checkout">git checkout</a> para ver como trocar
+de uma branch para outra.</p>
+<p>Sintaxe:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git branch -d &lt;nome da branch local&gt;
+</pre></div>
+</div>
+<p>Exemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git branch -d top  <span class="c1"># deleta a branch local top</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../index.html">Tabela de Conteúdo</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Sumário</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="instala%C3%A7%C3%A3o.html">Instalação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guia_r%C3%A1pido.html">Guia rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="criando_reposit%C3%B3rios.html">Criando repositórios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conceitos.html">Conceitos</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Comandos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#comandos-do-sistema-operacional">Comandos do sistema operacional</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#comandos-do-git">Comandos do git</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fork_pull_request.html">Fazendo fork e pull requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resolvendo_conflitos/index.html">Resolvendo conflitos</a></li>
+</ul>
+
+  <div>
+    <h4>Tópico anterior</h4>
+    <p class="topless"><a href="conceitos.html"
+                          title="capítulo anterior">Conceitos</a></p>
+  </div>
+  <div>
+    <h4>Próximo tópico</h4>
+    <p class="topless"><a href="fork_pull_request.html"
+                          title="próximo capítulo">Fazendo fork e pull requests</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>Essa Página</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/chapters/comandos.rst.txt"
+            rel="nofollow">Exibir Fonte</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Busca rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             >índice</a></li>
+        <li class="right" >
+          <a href="fork_pull_request.html" title="Fazendo fork e pull requests"
+             >próximo</a> |</li>
+        <li class="right" >
+          <a href="conceitos.html" title="Conceitos"
+             >anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Comandos</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Henry Cagnini.
+      Criada usando <a href="https://www.sphinx-doc.org/pt_BR/master">Sphinx</a> 5.3.0.
+    </div>
+  </body>
+</html>

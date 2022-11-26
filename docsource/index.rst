@@ -6,17 +6,6 @@
 gitEssentials
 =============
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Sumário
-
-   source/guia_rápido
-   source/criando_repositórios
-   source/conceitos
-   source/comandos
-   source/fork_pull_request
-   source/resolvendo_conflitos/index
-
 Introdução
 ----------
 
@@ -53,6 +42,18 @@ Pycharm, dentre outros. Todavia, neste repositório, será ensinado como
 usar o git a partir da linha de comando, que é, na visão do autor, a
 maneira que funciona em qualquer situação: seja programando sozinho, em
 grupo, com ou sem uma IDE.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Sumário
+
+   chapters/instalação
+   chapters/guia_rápido
+   chapters/criando_repositórios
+   chapters/conceitos
+   chapters/comandos
+   chapters/fork_pull_request
+   chapters/resolvendo_conflitos/index
 
 Recursos adicionais
 -------------------
