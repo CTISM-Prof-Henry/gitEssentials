@@ -1,3 +1,5 @@
+
+
 .. _instalacao:
 
 Instalação
@@ -12,14 +14,30 @@ Instruções para o Windows
 -------------------------
 
 1. Baixe o git `neste link <https://git-scm.com/downloads>`__;
-2. Siga o passo-a-passo do instalador;
-3. No instalador do git, marque a opção que você quer adicionar o programa ao PATH do sistema;
-4. Verifique se o programa foi instalado corretamente. Abra uma janela do prompt de comando
-   (aperte as teclas **Logotipo do Windows** + **R**, digite `cmd` e então aperte a tecla **Enter**);
-5. Se o programa não funcionar, será necessário adicionar o programa ao PATH do sistema manualmente.
-   Clique com o botão direito em cima do Ícone **Meu computador**, **Propriedades**, **Recursos Avançados**,
-   **Variáveis do Sistema**, onde a variável PATH se encontrar, escreva o caminho onde o git foi instalado.
+    * Cuide para baixar a versão adequada (32 ou 64 bits). Provavelmente, seu sistema operacional
+      é 62 bits; se algum problema acontecer na instalação, baixe a versão 32 bits.
+2. Siga o passo-a-passo do instalador (apenas clique **Next**, nenhuma opção precisa se modificada);
+3. Verifique se o programa foi instalado corretamente. Aperte as teclas **Logotipo do Windows** + **R** ao mesmo tempo,
+   escreva `cmd` na janela que aparecer, e então **Ok**:
 
+   |image1|
+
+4. Se o programa não funcionar, será necessário adicionar o programa ao PATH do sistema manualmente:
+    1. Clique no Menu Iniciar;
+    2. Digite "Meu Computador" na barra de busca;
+    3. No ícone que aparecer, selecione a opção **Propriedades**;
+    4. Na lista de opções da direita, selecione a opção **Configurações Avançadas do Sistema**;
+    5. Clique no botão **Variáveis do ambiente**;
+    6. Na seção *Variáveis do ambiente para o usuário `<nome do usuário>`*, onde `<nome do usuário>` é o nome do usuário
+       do Windows, encontre a variável de nome `PATH`;
+    7. Clique duas vezes sobre ela;
+    8. Selecione o botão **Novo**;
+    9. Escreva o caminho onde o programa `git` se encontra no seu computador, **mais** a pasta `bin`;
+        * Por padrão, o instalador coloca o git na pasta `C:\Program Files\Git`, portanto você deve digitar o endereço
+          `C:\Program Files\Git\bin` na caixa de texto.
+    10. Dê **Ok** em todas as janelas abertas.
+
+5. Feche o prompt de comando e repita o passo 3 novamente.
 
 Instruções para o Linux
 -----------------------
@@ -35,3 +53,4 @@ Instruções para o Linux
 
 
 .. |image0| image:: ../imagens/instalação_git_linux_01.png
+.. |image1| image:: ../imagens/executar.png
