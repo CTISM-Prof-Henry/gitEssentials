@@ -34,7 +34,7 @@ language = 'pt_BR'
 latex_engine = 'pdflatex'
 
 latex_elements = {
-    'babel': 'brazil'
+    'babel': r'\usepackage[brazil]{babel}'
     # The paper size ('letterpaper' or 'a4paper').
     #
     # 'papersize': 'letterpaper',
