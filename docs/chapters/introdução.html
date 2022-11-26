@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Guia rápido &#8212; documentação pythonEssentials 1.0</title>
+    <title>Introdução &#8212; documentação pythonEssentials 1.0</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/nature.css" />
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
@@ -20,7 +20,8 @@
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Buscar" href="../search.html" />
-    <link rel="prev" title="Nenhum conflito detectado" href="resolvendo_conflitos/resolvendo_conflitos_tela_3.html" /> 
+    <link rel="next" title="Instalação" href="instala%C3%A7%C3%A3o.html" />
+    <link rel="prev" title="gitEssentials" href="../index.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navegação</h3>
@@ -29,10 +30,13 @@
           <a href="../genindex.html" title="Índice Geral"
              accesskey="I">índice</a></li>
         <li class="right" >
-          <a href="resolvendo_conflitos/resolvendo_conflitos_tela_3.html" title="Nenhum conflito detectado"
+          <a href="instala%C3%A7%C3%A3o.html" title="Instalação"
+             accesskey="N">próximo</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="gitEssentials"
              accesskey="P">anterior</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Guia rápido</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Introdução</a></li> 
       </ul>
     </div>  
 
@@ -41,11 +45,38 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="guia-rapido">
-<span id="id1"></span><h1>Guia rápido<a class="headerlink" href="#guia-rapido" title="Link permanente para este cabeçalho">¶</a></h1>
-<p>O fluxo de trabalho mais comum quando trabalhamos com git é o seguinte:</p>
-<p><strong>Nota:</strong> Para resolver conflitos, confira <a class="reference internal" href="resolvendo_conflitos/index.html#resolvendo-conflitos"><span class="std std-ref">este tutorial.</span></a></p>
-<p><img alt="image0" src="../_images/guia_rapido_diagrama.png" /></p>
+  <section id="introducao">
+<span id="id1"></span><h1>Introdução<a class="headerlink" href="#introducao" title="Link permanente para este cabeçalho">¶</a></h1>
+<p>Este repositório organiza o conhecimento sobre o uso de git e Github.</p>
+<p>O git é uma ferramenta de <strong>versionamento</strong>. Quando estamos trabalhando
+com código-fonte, como por exemplo quando desenvolvemos um software ou
+algoritmo, utilizamos o git para salvar as diversas versões do nosso
+trabalho. O Github, por sua vez, é a “nuvem” do git: é onde armazenamos
+os repositórios na Internet.</p>
+<p>É incorreto e ineficiente usar outros métodos para manter controle de
+código-fonte. Métodos usados por programadores inexperientes incluem:</p>
+<ul class="simple">
+<li><p>Salvar o código em uma conversa com si mesmo no Whatsapp</p></li>
+<li><p>Enviar um e-mail para si mesmo com o código</p></li>
+<li><p>Usar um programa que não foi feito para este propósito (por exemplo,
+o Microsoft Word)</p></li>
+<li><p>Salvar o código-fonte em um arquivo na nuvem (por exemplo o Google
+Drive)</p></li>
+</ul>
+<p>O git não apenas resolve o problema de salvar código-fonte de uma
+maneira eficiente, como também apresenta soluções para trabalhar
+colaborativamente. Ou seja, caso dois ou mais programadores precisem
+trabalhar no mesmo código, o git tem as ferramentas necessárias para
+integrar as modificações.</p>
+<p>O git foi desenvolvido por <a class="reference external" href="https://en.wikipedia.org/wiki/Linus_Torvalds">Linus
+Torvalds</a> em 2005 para
+desenvolver o Linux. É uma ferramenta da linha de comando, originalmente
+sem interface gráfica. Hoje em dia, já existe uma interface gráfica para
+o git, bem como podemos utilizá-lo dentro de IDEs, como o VS Code,
+Pycharm, dentre outros. Todavia, neste repositório, será ensinado como
+usar o git a partir da linha de comando, que é, na visão do autor, a
+maneira que funciona em qualquer situação: seja programando sozinho, em
+grupo, com ou sem uma IDE.</p>
 </section>
 
 
@@ -58,25 +89,30 @@
 <h3><a href="../index.html">Tabela de Conteúdo</a></h3>
 <p class="caption" role="heading"><span class="caption-text">Sumário</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="introdu%C3%A7%C3%A3o.html">Introdução</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introdução</a></li>
 <li class="toctree-l1"><a class="reference internal" href="instala%C3%A7%C3%A3o.html">Instalação</a></li>
 <li class="toctree-l1"><a class="reference internal" href="criando_reposit%C3%B3rios.html">Criando repositórios</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conceitos.html">Conceitos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="comandos.html">Comandos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="fork_pull_request.html">Fazendo fork e pull requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="resolvendo_conflitos/index.html">Resolvendo conflitos</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Guia rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guia_r%C3%A1pido.html">Guia rápido</a></li>
 </ul>
 
   <div>
     <h4>Tópico anterior</h4>
-    <p class="topless"><a href="resolvendo_conflitos/resolvendo_conflitos_tela_3.html"
-                          title="capítulo anterior">Nenhum conflito detectado</a></p>
+    <p class="topless"><a href="../index.html"
+                          title="capítulo anterior">gitEssentials</a></p>
+  </div>
+  <div>
+    <h4>Próximo tópico</h4>
+    <p class="topless"><a href="instala%C3%A7%C3%A3o.html"
+                          title="próximo capítulo">Instalação</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>Essa Página</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/chapters/guia_rápido.rst.txt"
+      <li><a href="../_sources/chapters/introdução.rst.txt"
             rel="nofollow">Exibir Fonte</a></li>
     </ul>
    </div>
@@ -101,10 +137,13 @@
           <a href="../genindex.html" title="Índice Geral"
              >índice</a></li>
         <li class="right" >
-          <a href="resolvendo_conflitos/resolvendo_conflitos_tela_3.html" title="Nenhum conflito detectado"
+          <a href="instala%C3%A7%C3%A3o.html" title="Instalação"
+             >próximo</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="gitEssentials"
              >anterior</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Guia rápido</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Introdução</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
