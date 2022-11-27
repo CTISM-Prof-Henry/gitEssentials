@@ -38,7 +38,7 @@ goto end
 
 :github
 %SPHINXBUILD% -M html %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
-@move /Y _build\html\* .\docs\
+@robocopy _build\html docs * /E
 goto end
 
 :remove_latex_files

@@ -20,8 +20,8 @@
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Buscar" href="../search.html" />
-    <link rel="next" title="Guia rápido" href="guia_r%C3%A1pido.html" />
-    <link rel="prev" title="gitEssentials" href="../index.html" /> 
+    <link rel="next" title="Criando repositórios" href="criando_reposit%C3%B3rios.html" />
+    <link rel="prev" title="Introdução" href="introdu%C3%A7%C3%A3o.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navegação</h3>
@@ -30,10 +30,10 @@
           <a href="../genindex.html" title="Índice Geral"
              accesskey="I">índice</a></li>
         <li class="right" >
-          <a href="guia_r%C3%A1pido.html" title="Guia rápido"
+          <a href="criando_reposit%C3%B3rios.html" title="Criando repositórios"
              accesskey="N">próximo</a> |</li>
         <li class="right" >
-          <a href="../index.html" title="gitEssentials"
+          <a href="introdu%C3%A7%C3%A3o.html" title="Introdução"
              accesskey="P">anterior</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Instalação</a></li> 
@@ -53,15 +53,45 @@ versões do Windows (e.g. 7, 11), e que as instruções também funcionem para o
 do Linux (e.g. Arch, Debian, etc).</p>
 <section id="instrucoes-para-o-windows">
 <h2>Instruções para o Windows<a class="headerlink" href="#instrucoes-para-o-windows" title="Link permanente para este cabeçalho">¶</a></h2>
-<ol class="arabic simple">
-<li><p>Baixe o git <a class="reference external" href="https://git-scm.com/downloads">neste link</a>;</p></li>
-<li><p>Siga o passo-a-passo do instalador;</p></li>
-<li><p>No instalador do git, marque a opção que você quer adicionar o programa ao PATH do sistema;</p></li>
-<li><p>Verifique se o programa foi instalado corretamente. Abra uma janela do prompt de comando
-(aperte as teclas <strong>Logotipo do Windows</strong> + <strong>R</strong>, digite <cite>cmd</cite> e então aperte a tecla <strong>Enter</strong>);</p></li>
-<li><p>Se o programa não funcionar, será necessário adicionar o programa ao PATH do sistema manualmente.
-Clique com o botão direito em cima do Ícone <strong>Meu computador</strong>, <strong>Propriedades</strong>, <strong>Recursos Avançados</strong>,
-<strong>Variáveis do Sistema</strong>, onde a variável PATH se encontrar, escreva o caminho onde o git foi instalado.</p></li>
+<ol class="arabic">
+<li><dl class="simple">
+<dt>Baixe o git <a class="reference external" href="https://git-scm.com/downloads">neste link</a>;</dt><dd><ul class="simple">
+<li><p>Cuide para baixar a versão adequada (32 ou 64 bits). Provavelmente, seu sistema operacional
+é 62 bits; se algum problema acontecer na instalação, baixe a versão 32 bits.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Siga o passo-a-passo do instalador (apenas clique <strong>Next</strong>, nenhuma opção precisa se modificada);</p></li>
+<li><p>Verifique se o programa foi instalado corretamente. Aperte as teclas <strong>Logotipo do Windows</strong> + <strong>R</strong> ao mesmo tempo,
+escreva <cite>cmd</cite> na janela que aparecer, e então <strong>Ok</strong>:</p>
+<p><img alt="image1" src="../_images/executar.png" /></p>
+</li>
+<li><dl class="simple">
+<dt>Se o programa não funcionar, será necessário adicionar o programa ao PATH do sistema manualmente:</dt><dd><ol class="arabic simple">
+<li><p>Clique no Menu Iniciar;</p></li>
+<li><p>Digite “Meu Computador” na barra de busca;</p></li>
+<li><p>No ícone que aparecer, selecione a opção <strong>Propriedades</strong>;</p></li>
+<li><p>Na lista de opções da direita, selecione a opção <strong>Configurações Avançadas do Sistema</strong>;</p></li>
+<li><p>Clique no botão <strong>Variáveis do ambiente</strong>;</p></li>
+<li><p>Na seção <em>Variáveis do ambiente para o usuário `&lt;nome do usuário&gt;`</em>, onde <cite>&lt;nome do usuário&gt;</cite> é o nome do usuário
+do Windows, encontre a variável de nome <cite>PATH</cite>;</p></li>
+<li><p>Clique duas vezes sobre ela;</p></li>
+<li><p>Selecione o botão <strong>Novo</strong>;</p></li>
+<li><dl class="simple">
+<dt>Escreva o caminho onde o programa <cite>git</cite> se encontra no seu computador, <strong>mais</strong> a pasta <cite>bin</cite>;</dt><dd><ul class="simple">
+<li><p>Por padrão, o instalador coloca o git na pasta <cite>C:Program FilesGit</cite>, portanto você deve digitar o endereço
+<cite>C:Program FilesGitbin</cite> na caixa de texto.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Dê <strong>Ok</strong> em todas as janelas abertas.</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p>Feche o prompt de comando e repita o passo 3 novamente.</p></li>
 </ol>
 </section>
 <section id="instrucoes-para-o-linux">
@@ -87,28 +117,29 @@ Clique com o botão direito em cima do Ícone <strong>Meu computador</strong>, <
 <h3><a href="../index.html">Tabela de Conteúdo</a></h3>
 <p class="caption" role="heading"><span class="caption-text">Sumário</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introdu%C3%A7%C3%A3o.html">Introdução</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Instalação</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#instrucoes-para-o-windows">Instruções para o Windows</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#instrucoes-para-o-linux">Instruções para o Linux</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="guia_r%C3%A1pido.html">Guia rápido</a></li>
 <li class="toctree-l1"><a class="reference internal" href="criando_reposit%C3%B3rios.html">Criando repositórios</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conceitos.html">Conceitos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="comandos.html">Comandos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="fork_pull_request.html">Fazendo fork e pull requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="resolvendo_conflitos/index.html">Resolvendo conflitos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guia_r%C3%A1pido.html">Guia rápido</a></li>
 </ul>
 
   <div>
     <h4>Tópico anterior</h4>
-    <p class="topless"><a href="../index.html"
-                          title="capítulo anterior">gitEssentials</a></p>
+    <p class="topless"><a href="introdu%C3%A7%C3%A3o.html"
+                          title="capítulo anterior">Introdução</a></p>
   </div>
   <div>
     <h4>Próximo tópico</h4>
-    <p class="topless"><a href="guia_r%C3%A1pido.html"
-                          title="próximo capítulo">Guia rápido</a></p>
+    <p class="topless"><a href="criando_reposit%C3%B3rios.html"
+                          title="próximo capítulo">Criando repositórios</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>Essa Página</h3>
@@ -138,10 +169,10 @@ Clique com o botão direito em cima do Ícone <strong>Meu computador</strong>, <
           <a href="../genindex.html" title="Índice Geral"
              >índice</a></li>
         <li class="right" >
-          <a href="guia_r%C3%A1pido.html" title="Guia rápido"
+          <a href="criando_reposit%C3%B3rios.html" title="Criando repositórios"
              >próximo</a> |</li>
         <li class="right" >
-          <a href="../index.html" title="gitEssentials"
+          <a href="introdu%C3%A7%C3%A3o.html" title="Introdução"
              >anterior</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Instalação</a></li> 
