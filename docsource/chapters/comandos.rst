@@ -111,7 +111,7 @@ andamento do curso.
 **Nota 1:** é preciso estar dentro de uma pasta que é um repositório git
 para estes comandos funcionarem.
 
-**Nota 2:** Alguns destes comandos (marcados com o símbolo 🟦) dependem
+**Nota 2:** Alguns destes comandos (marcados com o símbolo **!!!**) dependem
 do **estado atual** do repositório, que pode ser consultado com um `git
 status <#git-status>`__. Em outras palavras, se você der este comando
 fora da sequência correta, ele não terá o efeito desejado. Por outro
@@ -151,7 +151,7 @@ Sintaxe e exemplo:
 git add
 ~~~~~~~
 
-🟦 Adiciona arquivos à lista de modificações-candidatas a serem salvas.
+**!!!** Adiciona arquivos à lista de modificações-candidatas a serem salvas.
 Não confundir com a funcionalidade do `git commit <#git-commit>`__.
 
 Sintaxe:
@@ -190,7 +190,7 @@ Exemplo:
 git commit
 ~~~~~~~~~~
 
-🟦 **Salva** as modificações feitas no repositório local, em um
+**!!!** **Salva** as modificações feitas no repositório local, em um
 checkpoint (também chamado de commit).
 
 **Nota:** só pode ser utilizado após um `git add <#git-add>`__.
@@ -204,7 +204,7 @@ Sintaxe e exemplo:
 git push
 ~~~~~~~~
 
-🟦 **Uso 1:** Envia modificações da atual branch local para uma branch do
+**!!!** **Uso 1:** Envia modificações da atual branch local para uma branch do
 repositório remoto, dado que as modificações já foram salvas.
 
 **Nota 1:** só pode ser utilizado após um `git commit <#git-commit>`__.
@@ -249,7 +249,7 @@ Exemplo:
 git pull
 ~~~~~~~~
 
-🟦 **Baixa** as modificações da branch de um repositório remoto para a
+**!!!** **Baixa** as modificações da branch de um repositório remoto para a
 atual branch da máquina local, **se o repositório já existir na máquina
 local.** Não confundir com a funcionalidade do `git
 clone <#git-clone>`__.
@@ -270,7 +270,7 @@ Exemplo:
 git checkout
 ~~~~~~~~~~~~
 
-🟦 Muda de uma branch local para outra.
+**!!!** Muda de uma branch local para outra.
 
 Sintaxe:
 
@@ -288,7 +288,7 @@ Exemplo:
 git branch
 ~~~~~~~~~~
 
-🟦 **Uso 1:** lista as branches locais.
+**!!!** **Uso 1:** lista as branches locais.
 
 Sintaxe e exemplo:
 

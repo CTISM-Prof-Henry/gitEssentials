@@ -3,11 +3,7 @@
 Criando repositórios
 ====================
 
-No decorrer do curso, pode ser que você queira organizar os arquivos de
-uma disciplina em um repositório do Github. Você pode fazer isso
-acessando o link https://github.com/new.
-
-Você se deparará com uma tela parecida com esta:
+Para criar um novo epositório, acesse o link https://github.com/new. A seguinte tela será apresentada:
 
 |image0|
 
@@ -52,3 +48,4 @@ Feito isso, você pode seguir o :ref:`fluxo normal <resolvendo-conflitos>` de
 trabalho do git.
 
 .. |image0| image:: ../imagens/create_1.png
+   :scale: 55 %
