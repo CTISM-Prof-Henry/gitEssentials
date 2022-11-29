@@ -5,7 +5,7 @@
 Instalação
 ==========
 
-Este guia cobre a instalação em dois sistemas operacionais, em duas versões específicas:
+Este material cobre a instalação em dois sistemas operacionais, em duas versões específicas:
 Windows 10 e Linux Ubuntu 20.04 LTS. É provável que as instruções aqui funcionem para outras
 versões do Windows (e.g. 7, 11), e que as instruções também funcionem para outras distribuições
 do Linux (e.g. Arch, Debian, etc).
