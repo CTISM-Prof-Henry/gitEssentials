@@ -1,7 +1,7 @@
-.. _primeiros-passos:
+.. _clonando-um-repositorio:
 
-Primeiros passos
-================
+Clonando um repositório
+=======================
 
 Uma vez que você tenha criado um novo repositório, você poderá cloná-lo para a sua máquina local. O ato de **clonar**
 cria uma cópia do repositório remoto no seu computador. Apesar do GitHub oferecer algumas ferramentas de manipulação de
@@ -26,11 +26,17 @@ digite
 
    git clone https://github.com/CTISM-Prof-Henry/gitEssentials.git
 
+É possível clonar qualquer repositório, inclusive repositórios que não são seus! Tenha em mente apenas que, ao clonar
+um repositório que não é seu, você não poderá enviar modificações para o repositório remoto.
+
+Após clonar um repositório, é possível trabalhar nele localmente, utilizando git. Apesar do git possuir muitos comandos,
+veremos na próxima seção o conjunto mínimo de comandos para começar a versionar nosso código-fonte.
+
 .. |image0| image:: ../imagens/botao_code.png
-   :scale: 50 %
+   :scale: 100 %
 
 .. |image1| image:: ../imagens/botao_code_contexto.png
-   :scale: 66 %
+   :scale: 100 %
 
 .. |image2| image:: ../imagens/botao_copy.png
-   :scale: 50 %
+   :scale: 100 %

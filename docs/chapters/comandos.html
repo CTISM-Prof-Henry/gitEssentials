@@ -125,7 +125,7 @@ listadas aqui, porém espera-se que este resumo seja suficiente para o
 andamento do curso.</p>
 <p><strong>Nota 1:</strong> é preciso estar dentro de uma pasta que é um repositório git
 para estes comandos funcionarem.</p>
-<p><strong>Nota 2:</strong> Alguns destes comandos (marcados com o símbolo 🟦) dependem
+<p><strong>Nota 2:</strong> Alguns destes comandos (marcados com o símbolo <strong>!!!</strong>) dependem
 do <strong>estado atual</strong> do repositório, que pode ser consultado com um <a class="reference external" href="#git-status">git
 status</a>. Em outras palavras, se você der este comando
 fora da sequência correta, ele não terá o efeito desejado. Por outro
@@ -155,7 +155,7 @@ não existir na máquina local.</strong> Não confundir com a funcionalidade do
 </section>
 <section id="git-add">
 <h3>git add<a class="headerlink" href="#git-add" title="Link permanente para este cabeçalho">¶</a></h3>
-<p>🟦 Adiciona arquivos à lista de modificações-candidatas a serem salvas.
+<p><strong>!!!</strong> Adiciona arquivos à lista de modificações-candidatas a serem salvas.
 Não confundir com a funcionalidade do <a class="reference external" href="#git-commit">git commit</a>.</p>
 <p>Sintaxe:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add &lt;parâmetro&gt;
@@ -184,7 +184,7 @@ git restore .  <span class="c1"># descarta modificações que foram feitas nos a
 </section>
 <section id="git-commit">
 <h3>git commit<a class="headerlink" href="#git-commit" title="Link permanente para este cabeçalho">¶</a></h3>
-<p>🟦 <strong>Salva</strong> as modificações feitas no repositório local, em um
+<p><strong>!!!</strong> <strong>Salva</strong> as modificações feitas no repositório local, em um
 checkpoint (também chamado de commit).</p>
 <p><strong>Nota:</strong> só pode ser utilizado após um <a class="reference external" href="#git-add">git add</a>.</p>
 <p>Sintaxe e exemplo:</p>
@@ -194,7 +194,7 @@ checkpoint (também chamado de commit).</p>
 </section>
 <section id="git-push">
 <h3>git push<a class="headerlink" href="#git-push" title="Link permanente para este cabeçalho">¶</a></h3>
-<p>🟦 <strong>Uso 1:</strong> Envia modificações da atual branch local para uma branch do
+<p><strong>!!!</strong> <strong>Uso 1:</strong> Envia modificações da atual branch local para uma branch do
 repositório remoto, dado que as modificações já foram salvas.</p>
 <p><strong>Nota 1:</strong> só pode ser utilizado após um <a class="reference external" href="#git-commit">git commit</a>.</p>
 <p><strong>Nota 2:</strong> é uma boa prática ser precedido por um <a class="reference external" href="#git-pull">git
@@ -226,7 +226,7 @@ para ver como deletar uma branch local.</p>
 </section>
 <section id="git-pull">
 <h3>git pull<a class="headerlink" href="#git-pull" title="Link permanente para este cabeçalho">¶</a></h3>
-<p>🟦 <strong>Baixa</strong> as modificações da branch de um repositório remoto para a
+<p><strong>!!!</strong> <strong>Baixa</strong> as modificações da branch de um repositório remoto para a
 atual branch da máquina local, <strong>se o repositório já existir na máquina
 local.</strong> Não confundir com a funcionalidade do <a class="reference external" href="#git-clone">git
 clone</a>.</p>
@@ -242,7 +242,7 @@ git pull origin top  <span class="c1"># baixa da branch remota top</span>
 </section>
 <section id="git-checkout">
 <h3>git checkout<a class="headerlink" href="#git-checkout" title="Link permanente para este cabeçalho">¶</a></h3>
-<p>🟦 Muda de uma branch local para outra.</p>
+<p><strong>!!!</strong> Muda de uma branch local para outra.</p>
 <p>Sintaxe:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout &lt;nome da branch local&gt;
 </pre></div>
@@ -255,7 +255,7 @@ git checkout main  <span class="c1"># troca da branch atual para a branch main</
 </section>
 <section id="git-branch">
 <h3>git branch<a class="headerlink" href="#git-branch" title="Link permanente para este cabeçalho">¶</a></h3>
-<p>🟦 <strong>Uso 1:</strong> lista as branches locais.</p>
+<p><strong>!!!</strong> <strong>Uso 1:</strong> lista as branches locais.</p>
 <p>Sintaxe e exemplo:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git branch
 </pre></div>
@@ -290,6 +290,7 @@ de uma branch para outra.</p>
 <li class="toctree-l1"><a class="reference internal" href="introdu%C3%A7%C3%A3o.html">Introdução</a></li>
 <li class="toctree-l1"><a class="reference internal" href="instala%C3%A7%C3%A3o.html">Instalação</a></li>
 <li class="toctree-l1"><a class="reference internal" href="criando_reposit%C3%B3rios.html">Criando repositórios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clonando.html">Clonando um repositório</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conceitos.html">Conceitos</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Comandos</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#comandos-do-sistema-operacional">Comandos do sistema operacional</a></li>

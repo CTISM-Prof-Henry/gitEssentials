@@ -78,7 +78,7 @@ html_static_path = ['_static']
 html_theme_options = {
     'github_banner': False,
     'github_user': 'CTISM-Prof-Henry',
-    'github_repo': 'gitEssentials'
+    'github_repo': 'gitEssentials',
 }
 
 html_sidebars = {

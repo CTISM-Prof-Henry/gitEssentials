@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Guia rápido &#8212; documentação pythonEssentials 1.0</title>
+    <title>Clonando um repositório &#8212; documentação pythonEssentials 1.0</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/nature.css" />
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
@@ -20,7 +20,8 @@
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Buscar" href="../search.html" />
-    <link rel="prev" title="Nenhum conflito detectado" href="resolvendo_conflitos/resolvendo_conflitos_tela_3.html" /> 
+    <link rel="next" title="Conceitos" href="conceitos.html" />
+    <link rel="prev" title="Criando repositórios" href="criando_reposit%C3%B3rios.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navegação</h3>
@@ -29,10 +30,13 @@
           <a href="../genindex.html" title="Índice Geral"
              accesskey="I">índice</a></li>
         <li class="right" >
-          <a href="resolvendo_conflitos/resolvendo_conflitos_tela_3.html" title="Nenhum conflito detectado"
+          <a href="conceitos.html" title="Conceitos"
+             accesskey="N">próximo</a> |</li>
+        <li class="right" >
+          <a href="criando_reposit%C3%B3rios.html" title="Criando repositórios"
              accesskey="P">anterior</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Guia rápido</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Clonando um repositório</a></li> 
       </ul>
     </div>  
 
@@ -41,11 +45,28 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="guia-rapido">
-<span id="id1"></span><h1>Guia rápido<a class="headerlink" href="#guia-rapido" title="Link permanente para este cabeçalho">¶</a></h1>
-<p>O fluxo de trabalho mais comum quando trabalhamos com git é o seguinte:</p>
-<p><strong>Nota:</strong> Para resolver conflitos, confira <a class="reference internal" href="resolvendo_conflitos/index.html#resolvendo-conflitos"><span class="std std-ref">este tutorial.</span></a></p>
-<p><img alt="image0" src="../_images/guia_rapido_diagrama.png" /></p>
+  <section id="clonando-um-repositorio">
+<span id="id1"></span><h1>Clonando um repositório<a class="headerlink" href="#clonando-um-repositorio" title="Link permanente para este cabeçalho">¶</a></h1>
+<p>Uma vez que você tenha criado um novo repositório, você poderá cloná-lo para a sua máquina local. O ato de <strong>clonar</strong>
+cria uma cópia do repositório remoto no seu computador. Apesar do GitHub oferecer algumas ferramentas de manipulação de
+arquivos na sua interface Web (por exemplo, é possível adicionar, remover e modificar arquivos), geralmente, quando
+estamos trabalhando com código-fonte, queremos executá-lo (e.g. compilá-lo) para ver o resultado.</p>
+<p>Na tela inicial do seu repositório recém-criado, clique no botão <a class="reference internal" href="../_images/botao_code.png"><img alt="image0" src="../_images/botao_code.png" style="width: 111.0px; height: 39.0px;" /></a>, e copie a URL do repositório clicando no
+botão <a class="reference internal" href="../_images/botao_copy.png"><img alt="image2" src="../_images/botao_copy.png" style="width: 49.0px; height: 35.0px;" /></a>:</p>
+<p><a class="reference internal" href="../_images/botao_code_contexto.png"><img alt="image1" src="../_images/botao_code_contexto.png" style="width: 403.0px; height: 271.0px;" /></a></p>
+<p>Abra a linha de comando do seu sistema operacional, e, na pasta que você quiser clonar o repositório, digite</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone &lt;URL&gt;
+</pre></div>
+</div>
+<p>Onde <code class="docutils literal notranslate"><span class="pre">&lt;URL&gt;</span></code> é a URL do seu repositório, copiada anteriormente. Por exemplo, para clonar o repositório deste manual,
+digite</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/CTISM-Prof-Henry/gitEssentials.git
+</pre></div>
+</div>
+<p>É possível clonar qualquer repositório, inclusive repositórios que não são seus! Tenha em mente apenas que, ao clonar
+um repositório que não é seu, você não poderá enviar modificações para o repositório remoto.</p>
+<p>Após clonar um repositório, é possível trabalhar nele localmente, utilizando git. Apesar do git possuir muitos comandos,
+veremos na próxima seção o conjunto mínimo de comandos para começar a versionar nosso código-fonte.</p>
 </section>
 
 
@@ -61,23 +82,28 @@
 <li class="toctree-l1"><a class="reference internal" href="introdu%C3%A7%C3%A3o.html">Introdução</a></li>
 <li class="toctree-l1"><a class="reference internal" href="instala%C3%A7%C3%A3o.html">Instalação</a></li>
 <li class="toctree-l1"><a class="reference internal" href="criando_reposit%C3%B3rios.html">Criando repositórios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="clonando.html">Clonando um repositório</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Clonando um repositório</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conceitos.html">Conceitos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="comandos.html">Comandos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="fork_pull_request.html">Fazendo fork e pull requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="resolvendo_conflitos/index.html">Resolvendo conflitos</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Guia rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guia_r%C3%A1pido.html">Guia rápido</a></li>
 </ul>
 
   <div>
     <h4>Tópico anterior</h4>
-    <p class="topless"><a href="resolvendo_conflitos/resolvendo_conflitos_tela_3.html"
-                          title="capítulo anterior">Nenhum conflito detectado</a></p>
+    <p class="topless"><a href="criando_reposit%C3%B3rios.html"
+                          title="capítulo anterior">Criando repositórios</a></p>
+  </div>
+  <div>
+    <h4>Próximo tópico</h4>
+    <p class="topless"><a href="conceitos.html"
+                          title="próximo capítulo">Conceitos</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>Essa Página</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/chapters/guia_rápido.rst.txt"
+      <li><a href="../_sources/chapters/clonando.rst.txt"
             rel="nofollow">Exibir Fonte</a></li>
     </ul>
    </div>
@@ -102,10 +128,13 @@
           <a href="../genindex.html" title="Índice Geral"
              >índice</a></li>
         <li class="right" >
-          <a href="resolvendo_conflitos/resolvendo_conflitos_tela_3.html" title="Nenhum conflito detectado"
+          <a href="conceitos.html" title="Conceitos"
+             >próximo</a> |</li>
+        <li class="right" >
+          <a href="criando_reposit%C3%B3rios.html" title="Criando repositórios"
              >anterior</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Guia rápido</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Clonando um repositório</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

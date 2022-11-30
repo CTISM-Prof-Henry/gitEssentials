@@ -5,7 +5,7 @@
 Instalação
 ==========
 
-Este guia cobre a instalação em dois sistemas operacionais, em duas versões específicas:
+Este material cobre a instalação em dois sistemas operacionais, em duas versões específicas:
 Windows 10 e Linux Ubuntu 20.04 LTS. É provável que as instruções aqui funcionem para outras
 versões do Windows (e.g. 7, 11), e que as instruções também funcionem para outras distribuições
 do Linux (e.g. Arch, Debian, etc).
@@ -15,10 +15,10 @@ Instruções para o Windows
 
 1. Baixe o git `neste link <https://git-scm.com/downloads>`__;
     * Cuide para baixar a versão adequada (32 ou 64 bits). Provavelmente, seu sistema operacional
-      é 62 bits; se algum problema acontecer na instalação, baixe a versão 32 bits.
+      é 64 bits; se algum problema acontecer na instalação, baixe a versão 32 bits.
 2. Siga o passo-a-passo do instalador (apenas clique **Next**, nenhuma opção precisa se modificada);
 3. Verifique se o programa foi instalado corretamente. Aperte as teclas **Logotipo do Windows** + **R** ao mesmo tempo,
-   escreva `cmd` na janela que aparecer, e então **Ok**:
+   escreva `cmd` na janela que aparecer, e então **OK**:
 
    |image1|
 
@@ -53,4 +53,7 @@ Instruções para o Linux
 
 
 .. |image0| image:: ../imagens/instalação_git_linux_01.png
+   :scale: 50 %
+
 .. |image1| image:: ../imagens/executar.png
+   :scale: 67 %

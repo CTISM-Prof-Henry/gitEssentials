@@ -13,6 +13,7 @@ gitEssentials
    chapters/introdução
    chapters/instalação
    chapters/criando_repositórios
+   chapters/clonando
    chapters/conceitos
    chapters/comandos
    chapters/fork_pull_request

@@ -3,15 +3,11 @@
 Criando repositórios
 ====================
 
-No decorrer do curso, pode ser que você queira organizar os arquivos de
-uma disciplina em um repositório do Github. Você pode fazer isso
-acessando o link https://github.com/new.
-
-Você se deparará com uma tela parecida com esta:
+Para criar um novo repositório, acesse o link https://github.com/new. A seguinte tela será apresentada:
 
 |image0|
 
-Você precisará configurar todos os 8 itens. A seguir está a descrição do
+Você precisará configurar todos os oito itens. A seguir está a descrição do
 que cada um deles faz:
 
 1. **Template:** Se você está copiando a *estrutura* de outro
@@ -46,9 +42,8 @@ que cada um deles faz:
    vez que ele vier a público? Pode deixar este campo inalterado para
    este tutorial.
 
-Clique no botão após realizar a configuração.
-
-Feito isso, você pode seguir o :ref:`fluxo normal <resolvendo-conflitos>` de
-trabalho do git.
+Após clicar no botão **Create repository**, você poderá clonar o repositório
+na sua máquina local e começar a mexer nele.
 
 .. |image0| image:: ../imagens/create_1.png
+   :scale: 55 %
