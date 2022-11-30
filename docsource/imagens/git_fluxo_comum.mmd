@@ -1,0 +1,34 @@
+graph TD
+%% fluxos
+
+common_workflow[\"<b>Fluxo de<br/>trabalho comum</b>"/]
+sharing_workflow[\"<b>Fluxo de<br/>compartilhamento</b>"/]
+
+%% ações
+create_new_files_or_edit_existent_files["<b>Criar arquivos novos<br/>ou editar os existentes</b>"]
+%% decisões
+check_what_will_be_commited{"Verificar o que<br/>será salvo?"}
+fine_to_commit{"<b>Pode salvar?</b>"}
+would_you_like_share_the_changes{"<b>Gostaria de compartilhar<br/>as modificações?</b>"}
+%% comandos
+git_add["<b>Colocar arquivos na área de preparação</b><br/>git add ."]
+git_status["<b>Verificar o que será salvo</b><br/>git status"]
+git_commit["<b>Criar o commit</b><br/>git commit -m \"mensagem\""]
+git_restore["<b>Restaurar a partir da<br/>área de preparação</b><br/>git restore --staged <filename>"]
+%% relacionamentos
+common_workflow --> create_new_files_or_edit_existent_files --> git_add
+git_add --> check_what_will_be_commited
+check_what_will_be_commited -- "sim" --> git_status
+git_status --> fine_to_commit
+fine_to_commit -- "sim" --> git_commit
+git_commit --> would_you_like_share_the_changes
+would_you_like_share_the_changes -- "sim" --> sharing_workflow
+
+check_what_will_be_commited -- "não" --> git_commit
+
+%% left
+git_restore --> git_status
+fine_to_commit -- "não" --> git_restore
+
+%% right
+would_you_like_share_the_changes -- "não" --> create_new_files_or_edit_existent_files

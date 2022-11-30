@@ -14,7 +14,8 @@ gitEssentials
    chapters/instalação
    chapters/criando_repositórios
    chapters/clonando
-   chapters/comandos_básicos
+   chapters/trabalhando_localmente
+   chapters/enviando_para_nuvem
    chapters/conceitos
    chapters/comandos
    chapters/fork_pull_request
