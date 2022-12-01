@@ -13,6 +13,11 @@ Trabalhando localmente
    utilizar o comando ``git commit`` (que cria um checkpoint) sem antes preparar os arquivos com ``git add`` não fará
    sentido.
 
+   Para auxiliar na compreensão da ordem de uso dos comandos, o seguinte fluxograma, adaptado do material de Fabrício
+   Cabral [CABRAL2022]_, é mostrado abaixo:
+
+   |image0|
+
 .. only:: html
 
    Uma vez que um repositório é clonado, utilizaremos um conjunto restrito de comandos para trabalhar localmente (ou
@@ -23,12 +28,19 @@ Trabalhando localmente
    utilizar o comando ``git commit`` (que cria um checkpoint) sem antes preparar os arquivos com ``git add`` não fará
    sentido.
 
-Para auxiliar na compreensão da ordem de uso dos comandos, o seguinte fluxograma, adaptado do material de Fabrício Cabral
-no seu repositório [#]_, é mostrado abaixo:
+   Para auxiliar na compreensão da ordem de uso dos comandos, o seguinte fluxograma, adaptado do material de Fabrício
+   Cabral [#]_, é mostrado abaixo:
 
-|image0|
+   |image1|
+
 
 .. |image0| image:: ../imagens/git_fluxo_comum.png
-   :scale: 100 %
+      :scale: 100 %
+
+.. |image1| image:: ../imagens/git_fluxo_comum.svg
+      :scale: 100 %
 
 .. [#] Disponível em `<https://github.com/fabriciofx/gitflowchart>`__. Acesso em 30/11/2022.
+
+.. [CABRAL2022] Cabral, Fabrício. Git flowchart. Disponível em `<https://github.com/fabriciofx/gitflowchart>`__.
+   Acesso em 30/11/2022.
