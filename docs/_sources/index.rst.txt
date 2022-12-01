@@ -20,7 +20,7 @@ gitEssentials
    chapters/fork_pull_request
    chapters/conceitos
    chapters/comandos
-   chapters/guia_rápido
+   chapters/fluxogramas
 
 Recursos adicionais
 -------------------

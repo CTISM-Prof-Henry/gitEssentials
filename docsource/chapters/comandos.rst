@@ -334,4 +334,5 @@ Exemplo:
 
    git branch -d top  # deleta a branch local top
 
+
 .. [GIT2022] Git. Documentação oficial. Disponível em https://git-scm.com/doc. Acesso em 01/12/2022.
