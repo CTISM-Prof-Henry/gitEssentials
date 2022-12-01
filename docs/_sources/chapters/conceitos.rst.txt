@@ -115,23 +115,22 @@ altamente recomendado.
 2. Se houverem modificações (arquivos escritos em vermelho), salve-as em
    um commit:
 
-.. code:: bash
+   .. code:: bash
 
-   git add <param>
-   git commit -m "mensagem do commit dizendo o que foi feito"
+      git add <param>
+      git commit -m "mensagem do commit dizendo o que foi feito"
 
-Onde ``<param>`` é um parâmetro válido do ``git add`` (veja a entrada do
-comando add na página `Comandos <comandos.md#git-add>`__).
+   Onde ``<param>`` é um parâmetro válido do ``git add`` (veja a entrada do
+   comando add na página `Comandos <comandos.md#git-add>`__).
 
-Ou, alternativamente, descarte-as:
+   Ou, alternativamente, descarte-as:
 
 .. code:: bash
 
    git restore <param>
 
-Onde ``<param>`` é um parâmetro válido do ``git restore`` (veja a
-entrada do comando restore na página
-`Comandos <comandos.md#git-restore>`__).
+   Onde ``<param>`` é um parâmetro válido do ``git restore`` (veja a entrada do comando restore na página
+   `Comandos <comandos.md#git-restore>`__).
 
 3. Dê um ``git pull origin <nome da branch remota>`` para baixar
    modificações que estão no repositório remoto

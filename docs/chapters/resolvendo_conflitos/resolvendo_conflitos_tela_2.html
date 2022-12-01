@@ -50,30 +50,34 @@
 <span id="resolvendo-conflitos-tela-2"></span><h1>Finalizando<a class="headerlink" href="#finalizando" title="Link permanente para este cabeçalho">¶</a></h1>
 <p><img alt="image0" src="../../_images/conflito_3.png" /></p>
 <p>A mensagem <em>Automatic merge failed; fix conflicts and then commit the
-result</em> quer dizer que você terá que abrir os arquivos que resultaram em
-conflitos e deixá-los da maneira que eles devem ficar corretamente. Você
-saberá quais arquivos estão dando conflito pela mensagem do git; na
-imagem acima, o conflito está no arquivo README.md.</p>
-<p>Abrindo o arquivo README.md pelo Sublime Text, vemos que ele está da
-seguinte maneira:</p>
+result</em> quer dizer que teremos que abrir os arquivos que resultaram em
+conflitos e deixá-los da maneira que eles devem ficar corretamente. Saberemos quais arquivos possuem conflitos pela
+mensagem do git: na imagem acima, o conflito está no arquivo <code class="docutils literal notranslate"><span class="pre">README.md</span></code>.</p>
+<p>Abrindo o arquivo README.md por um editor de textos (a sugestão dos autores é pelo Sublime Text <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>), vemos que ele
+se apresenta da seguinte forma:</p>
 <p><img alt="image1" src="../../_images/conflito_4.png" /></p>
-<p>O arquivo está organizado da seguinte maneira: os caracteres <code class="docutils literal notranslate"><span class="pre">&lt;&lt;&lt;&lt;</span></code>
-marcam o começo da região que resultou em um conflito; os caracteres
-<code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;&gt;</span></code> marcam o fim da região conflitante. Os caracteres <code class="docutils literal notranslate"><span class="pre">====</span></code>
-marcam a divisão do código; onde diz <code class="docutils literal notranslate"><span class="pre">HEAD</span></code>, é o código da sua máquina
-local, e o código (neste exemplo) marcado pela hash
-<code class="docutils literal notranslate"><span class="pre">8fa75db4cccadfec3d45a5e8a8ee10c9c6fb1697</span></code> é o código que veio do
-repositório do Github (na verdade, esta hash é o ID do commit no
-Github).</p>
-<p>Arrume o arquivo de maneira que ele concilie as modificações que você
-fez, e as que seu colega fez (e já estão no Github):</p>
+<ul class="simple">
+<li><p>Os caracteres <code class="docutils literal notranslate"><span class="pre">&lt;&lt;&lt;&lt;</span></code> arcam o começo da região que resultou em um conflito;</p></li>
+<li><p>Os caracteres <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;&gt;</span></code> marcam o fim da região conflitante;</p></li>
+<li><p>Os caracteres <code class="docutils literal notranslate"><span class="pre">====</span></code> marcam a divisão do código;</p></li>
+<li><p>A seção que começa com <code class="docutils literal notranslate"><span class="pre">HEAD</span></code> delimita o código-fonte como apresentado no repositório local (do nosso computador);A</p></li>
+<li><p>A seção marcada pela hash (que varia de acordo com o commit; neste exemplo é a hash
+<code class="docutils literal notranslate"><span class="pre">8fa75db4cccadfec3d45a5e8a8ee10c9c6fb1697</span></code>) é o código-fonte encontrado no repositório remoto. Na verdade, este hash
+é o identificador único do commit no repositório remoto.</p></li>
+</ul>
+<p>Vamos arrumar o arquivo de maneira que ele concilie as duas modificações, tanto do repositório remoto quanto do
+repositório local:</p>
 <p><img alt="image2" src="../../_images/conflito_5.png" /></p>
-<p>Após a correção, volte para a linha de comando e envie as modificações
-para o Github:</p>
+<p>Após a correção, voltamos à linha de comando para enviar as modificações ao repositório remoto:</p>
 <p><img alt="image3" src="../../_images/conflito_6.png" /></p>
-<p>Pronto! Com isso, tanto seu código, quando o do seu colega, estarão no
-Github:</p>
+<p>Pronto! Com isso, a resolução de conflito que acabamos de fazer estará presente no repositório remoto:</p>
 <p><img alt="image4" src="../../_images/conflito_7.png" /></p>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id2" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Disponível em <a class="reference external" href="https://www.sublimetext.com/">https://www.sublimetext.com/</a>. Acesso em 01/12/2022.</p>
+</aside>
+</aside>
 </section>
 
 
@@ -90,16 +94,17 @@ Github:</p>
 <li class="toctree-l1"><a class="reference internal" href="../instala%C3%A7%C3%A3o.html">Instalação</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../criando_reposit%C3%B3rios.html">Criando repositórios</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../clonando.html">Clonando um repositório</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../comandos_b%C3%A1sicos.html">Comandos Básicos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../conceitos.html">Conceitos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../comandos.html">Comandos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../fork_pull_request.html">Fazendo fork e pull requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trabalhando_localmente.html">Trabalhando localmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../enviando_para_nuvem.html">Enviando para nuvem</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Resolvendo conflitos</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="resolvendo_conflitos_tela_1.html">Definindo o método de conciliação de conflitos</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Finalizando</a></li>
 <li class="toctree-l2"><a class="reference internal" href="resolvendo_conflitos_tela_3.html">Nenhum conflito detectado</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../fork_pull_request.html">Fazendo fork e pull requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../conceitos.html">Conceitos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../comandos.html">Comandos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guia_r%C3%A1pido.html">Guia rápido</a></li>
 </ul>
 

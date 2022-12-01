@@ -6,37 +6,33 @@ Finalizando
 |image0|
 
 A mensagem *Automatic merge failed; fix conflicts and then commit the
-result* quer dizer que você terá que abrir os arquivos que resultaram em
-conflitos e deixá-los da maneira que eles devem ficar corretamente. Você
-saberá quais arquivos estão dando conflito pela mensagem do git; na
-imagem acima, o conflito está no arquivo README.md.
+result* quer dizer que teremos que abrir os arquivos que resultaram em
+conflitos e deixá-los da maneira que eles devem ficar corretamente. Saberemos quais arquivos possuem conflitos pela
+mensagem do git: na imagem acima, o conflito está no arquivo ``README.md``.
 
-Abrindo o arquivo README.md pelo Sublime Text, vemos que ele está da
-seguinte maneira:
+Abrindo o arquivo README.md por um editor de textos (a sugestão dos autores é pelo Sublime Text [#]_), vemos que ele
+se apresenta da seguinte forma:
 
 |image1|
 
-O arquivo está organizado da seguinte maneira: os caracteres ``<<<<``
-marcam o começo da região que resultou em um conflito; os caracteres
-``>>>>`` marcam o fim da região conflitante. Os caracteres ``====``
-marcam a divisão do código; onde diz ``HEAD``, é o código da sua máquina
-local, e o código (neste exemplo) marcado pela hash
-``8fa75db4cccadfec3d45a5e8a8ee10c9c6fb1697`` é o código que veio do
-repositório do Github (na verdade, esta hash é o ID do commit no
-Github).
+-  Os caracteres ``<<<<`` arcam o começo da região que resultou em um conflito;
+-  Os caracteres ``>>>>`` marcam o fim da região conflitante;
+-  Os caracteres ``====`` marcam a divisão do código;
+-  A seção que começa com ``HEAD`` delimita o código-fonte como apresentado no repositório local (do nosso computador);A
+-  A seção marcada pela hash (que varia de acordo com o commit; neste exemplo é a hash
+   ``8fa75db4cccadfec3d45a5e8a8ee10c9c6fb1697``) é o código-fonte encontrado no repositório remoto. Na verdade, este hash
+   é o identificador único do commit no repositório remoto.
 
-Arrume o arquivo de maneira que ele concilie as modificações que você
-fez, e as que seu colega fez (e já estão no Github):
+Vamos arrumar o arquivo de maneira que ele concilie as duas modificações, tanto do repositório remoto quanto do
+repositório local:
 
 |image2|
 
-Após a correção, volte para a linha de comando e envie as modificações
-para o Github:
+Após a correção, voltamos à linha de comando para enviar as modificações ao repositório remoto:
 
 |image3|
 
-Pronto! Com isso, tanto seu código, quando o do seu colega, estarão no
-Github:
+Pronto! Com isso, a resolução de conflito que acabamos de fazer estará presente no repositório remoto:
 
 |image4|
 
@@ -45,3 +41,5 @@ Github:
 .. |image2| image:: ../../imagens/conflito_5.png
 .. |image3| image:: ../../imagens/conflito_6.png
 .. |image4| image:: ../../imagens/conflito_7.png
+
+.. [#] Disponível em `<https://www.sublimetext.com/>`__. Acesso em 01/12/2022.

@@ -20,7 +20,7 @@
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Buscar" href="../search.html" />
-    <link rel="next" title="Conceitos" href="conceitos.html" />
+    <link rel="next" title="Resolvendo conflitos" href="resolvendo_conflitos/index.html" />
     <link rel="prev" title="Trabalhando localmente" href="trabalhando_localmente.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -30,7 +30,7 @@
           <a href="../genindex.html" title="Índice Geral"
              accesskey="I">índice</a></li>
         <li class="right" >
-          <a href="conceitos.html" title="Conceitos"
+          <a href="resolvendo_conflitos/index.html" title="Resolvendo conflitos"
              accesskey="N">próximo</a> |</li>
         <li class="right" >
           <a href="trabalhando_localmente.html" title="Trabalhando localmente"
@@ -54,9 +54,15 @@ na nuvem, apesar que, estritamente falando, ele é um servidor remoto para armaz
 <p>Para que seja possível enviar os commits para o GitHub, é necessário primeiro que o repositório remoto exista. Como este
 material começa criando um repositório remoto na <code class="xref std std-numref docutils literal notranslate"><span class="pre">criando-repositorios</span></code>, nos resta apenas enviar o código com
 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>.</p>
-<p>O fluxograma abaixo foi adaptado do material de Fabrício Cabral no seu repositório <a class="footnote-reference brackets" href="#id3" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>, é mostra como enviamos o
+<p>O fluxograma abaixo foi adaptado do material de Fabrício Cabral no seu repositório <a class="footnote-reference brackets" href="#id3" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>, e mostra como enviamos o
 código-fonte para o repositório remoto:</p>
-<p><a class="reference internal" href="../_images/git_fluxo_compartilhamento.png"><img alt="image0" src="../_images/git_fluxo_compartilhamento.png" style="width: 792.0px; height: 2022.0px;" /></a></p>
+<p><a class="reference internal" href="../_images/git_fluxo_compartilhamento.png"><img alt="image0" src="../_images/git_fluxo_compartilhamento.png" style="width: 695.0px; height: 1984.0px;" /></a></p>
+<p>Note que quando <strong>clonamos</strong> um repositório, o nosso repositório remoto já possui uma versão remota. Pode ser que, no
+processo de enviar o código-fonte para o repositório remoto, apareçam conflitos no código. Isto ocorre porque as versões
+local e remota estão <strong>desincronizadas</strong>. Em outras palavras, existem modificações em uma das duas versões que não estão
+presentes na outra versão. Contudo, o git consegue identificar exatamente onde estes conflitos estão, e oferece
+ferramentas para conciliar as versões diferentes. Um guia de como resolver estes conflitos é apresentado na
+<code class="xref std std-numref docutils literal notranslate"><span class="pre">resolvendo-conflitos</span></code>.</p>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id3" role="note">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
@@ -81,10 +87,10 @@ código-fonte para o repositório remoto:</p>
 <li class="toctree-l1"><a class="reference internal" href="clonando.html">Clonando um repositório</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trabalhando_localmente.html">Trabalhando localmente</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Enviando para nuvem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resolvendo_conflitos/index.html">Resolvendo conflitos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fork_pull_request.html">Fazendo fork e pull requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conceitos.html">Conceitos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="comandos.html">Comandos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fork_pull_request.html">Fazendo fork e pull requests</a></li>
-<li class="toctree-l1"><a class="reference internal" href="resolvendo_conflitos/index.html">Resolvendo conflitos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="guia_r%C3%A1pido.html">Guia rápido</a></li>
 </ul>
 
@@ -95,8 +101,8 @@ código-fonte para o repositório remoto:</p>
   </div>
   <div>
     <h4>Próximo tópico</h4>
-    <p class="topless"><a href="conceitos.html"
-                          title="próximo capítulo">Conceitos</a></p>
+    <p class="topless"><a href="resolvendo_conflitos/index.html"
+                          title="próximo capítulo">Resolvendo conflitos</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>Essa Página</h3>
@@ -126,7 +132,7 @@ código-fonte para o repositório remoto:</p>
           <a href="../genindex.html" title="Índice Geral"
              >índice</a></li>
         <li class="right" >
-          <a href="conceitos.html" title="Conceitos"
+          <a href="resolvendo_conflitos/index.html" title="Resolvendo conflitos"
              >próximo</a> |</li>
         <li class="right" >
           <a href="trabalhando_localmente.html" title="Trabalhando localmente"

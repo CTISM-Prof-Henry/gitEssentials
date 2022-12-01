@@ -17,7 +17,13 @@ código-fonte para o repositório remoto:
 
 |image0|
 
-Note que quando **clonamos** um repositório, isto equivale a já ter adicionado um remoto à um repositório local.
+Note que quando **clonamos** um repositório, o nosso repositório remoto já possui uma versão remota. Pode ser que, no
+processo de enviar o código-fonte para o repositório remoto, apareçam conflitos no código. Isto ocorre porque as versões
+local e remota estão **desincronizadas**. Em outras palavras, existem modificações em uma das duas versões que não estão
+presentes na outra versão. Contudo, o git consegue identificar exatamente onde estes conflitos estão, e oferece
+ferramentas para conciliar as versões diferentes. Um guia de como resolver estes conflitos é apresentado na
+:numref:`resolvendo-conflitos`.
+
 
 .. |image0| image:: ../imagens/git_fluxo_compartilhamento.png
    :scale: 100 %

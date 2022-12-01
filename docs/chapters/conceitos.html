@@ -21,7 +21,7 @@
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Buscar" href="../search.html" />
     <link rel="next" title="Comandos" href="comandos.html" />
-    <link rel="prev" title="Enviando para nuvem" href="enviando_para_nuvem.html" /> 
+    <link rel="prev" title="Fazendo fork e pull requests" href="fork_pull_request.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navegação</h3>
@@ -33,7 +33,7 @@
           <a href="comandos.html" title="Comandos"
              accesskey="N">próximo</a> |</li>
         <li class="right" >
-          <a href="enviando_para_nuvem.html" title="Enviando para nuvem"
+          <a href="fork_pull_request.html" title="Fazendo fork e pull requests"
              accesskey="P">anterior</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Conceitos</a></li> 
@@ -133,12 +133,11 @@ dados.</p>
 <h2>Boas práticas no uso do git<a class="headerlink" href="#boas-praticas-no-uso-do-git" title="Link permanente para este cabeçalho">¶</a></h2>
 <p>Não é preciso seguir estritamente essa sequência de comandos, mas é
 altamente recomendado.</p>
-<ol class="arabic simple">
+<ol class="arabic">
 <li><p>Dê um <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> para ver se existem modificações não salvas no
 seu <strong>repositório local</strong></p></li>
 <li><p>Se houverem modificações (arquivos escritos em vermelho), salve-as em
-um commit:</p></li>
-</ol>
+um commit:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add &lt;param&gt;
 git commit -m <span class="s2">&quot;mensagem do commit dizendo o que foi feito&quot;</span>
 </pre></div>
@@ -146,12 +145,14 @@ git commit -m <span class="s2">&quot;mensagem do commit dizendo o que foi feito&
 <p>Onde <code class="docutils literal notranslate"><span class="pre">&lt;param&gt;</span></code> é um parâmetro válido do <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code> (veja a entrada do
 comando add na página <a class="reference external" href="comandos.md#git-add">Comandos</a>).</p>
 <p>Ou, alternativamente, descarte-as:</p>
+</li>
+</ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git restore &lt;param&gt;
+
+Onde <span class="sb">``</span>&lt;param&gt;<span class="sb">``</span> é um parâmetro válido <span class="k">do</span> <span class="sb">``</span>git restore<span class="sb">``</span> <span class="o">(</span>veja a entrada <span class="k">do</span> comando restore na página
+<span class="sb">`</span>Comandos &lt;comandos.md#git-restore&gt;<span class="sb">`</span>__<span class="o">)</span>.
 </pre></div>
 </div>
-<p>Onde <code class="docutils literal notranslate"><span class="pre">&lt;param&gt;</span></code> é um parâmetro válido do <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">restore</span></code> (veja a
-entrada do comando restore na página
-<a class="reference external" href="comandos.md#git-restore">Comandos</a>).</p>
 <ol class="arabic simple" start="3">
 <li><p>Dê um <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span> <span class="pre">&lt;nome</span> <span class="pre">da</span> <span class="pre">branch</span> <span class="pre">remota&gt;</span></code> para baixar
 modificações que estão no repositório remoto</p></li>
@@ -180,6 +181,8 @@ resolver.</p>
 <li class="toctree-l1"><a class="reference internal" href="clonando.html">Clonando um repositório</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trabalhando_localmente.html">Trabalhando localmente</a></li>
 <li class="toctree-l1"><a class="reference internal" href="enviando_para_nuvem.html">Enviando para nuvem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resolvendo_conflitos/index.html">Resolvendo conflitos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fork_pull_request.html">Fazendo fork e pull requests</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Conceitos</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#repositorio">Repositório</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#branch">Branch</a></li>
@@ -189,15 +192,13 @@ resolver.</p>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="comandos.html">Comandos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fork_pull_request.html">Fazendo fork e pull requests</a></li>
-<li class="toctree-l1"><a class="reference internal" href="resolvendo_conflitos/index.html">Resolvendo conflitos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="guia_r%C3%A1pido.html">Guia rápido</a></li>
 </ul>
 
   <div>
     <h4>Tópico anterior</h4>
-    <p class="topless"><a href="enviando_para_nuvem.html"
-                          title="capítulo anterior">Enviando para nuvem</a></p>
+    <p class="topless"><a href="fork_pull_request.html"
+                          title="capítulo anterior">Fazendo fork e pull requests</a></p>
   </div>
   <div>
     <h4>Próximo tópico</h4>
@@ -235,7 +236,7 @@ resolver.</p>
           <a href="comandos.html" title="Comandos"
              >próximo</a> |</li>
         <li class="right" >
-          <a href="enviando_para_nuvem.html" title="Enviando para nuvem"
+          <a href="fork_pull_request.html" title="Fazendo fork e pull requests"
              >anterior</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Conceitos</a></li> 

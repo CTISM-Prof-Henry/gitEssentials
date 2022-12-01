@@ -20,8 +20,8 @@
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Buscar" href="../search.html" />
-    <link rel="next" title="Resolvendo conflitos" href="resolvendo_conflitos/index.html" />
-    <link rel="prev" title="Comandos" href="comandos.html" /> 
+    <link rel="next" title="Conceitos" href="conceitos.html" />
+    <link rel="prev" title="Nenhum conflito detectado" href="resolvendo_conflitos/resolvendo_conflitos_tela_3.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navegação</h3>
@@ -30,10 +30,10 @@
           <a href="../genindex.html" title="Índice Geral"
              accesskey="I">índice</a></li>
         <li class="right" >
-          <a href="resolvendo_conflitos/index.html" title="Resolvendo conflitos"
+          <a href="conceitos.html" title="Conceitos"
              accesskey="N">próximo</a> |</li>
         <li class="right" >
-          <a href="comandos.html" title="Comandos"
+          <a href="resolvendo_conflitos/resolvendo_conflitos_tela_3.html" title="Nenhum conflito detectado"
              accesskey="P">anterior</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Fazendo fork e pull requests</a></li> 
@@ -47,114 +47,105 @@
             
   <section id="fazendo-fork-e-pull-requests">
 <h1>Fazendo fork e pull requests<a class="headerlink" href="#fazendo-fork-e-pull-requests" title="Link permanente para este cabeçalho">¶</a></h1>
-<p>Uma das principais características do git é servir para o
-desenvolvimento de código-fonte <strong>colaborativo</strong>; ou seja, quando várias
-pessoas trabalham no mesmo código-fonte, ao mesmo tempo.</p>
-<p>O git fornece os meios necessários para coordenar o trabalho, de forma
-que o caos não se instale.</p>
-<p>Uma das modalidades de colaboração com o git é quando fazemos <strong>fork</strong>
-em um repositório. Um fork é um mecanismo de colaboração em que copiamos
-o repositório de outra pessoa (fork), fazemos modificações nele, e
-enviamos de volta à pessoa (pull request), para que ela avalie se quer
-integrar nossas melhorias ao seu código ou não.</p>
-<p>Um fork efetivamente cria uma cópia do repositório da outra pessoa na
-nossa conta do Github. Dentro da nossa cópia do repositório, inclusive,
-várias pessoas podem estar trabalhando juntas.</p>
-<section id="fluxograma">
-<h2>Fluxograma<a class="headerlink" href="#fluxograma" title="Link permanente para este cabeçalho">¶</a></h2>
-<p>O fluxograma de trabalho quando estamos trabalhando com forks e pull
-requests é o seguinte:</p>
-<p><img alt="image6" src="../_images/fork_pull_request_diagrama.png" /></p>
-</section>
+<p>Uma das principais características do git é servir para o desenvolvimento de código-fonte <strong>colaborativo</strong>: quando
+várias pessoas trabalham no mesmo código-fonte, ao mesmo tempo. O git fornece os meios necessários para coordenar o
+trabalho, de forma que não se perca o foco do trabalho, tentando integrar diferentes versões do mesmo código-fonte.</p>
+<p>Uma das modalidades de colaboração com o git é quando fazemos <strong>fork</strong> de um repositório. Um fork é um mecanismo de
+colaboração em que copiamos o repositório remoto de outra pessoa (fork) para nossa conta do GitHub, fazemos modificações
+na nossa cópia, e enviamos nossa cópia ao repositório remoto original (pull request), para que as modificações sejam
+integradas neste. A aceitação das modificações realizadas dependem da aceitação dos mantenedores do repositório remoto
+original.</p>
 <section id="passo-a-passo">
 <h2>Passo-a-passo<a class="headerlink" href="#passo-a-passo" title="Link permanente para este cabeçalho">¶</a></h2>
-<ol class="arabic simple">
+<p>A seguir são descritos os passos necessários para fazer um fork e posteriormente um pull request em um repositório de
+outro usuário do GitHub.</p>
+<ol class="arabic">
 <li><p>Entrar na página do repositório que deseja-se fazer o fork, no
 github. Vamos chamá-lo de
-<code class="docutils literal notranslate"><span class="pre">https://github.com/CTISM-Prof-Henry/gitEssentials</span></code></p></li>
-<li><p>Clicar no botão “fork”, no canto superior direito:</p></li>
-<li><p>Confirmar que deseja-se fazer fork na tela que aparecer:</p></li>
-</ol>
+<code class="docutils literal notranslate"><span class="pre">https://github.com/CTISM-Prof-Henry/gitEssentials</span></code>;</p></li>
+<li><p>Clicar no botão “fork”, no canto superior direito;</p></li>
+<li><p>Confirmar que deseja-se fazer fork na tela que aparecer:</p>
 <p><img alt="image0" src="../_images/fork_2.png" /></p>
-<ol class="arabic simple" start="4">
+</li>
 <li><p>Clonar o repositório que foi recém criado (a cópia, não o original)
 com <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code>. Por exemplo, se eu, henryzord, fizer um fork do
 repositório <strong>gitEssentials</strong> (que pertence à conta
 CTISM-Prof-Henry), a URL do meu repositório copiado será
-<code class="docutils literal notranslate"><span class="pre">https://github.com/henryzord/gitEssentials</span></code>, e o comando a ser
-dado é</p></li>
-</ol>
+<code class="docutils literal notranslate"><span class="pre">https://github.com/henryzord/gitEssentials</span></code>, e o comando a ser executado é</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/henryzord/gitEssentials
 </pre></div>
 </div>
-<ol class="arabic simple" start="5">
-<li><p>Criar uma nova <strong>branch local</strong>, e mudar para ela:
-<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">&lt;nome</span> <span class="pre">da</span> <span class="pre">branch&gt;</span></code>. Supondo que eu queira criar uma
-nova branch de nome <strong>top</strong>, o comando a ser dado é</p></li>
-</ol>
+</li>
+<li><p>Criar uma nova <strong>branch local</strong>, e mudar para ela: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">&lt;nome</span> <span class="pre">da</span> <span class="pre">branch&gt;</span></code>. Supondo que queiramos criar
+uma nova branch de nome <code class="docutils literal notranslate"><span class="pre">top</span></code>, o comando a ser executado é</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout -b top
 </pre></div>
 </div>
-<ol class="arabic simple" start="6">
+</li>
 <li><p>Notificar o git de que este repositório relaciona-se com o
 repositório original:
 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">upstream</span> <span class="pre">&lt;url</span> <span class="pre">do</span> <span class="pre">repo</span> <span class="pre">original&gt;</span></code>. No exemplo,
-ficaria</p></li>
-</ol>
+ficaria</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git remote add upstream https://github.com/CTISM-Prof-Henry/gitEssentials
 </pre></div>
 </div>
-<ol class="arabic simple" start="7">
-<li><p>Fazer as modificações necessárias no código-fonte (editar, deletar
-ou criar arquivos)</p></li>
-<li><p>Adicionar arquivos com <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code>: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code>, por exemplo</p></li>
-<li><p>Salvar modificações com <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;mensagem&quot;</span></code></p></li>
-<li><p>Dar um <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> para atualizar o repositório local com as
-modificações do repositório remoto original</p></li>
-<li><p>Enviar modificações para o repositório copiado, em uma <strong>branch
-remota</strong> que será criada, chamada <strong>top</strong>:
-<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">-u</span> <span class="pre">origin</span> <span class="pre">top</span></code></p></li>
-<li><p>Depois que você enviar as modificações para o seu repositório
-copiado, você pode acessá-lo pelo Github. Você perceberá uma
-mensagem na tela inicial, mostrando o quão atualizado seu código
-deste repositório está em relação ao código do repositório original:</p></li>
-</ol>
-<p><img alt="image1" src="../_images/fork_3.png" /></p>
-<ol class="arabic" start="13">
-<li><p>Nós iremos enviar as modificações que fizemos no repositório copiado
-para o repositório original. <strong>Atenção:</strong> faça isso apenas quando
-você tiver terminado de fazer <strong>todas</strong> as modificações necessárias
-no seu repositório copiado.</p>
-<p>No seu repositório copiado, como mostrado na figura acima, clique no
-botão <strong>Pull requests</strong></p>
 </li>
-<li><p>Clique no botão <strong>new pull request</strong>:</p></li>
-<li><p>Abrirá uma tela que irá comparar o seu código-fonte copiado com o
-código-fonte original. Como a visualização padrão do Github é para a
-branch <strong>main</strong>, não irá mostrar nada significante, pois criamos uma
-nova branch <strong>top</strong>:</p></li>
-</ol>
+<li><p>Fazer as modificações necessárias no código-fonte (editar, deletar ou criar arquivos);</p></li>
+<li><p>Adicionar arquivos com</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add .
+</pre></div>
+</div>
+</li>
+<li><p>Salvar modificações com</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git commit -m <span class="s2">&quot;mensagem&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Executar um <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> para atualizar o repositório local com as modificações do repositório remoto original</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git pull origin main
+</pre></div>
+</div>
+</li>
+<li><p>Enviar modificações para o repositório copiado, em uma <strong>branch remota</strong> que será criada, chamada <code class="docutils literal notranslate"><span class="pre">top</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git push -u origin top
+</pre></div>
+</div>
+</li>
+<li><p>Depois que enviarmos as modificações para o nosso repositório copiado, podemos acessá-lo pelo GitHub. Perceberemos
+uma mensagem na tela inicial, mostrando o quão atualizado nosso código-fonte deste repositório está em relação ao
+código-fonte do repositório original:</p>
+<p><img alt="image1" src="../_images/fork_3.png" /></p>
+</li>
+<li><p>Enviaremos as modificações que fizemos no repositório copiado para o repositório original.
+<strong>Atenção:</strong> iremos afzer isto apenas quando tivermos terminado de fazer <strong>todas</strong> as modificações necessárias
+no nosso repositório copiado. No nosso repositório copiado, como mostrado na figura acima, vamos clicar no botão
+<strong>Pull requests</strong>;</p></li>
+<li><p>Clicamos no botão <strong>new pull request</strong>;</p></li>
+<li><p>Abrirá uma tela que irá comparar o nosso código-fonte copiado com o código-fonte original. Como a visualização
+padrão do GitHub é para a branch <strong>main</strong>, não irá mostrar nada significante, pois criamos uma
+nova branch <strong>top</strong>:</p>
 <p><img alt="image2" src="../_images/fork_5.png" /></p>
-<ol class="arabic simple" start="16">
-<li><p>No seletor do repositório copiado, mude para a branch <strong>top</strong>:</p></li>
-</ol>
+</li>
+<li><p>No seletor do repositório copiado, mudamos para a branch <strong>top</strong>:</p>
 <p><img alt="image3" src="../_images/fork_6.png" /></p>
-<ol class="arabic simple" start="17">
-<li><p>Clique no botão <strong>create new pull request</strong>:</p></li>
-<li><p>Neste passo você pode escrever uma mensagem para o administrador do
-repositório original, explicando as modificações que foram feitas no
-pull request. Depois de escrever sua mensagem para ele, clique em
-<strong>create pull request</strong>.</p></li>
-</ol>
+</li>
+<li><p>Clicamos no botão <strong>create new pull request</strong>;</p></li>
+<li><p>Neste passo poderemos escrever uma mensagem para o administrador do repositório original, explicando as
+modificações feitas no pull request. Depois de escrever a mensagem, clicamos em <strong>create pull request</strong>.</p>
 <p><img alt="image4" src="../_images/fork_8.png" /></p>
-<ol class="arabic simple" start="19">
-<li><p>Esta tela é o que o <strong>administrador do repositório original</strong> verá,
-no Github dele:</p></li>
-</ol>
+</li>
+<li><p>Esta tela é o que o <strong>administrador do repositório original</strong> verá, no GitHub dele:</p>
 <p><img alt="image5" src="../_images/fork_9.png" /></p>
-<p>Se ele aceitar suas modificações, elas serão integradas ao repositório
-original. Você poderá vê-las na lista de commits do repositório
-original.</p>
+</li>
+</ol>
+<p>Se ele aceitar nossas modificações, elas serão integradas ao repositório original. Poderemos vê-las na lista de commits
+do repositório original.</p>
+</section>
+<section id="fluxograma">
+<h2>Fluxograma<a class="headerlink" href="#fluxograma" title="Link permanente para este cabeçalho">¶</a></h2>
+<p>O fluxograma de trabalho quando estamos trabalhando com forks e pull
+requests é apresentado na figura abaixo:</p>
+<p><img alt="image6" src="../_images/fork_pull_request_diagrama.png" /></p>
 </section>
 </section>
 
@@ -172,27 +163,28 @@ original.</p>
 <li class="toctree-l1"><a class="reference internal" href="instala%C3%A7%C3%A3o.html">Instalação</a></li>
 <li class="toctree-l1"><a class="reference internal" href="criando_reposit%C3%B3rios.html">Criando repositórios</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clonando.html">Clonando um repositório</a></li>
-<li class="toctree-l1"><a class="reference internal" href="comandos_b%C3%A1sicos.html">Comandos Básicos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="conceitos.html">Conceitos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="comandos.html">Comandos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trabalhando_localmente.html">Trabalhando localmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enviando_para_nuvem.html">Enviando para nuvem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resolvendo_conflitos/index.html">Resolvendo conflitos</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Fazendo fork e pull requests</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#fluxograma">Fluxograma</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#passo-a-passo">Passo-a-passo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fluxograma">Fluxograma</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="resolvendo_conflitos/index.html">Resolvendo conflitos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conceitos.html">Conceitos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comandos.html">Comandos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="guia_r%C3%A1pido.html">Guia rápido</a></li>
 </ul>
 
   <div>
     <h4>Tópico anterior</h4>
-    <p class="topless"><a href="comandos.html"
-                          title="capítulo anterior">Comandos</a></p>
+    <p class="topless"><a href="resolvendo_conflitos/resolvendo_conflitos_tela_3.html"
+                          title="capítulo anterior">Nenhum conflito detectado</a></p>
   </div>
   <div>
     <h4>Próximo tópico</h4>
-    <p class="topless"><a href="resolvendo_conflitos/index.html"
-                          title="próximo capítulo">Resolvendo conflitos</a></p>
+    <p class="topless"><a href="conceitos.html"
+                          title="próximo capítulo">Conceitos</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>Essa Página</h3>
@@ -222,10 +214,10 @@ original.</p>
           <a href="../genindex.html" title="Índice Geral"
              >índice</a></li>
         <li class="right" >
-          <a href="resolvendo_conflitos/index.html" title="Resolvendo conflitos"
+          <a href="conceitos.html" title="Conceitos"
              >próximo</a> |</li>
         <li class="right" >
-          <a href="comandos.html" title="Comandos"
+          <a href="resolvendo_conflitos/resolvendo_conflitos_tela_3.html" title="Nenhum conflito detectado"
              >anterior</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Fazendo fork e pull requests</a></li> 

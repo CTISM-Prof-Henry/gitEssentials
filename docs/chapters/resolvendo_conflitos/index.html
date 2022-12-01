@@ -21,7 +21,7 @@
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Buscar" href="../../search.html" />
     <link rel="next" title="Definindo o método de conciliação de conflitos" href="resolvendo_conflitos_tela_1.html" />
-    <link rel="prev" title="Fazendo fork e pull requests" href="../fork_pull_request.html" /> 
+    <link rel="prev" title="Enviando para nuvem" href="../enviando_para_nuvem.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navegação</h3>
@@ -33,7 +33,7 @@
           <a href="resolvendo_conflitos_tela_1.html" title="Definindo o método de conciliação de conflitos"
              accesskey="N">próximo</a> |</li>
         <li class="right" >
-          <a href="../fork_pull_request.html" title="Fazendo fork e pull requests"
+          <a href="../enviando_para_nuvem.html" title="Enviando para nuvem"
              accesskey="P">anterior</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Resolvendo conflitos</a></li> 
@@ -47,36 +47,38 @@
             
   <section id="resolvendo-conflitos">
 <span id="id1"></span><h1>Resolvendo conflitos<a class="headerlink" href="#resolvendo-conflitos" title="Link permanente para este cabeçalho">¶</a></h1>
+<p>Um conflito ocorre quando duas versões do repositório estão dessincronizadas, e é impossível determinar quais
+modificações devem ser preservadas, e quais devem ser descartadas. Estas versões não são commits diferentes,
+mas sim repositórios distintos: por exemplo, um repositório remoto e um repositório local. As modificações introduzidas
+no repositório remoto podem vir quando clonamos este repositório em outra máquina, que não o nosso computador pessoal,
+modificamos o código e enviamos ao repositório remoto; ou então quando um colega de trabalho introduz estas modificações
+a partir do seu computador pessoal.</p>
+<p>É possível ver que um conflito ocorreu quando tentamos dar um <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> e a seguinte tela aparece:</p>
+<p><img alt="image0" src="../../_images/conflito_1.png" /></p>
+<p>Para auxiliá-lo na compreensão deste fenômeno, é disponibilizado um repositório de código-fonte <a class="footnote-reference brackets" href="#id3" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>, usado nas imagens
+desta Seção. O que vemos na imagem acima está basicamente dizendo que não podemos enviar o código-fonte para o GitHub
+pois existem modificações nos arquivos que ainda não colocamos no repositório local. Precisamos então baixá-las, usando
+o comando <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code>.</p>
+<p>Às vezes, o git consegue conciliar ambas as duas versões de código-fonte (local e remota). Porém, quando isto não é
+possível, nós mesmos teremos que resolver o conflito que ocorreu nos arquivos. Saberemos que é necessário fazer isto
+quando, ao dar um <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code>, a tela</p>
+<p><img alt="image1" src="../../_images/conflito_2.png" /></p>
+<p>Ou então a tela</p>
+<p><img alt="image2" src="../../_images/conflito_3.png" /></p>
+<p>aparecer. Dependendo de qual tela aparecer, teremos que seguir caminhos diferentes:</p>
+<ul class="simple">
+<li><p>Primeira tela: siga para a <code class="xref std std-numref docutils literal notranslate"><span class="pre">resolvendo-conflitos-tela-1</span></code></p></li>
+<li><p>Segunda tela: siga para a <code class="xref std std-numref docutils literal notranslate"><span class="pre">resolvendo-conflitos-tela-2</span></code></p></li>
+<li><p>Nenhuma das duas: siga para <code class="xref std std-numref docutils literal notranslate"><span class="pre">resolvendo-conflitos-tela-3</span></code></p></li>
+</ul>
 <div class="toctree-wrapper compound">
 </div>
-<p><strong>Nota:</strong> Você pode ver o repositório no qual eu realizei este tutorial
-por <a class="reference external" href="https://github.com/CTISM-Prof-Henry/gitTest">este link</a>.</p>
-<p>Quando você estiver trabalhando colaborativamente em um repositório do
-Github (ou seja, com mais de duas pessoas), pode ser que no fluxo de
-trabalho, um colega envie arquivos para o Github que você não possui na
-sua máquina local. Você descobrirá que isso aconteceu quando tentar
-enviar os arquivos para o Github com um <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>:</p>
-<p><img alt="image0" src="../../_images/conflito_1.png" /></p>
-<p>Esta janela está basicamente dizendo que você não pode enviar seu código
-para o Github porque existem modificações nos arquivos que você não
-baixou ainda. Você precisa então baixá-las, usando um <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code>.</p>
-<p>Às vezes, o git (o programa que você usa na linha de comando para mandar
-o código-fonte para o Github) consegue conciliar ambas as modificações:
-as da sua máquina local, e do repositório do Github. Porém, quando ele
-não consegue fazer isso, você mesmo terá que <strong>resolver o conflito</strong> que
-ocorreu nos arquivos.</p>
-<p>Você saberá que é essa a hora quando um <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> resultar numa
-mensagem parecida com essa:</p>
-<p><img alt="image1" src="../../_images/conflito_2.png" /></p>
-<p>Ou então essa:</p>
-<p><img alt="image2" src="../../_images/conflito_3.png" /></p>
-<p>Dependendo de qual tela apareceu para você, clique no link abaixo para
-ir para a etapa do tutorial correspondente.</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="resolvendo_conflitos_tela_1.html#resolvendo-conflitos-tela-1"><span class="std std-ref">Primeira tela</span></a></p></li>
-<li><p><a class="reference internal" href="resolvendo_conflitos_tela_2.html#resolvendo-conflitos-tela-2"><span class="std std-ref">Segunda tela</span></a></p></li>
-<li><p><a class="reference internal" href="resolvendo_conflitos_tela_3.html#resolvendo-conflitos-tela-3"><span class="std std-ref">Nenhuma das duas</span></a></p></li>
-</ul>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id3" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
+<p>Disponível em <a class="reference external" href="https://github.com/CTISM-Prof-Henry/gitTest">https://github.com/CTISM-Prof-Henry/gitTest</a>. Acesso em 01/12/2022.</p>
+</aside>
+</aside>
 </section>
 
 
@@ -93,23 +95,24 @@ ir para a etapa do tutorial correspondente.</p>
 <li class="toctree-l1"><a class="reference internal" href="../instala%C3%A7%C3%A3o.html">Instalação</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../criando_reposit%C3%B3rios.html">Criando repositórios</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../clonando.html">Clonando um repositório</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../comandos_b%C3%A1sicos.html">Comandos Básicos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../conceitos.html">Conceitos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../comandos.html">Comandos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../fork_pull_request.html">Fazendo fork e pull requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trabalhando_localmente.html">Trabalhando localmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../enviando_para_nuvem.html">Enviando para nuvem</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Resolvendo conflitos</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="resolvendo_conflitos_tela_1.html">Definindo o método de conciliação de conflitos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="resolvendo_conflitos_tela_2.html">Finalizando</a></li>
 <li class="toctree-l2"><a class="reference internal" href="resolvendo_conflitos_tela_3.html">Nenhum conflito detectado</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../fork_pull_request.html">Fazendo fork e pull requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../conceitos.html">Conceitos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../comandos.html">Comandos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guia_r%C3%A1pido.html">Guia rápido</a></li>
 </ul>
 
   <div>
     <h4>Tópico anterior</h4>
-    <p class="topless"><a href="../fork_pull_request.html"
-                          title="capítulo anterior">Fazendo fork e pull requests</a></p>
+    <p class="topless"><a href="../enviando_para_nuvem.html"
+                          title="capítulo anterior">Enviando para nuvem</a></p>
   </div>
   <div>
     <h4>Próximo tópico</h4>
@@ -147,7 +150,7 @@ ir para a etapa do tutorial correspondente.</p>
           <a href="resolvendo_conflitos_tela_1.html" title="Definindo o método de conciliação de conflitos"
              >próximo</a> |</li>
         <li class="right" >
-          <a href="../fork_pull_request.html" title="Fazendo fork e pull requests"
+          <a href="../enviando_para_nuvem.html" title="Enviando para nuvem"
              >anterior</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Resolvendo conflitos</a></li> 

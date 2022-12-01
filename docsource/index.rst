@@ -16,10 +16,10 @@ gitEssentials
    chapters/clonando
    chapters/trabalhando_localmente
    chapters/enviando_para_nuvem
+   chapters/resolvendo_conflitos/index
+   chapters/fork_pull_request
    chapters/conceitos
    chapters/comandos
-   chapters/fork_pull_request
-   chapters/resolvendo_conflitos/index
    chapters/guia_rápido
 
 Recursos adicionais
