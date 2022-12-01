@@ -16,7 +16,13 @@ Rode novamente o comando ``git pull origin main``:
 
 |image1|
 
-Siga para a :numref:`resolvendo-conflitos-tela-2` para finalizar a resolução de conflitos.
+.. only:: latex
+
+   Siga para a :numref:`resolvendo-conflitos-tela-2` para finalizar a resolução de conflitos.
+
+.. only:: html
+
+   Siga para a Seção :ref:`resolvendo-conflitos-tela-2` para finalizar a resolução de conflitos.
 
 .. |image0| image:: ../../imagens/conflito_2.png
 .. |image1| image:: ../../imagens/conflito_3.png

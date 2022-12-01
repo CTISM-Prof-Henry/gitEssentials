@@ -47,121 +47,76 @@
             
   <section id="conceitos">
 <span id="id1"></span><h1>Conceitos<a class="headerlink" href="#conceitos" title="Link permanente para este cabeçalho">¶</a></h1>
+<p>Agora que trabalhamos com diversos conceitos do git, é interessante colocá-los em perspectiva, bem como fornecer uma
+explicação mais detalhada sobre o que cada um deles representa.</p>
 <section id="repositorio">
 <h2>Repositório<a class="headerlink" href="#repositorio" title="Link permanente para este cabeçalho">¶</a></h2>
-<p>Também conhecido como repo ou repository, um repositório é um local para
-armazenar código-fonte, ou informações textuais, sobre o desenvolvimento
-de uma aplicação, algoritmo, ou software.</p>
-<p>Não se deve guardar arquivos binários (e.g. .exe) em um repositório de
-código-fonte, pois não é este o objetivo dessas ferramentas. Arquivos
-binários são melhor armazenados em drives online (e.g. Google Drive, One
-Drive, Dropbox, etc).</p>
-<p>Para verificar se um arquivo é binário, tente abri-lo pelo bloco de
-notas: se o texto não for legível, então o arquivo é binário.</p>
+<p>Também conhecido como <em>repo</em> ou <em>repository</em>, um repositório é um local para armazenar código-fonte (ou, alternativamente,
+arquivos não-binários). É possível por exemplo armazenar aquivos de texto como <code class="docutils literal notranslate"><span class="pre">txt</span></code> (não-binário), mas não é possível
+armazenar arquivos <code class="docutils literal notranslate"><span class="pre">docx</span></code> (binário). A maioria dos arquivos que dizem respeito ao desenvolvimento de um software,
+algoritmo ou programa são não-binários, e foi com este propósito que os repositórios foram propostos.</p>
+<p>Não é recomendável armazenar arquivos binários (e.g. <code class="docutils literal notranslate"><span class="pre">programa.exe</span></code>) em um repositório, pois não poderemos efetivamente
+manter um controle de versão sobre estes arquivos. Para estes arquivos, é recomendável armazená-los em outros serviços,
+como Google Drive, One Drive, Dropbox, dentre outros.</p>
+<p>Para verificar se um arquivo é binário, tente abri-lo usando um editor de textos, como o bloco de notas: se o texto for
+não-legível, então o arquivo é binário.</p>
 </section>
 <section id="branch">
 <h2>Branch<a class="headerlink" href="#branch" title="Link permanente para este cabeçalho">¶</a></h2>
-<p>Uma branch é um recurso do git para manter um código-fonte paralelo ao
-código-fonte principal. No Github, a branch principal é chamada de
-<strong>main</strong>; este é o mesmo main que escrevemos quando damos os comandos
-<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">main</span></code> e <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span> <span class="pre">main</span></code>.</p>
-<p>Contudo, se tivéssemos outra branch em um dado repositório, vamos supor
-que de nome <strong>teste</strong>, e quiséssemos baixar ou enviar código para esta
-branch, faríamos <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span> <span class="pre">teste</span></code> e <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">teste</span></code>.</p>
-<p>A ideia de usar branches é isolar códigos-fonte que estão sendo
-desenvolvidos por equipes (ou pessoas) diferentes. Por exemplo, se
-levássemos em consideração a equipe que desenvolve o aplicativo
-Instagram, existem diversas equipes de desenvolvedores trabalhando ao
-mesmo tempo neste aplicativo. Uma equipe poderia ser responsável por
-atualizar o software da câmera, enquanto outra muda uma parte do layout
-do app. Portanto, usar branches neste cenário é vantajoso, pois as
-modificações feitas pela equipe do layout não irão interferir no código
-das outras equipes.</p>
-<p>Por costume, mantemos sempre na branch main o código-fonte de
-<strong>produção</strong> (ou seja, o código-fonte que está pronto para ser entregue
-ao cliente). Como neste curso não temos clientes para os quais vender um
-produto, não tem problema usar a branch main para desenvolver todo o
-código-fonte de um trabalho. Mas tenha em mente que em uma empresa, esta
-é a filosofia adotada.</p>
-<p>Você pode criar quantas branches quiser, com os nomes que quiser.
-Inclusive, você pode ter branches que são branches de outras branches,
-como mostrado na figura abaixo.</p>
+<p>Um repositório pode conter diversos <em>branches</em>, ou “galhos”, na tradução em português (apesar que mesmo programadores
+brasileiros se referem à estes galhos como <em>branches</em>). Branches são uma maneira de manter códigos-fonte similares,
+porém paralelos, ao mesmo tempo, em um mesmo repositório. Imagine por exemplo uma empresa que desenvolve um aplicativo
+de tirar fotos e postá-las em uma rede social. Existem diversas equipes de desenvolvedores trabalhando ao
+mesmo tempo no aplicativo: uma equipe poderia ser responsável por atualizar o software da câmera; enquanto outra muda
+uma parte do layout. Portanto, usar branches neste cenário é vantajoso, pois as modificações feitas pela equipe do layout
+não interferirão no código-fonte das outras equipes.</p>
+<p>Quando criamos um repositório (seja localmente ou remotamente), é obrigatório criar uma branch principal, onde o
+código-fonte <strong>de produção</strong> será mantido. A ideia é que nesta branch uma versão pronta do nosso software esteja armazenada,
+sem bugs e sem tarefas por fazer. Como neste material não temos clientes para os quais vender um software, não tem
+problema usar a branch main para desenvolver todo o código-fonte de um trabalho. Mas tenha em mente que em uma empresa,
+esta é a filosofia adotada.</p>
+<p>Quando criamos um repositório pelo GitHub, o site cria automaticamente uma branch principal para nós, de nome <strong>main</strong>.
+É este o mesmo nome que usamos quando usamos os comandos <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">main</span></code> e <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span> <span class="pre">main</span></code>. Se por
+outro lado tivermos uma segunda branch em um repositório, de nome <strong>teste</strong>, os comandos seriam <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span> <span class="pre">teste</span></code>
+e <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">teste</span></code>.</p>
+<p>Você pode criar quantas branches quiser, com os nomes que quiser. Inclusive, você pode ter branches que são branches de
+outras branches, como mostrado na figura abaixo.</p>
 <p><img alt="image0" src="../_images/branches.png" /></p>
 </section>
 <section id="commit">
 <h2>Commit<a class="headerlink" href="#commit" title="Link permanente para este cabeçalho">¶</a></h2>
-<p>Um commit é um <em>checkpoint</em>, uma versão do código-fonte em uma
-determinada branch. Ele possui um identificador único, um código
-gigante, chamado de hash.</p>
-<p>Commits são salvos no repositório (tanto local quanto remoto) para
-sempre, a menos que sejam explicitamente deletados por alguém. Com isso,
-os arquivos daquele commit estão salvos, mesmo que posteriormente sejam
-modificados ou deletados. Esta é uma das maiores vantagens de
-utilizar-se o git, pois podemos ver o histórico de um arquivo, podendo
-inclusive ver quem escreveu cada linha de cada arquivo.</p>
-<p>Você pode ver a lista de commits de uma determinada branch clicando no
-botão de commits, na página inicial de um repositório:</p>
+<p>Um commit é um <em>checkpoint</em>, uma versão do código-fonte em uma determinada branch. Ele possui um identificador único,
+um código de letras e números, chamado de <em>hash</em>. A <em>hash</em> é única à um commit; nenhum outro commit possuirá a mesma
+<em>hash</em>.</p>
+<p>Commits são salvos no repositório (tanto local quanto remoto) para sempre, a menos que sejam explicitamente deletados.
+Com isso, os arquivos daquele commit estão salvos, mesmo que posteriormente sejam modificados ou deletados. Esta é uma
+das vantagens de utilizar-se o git, pois podemos ver o histórico de um arquivo, vendo inclusive quem escreveu cada linha
+de cada arquivo.</p>
+<p>Podemos ver a lista de commits de uma determinada branch clicando no botão de commits, na página inicial de um repositório:</p>
 <p><img alt="image1" src="../_images/commits_button.png" /></p>
-<p>Você pode ver os commits da branch main deste repositório <a class="reference external" href="https://github.com/CTISM-Prof-Henry/gitEssentials/commits/main">neste
-link</a>.
-Para cada um dos commits neste link, existem três botões:</p>
+<p>Os commits da branch main do repositório que gera este material estão neste link <a class="footnote-reference brackets" href="#id3" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. Para cada um dos commits
+deste repositório, existem três botões:</p>
 <p><img alt="image2" src="../_images/commit_buttons.png" /></p>
-<p>O primeiro botão copia a hash do commit; o segundo botão mostrará uma
-lista das modificações que foram feitas naquele commit. O terceiro link
-mostra a estrutura do repositório como estava na época deste commit.</p>
+<p>O primeiro botão copia a hash do commit. O segundo botão mostrará uma lista das modificações que foram feitas naquele
+commit. Finalmente, o terceiro link mostra a estrutura do repositório como estava à época deste commit.</p>
 </section>
 <section id="qual-a-diferenca-entre-repositorio-remoto-e-local">
 <h2>Qual a diferença entre repositório remoto e local?<a class="headerlink" href="#qual-a-diferenca-entre-repositorio-remoto-e-local" title="Link permanente para este cabeçalho">¶</a></h2>
-<p>Primeiro, vamos por partes: um <strong>repositório</strong> é uma <strong>pasta</strong> que por
-sua vez possui outra pasta dentro de si, oculta, chamada <code class="docutils literal notranslate"><span class="pre">.git</span></code>.
-Dentro da pasta oculta <code class="docutils literal notranslate"><span class="pre">.git</span></code>, existem diversos meta-arquivos que
-fazem o controle dos arquivos do <strong>repositório.</strong></p>
-<p>Um repositório é um repositório independentemente de onde ele esteja:
-seja na máquina local (e daí vem o termo <strong>repositório local</strong>), ou seja
-em algum site (daí vem o termo <strong>repositório remoto</strong>). Sites que
-armazenam repositórios são, por exemplo, o
-<a class="reference external" href="https://github.com">Github</a>,
-<a class="reference external" href="https://www.gitkraken.com">GitKraken</a>,
-<a class="reference external" href="https://bitbucket.org">BitBucket</a>,
-<a class="reference external" href="https://about.gitlab.com">Gitlab</a>, dentre outros.</p>
-<p>É possível trabalhar com git sem nunca criar uma conta num repositório
-remoto, porém isso é perigoso, pois caso a máquina local sofra alguma
-falha (seja formatada, falte energia elétrica, etc), podemos perder os
-dados.</p>
-</section>
-<section id="boas-praticas-no-uso-do-git">
-<h2>Boas práticas no uso do git<a class="headerlink" href="#boas-praticas-no-uso-do-git" title="Link permanente para este cabeçalho">¶</a></h2>
-<p>Não é preciso seguir estritamente essa sequência de comandos, mas é
-altamente recomendado.</p>
-<ol class="arabic">
-<li><p>Dê um <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> para ver se existem modificações não salvas no
-seu <strong>repositório local</strong></p></li>
-<li><p>Se houverem modificações (arquivos escritos em vermelho), salve-as em
-um commit:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add &lt;param&gt;
-git commit -m <span class="s2">&quot;mensagem do commit dizendo o que foi feito&quot;</span>
-</pre></div>
-</div>
-<p>Onde <code class="docutils literal notranslate"><span class="pre">&lt;param&gt;</span></code> é um parâmetro válido do <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code> (veja a entrada do
-comando add na página <a class="reference external" href="comandos.md#git-add">Comandos</a>).</p>
-<p>Ou, alternativamente, descarte-as:</p>
-</li>
-</ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git restore &lt;param&gt;
-
-Onde <span class="sb">``</span>&lt;param&gt;<span class="sb">``</span> é um parâmetro válido <span class="k">do</span> <span class="sb">``</span>git restore<span class="sb">``</span> <span class="o">(</span>veja a entrada <span class="k">do</span> comando restore na página
-<span class="sb">`</span>Comandos &lt;comandos.md#git-restore&gt;<span class="sb">`</span>__<span class="o">)</span>.
-</pre></div>
-</div>
-<ol class="arabic simple" start="3">
-<li><p>Dê um <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">origin</span> <span class="pre">&lt;nome</span> <span class="pre">da</span> <span class="pre">branch</span> <span class="pre">remota&gt;</span></code> para baixar
-modificações que estão no repositório remoto</p></li>
-<li><p>Dê um <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">&lt;nome</span> <span class="pre">da</span> <span class="pre">branch</span> <span class="pre">remota&gt;</span></code> para enviar as
-modificações ao repositório remoto.</p></li>
-</ol>
-<p><strong>Nota:</strong> pode ser que <strong>aconteça um conflito</strong> no passo 3. Neste caso,
-<a class="reference external" href="resolvendo_conflitos.md">consulte esta página</a> para saber como
-resolver.</p>
+<p>Um <strong>repositório</strong> é uma <strong>pasta</strong> que por sua vez possui outra pasta dentro de si, oculta, chamada <code class="docutils literal notranslate"><span class="pre">.git</span></code>.
+Dentro da pasta oculta <code class="docutils literal notranslate"><span class="pre">.git</span></code>, existem diversos meta-arquivos que fazem o controle dos arquivos do <strong>repositório.</strong></p>
+<p>Um repositório é um repositório independentemente de onde ele esteja: seja na máquina local (e daí vem o termo
+<strong>repositório local</strong>), seja em algum site (daí vem o termo <strong>repositório remoto</strong>). Sites que armazenam repositórios
+são, por exemplo, o <a class="reference external" href="https://github.com">Github</a>, <a class="reference external" href="https://www.gitkraken.com">GitKraken</a>,
+<a class="reference external" href="https://bitbucket.org">BitBucket</a>, <a class="reference external" href="https://about.gitlab.com">Gitlab</a>, dentre outros.</p>
+<p>É possível trabalhar com git sem nunca criar uma conta num repositório remoto. Todavia, é recomendável trabalhar com
+repositórios remotos, para criar cópias do repositório local em outras máquinas. Caso nossa máquina local sofra alguma
+falha (formatação, falte energia elétrica, etc), nossos dados estarão seguramente armazenados no repositório remoto.</p>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id3" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
+<p>Disponível em <a class="reference external" href="https://github.com/CTISM-Prof-Henry/gitEssentials/commits/main">https://github.com/CTISM-Prof-Henry/gitEssentials/commits/main</a>. Acesso em 01/12/2022.</p>
+</aside>
+</aside>
 </section>
 </section>
 
@@ -188,7 +143,6 @@ resolver.</p>
 <li class="toctree-l2"><a class="reference internal" href="#branch">Branch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#commit">Commit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#qual-a-diferenca-entre-repositorio-remoto-e-local">Qual a diferença entre repositório remoto e local?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#boas-praticas-no-uso-do-git">Boas práticas no uso do git</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="comandos.html">Comandos</a></li>

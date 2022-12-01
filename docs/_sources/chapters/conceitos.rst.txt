@@ -3,144 +3,92 @@
 Conceitos
 =========
 
+Agora que trabalhamos com diversos conceitos do git, é interessante colocá-los em perspectiva, bem como fornecer uma
+explicação mais detalhada sobre o que cada um deles representa.
+
 Repositório
 -----------
 
-Também conhecido como repo ou repository, um repositório é um local para
-armazenar código-fonte, ou informações textuais, sobre o desenvolvimento
-de uma aplicação, algoritmo, ou software.
+Também conhecido como *repo* ou *repository*, um repositório é um local para armazenar código-fonte (ou, alternativamente,
+arquivos não-binários). É possível por exemplo armazenar aquivos de texto como ``txt`` (não-binário), mas não é possível
+armazenar arquivos ``docx`` (binário). A maioria dos arquivos que dizem respeito ao desenvolvimento de um software,
+algoritmo ou programa são não-binários, e foi com este propósito que os repositórios foram propostos.
 
-Não se deve guardar arquivos binários (e.g. .exe) em um repositório de
-código-fonte, pois não é este o objetivo dessas ferramentas. Arquivos
-binários são melhor armazenados em drives online (e.g. Google Drive, One
-Drive, Dropbox, etc).
+Não é recomendável armazenar arquivos binários (e.g. ``programa.exe``) em um repositório, pois não poderemos efetivamente
+manter um controle de versão sobre estes arquivos. Para estes arquivos, é recomendável armazená-los em outros serviços,
+como Google Drive, One Drive, Dropbox, dentre outros.
 
-Para verificar se um arquivo é binário, tente abri-lo pelo bloco de
-notas: se o texto não for legível, então o arquivo é binário.
+Para verificar se um arquivo é binário, tente abri-lo usando um editor de textos, como o bloco de notas: se o texto for
+não-legível, então o arquivo é binário.
 
 Branch
 ------
 
-Uma branch é um recurso do git para manter um código-fonte paralelo ao
-código-fonte principal. No Github, a branch principal é chamada de
-**main**; este é o mesmo main que escrevemos quando damos os comandos
-``git push origin main`` e ``git pull origin main``.
+Um repositório pode conter diversos *branches*, ou "galhos", na tradução em português (apesar que mesmo programadores
+brasileiros se referem à estes galhos como *branches*). Branches são uma maneira de manter códigos-fonte similares,
+porém paralelos, ao mesmo tempo, em um mesmo repositório. Imagine por exemplo uma empresa que desenvolve um aplicativo
+de tirar fotos e postá-las em uma rede social. Existem diversas equipes de desenvolvedores trabalhando ao
+mesmo tempo no aplicativo: uma equipe poderia ser responsável por atualizar o software da câmera; enquanto outra muda
+uma parte do layout. Portanto, usar branches neste cenário é vantajoso, pois as modificações feitas pela equipe do layout
+não interferirão no código-fonte das outras equipes.
 
-Contudo, se tivéssemos outra branch em um dado repositório, vamos supor
-que de nome **teste**, e quiséssemos baixar ou enviar código para esta
-branch, faríamos ``git pull origin teste`` e ``git push origin teste``.
+Quando criamos um repositório (seja localmente ou remotamente), é obrigatório criar uma branch principal, onde o
+código-fonte **de produção** será mantido. A ideia é que nesta branch uma versão pronta do nosso software esteja armazenada,
+sem bugs e sem tarefas por fazer. Como neste material não temos clientes para os quais vender um software, não tem
+problema usar a branch main para desenvolver todo o código-fonte de um trabalho. Mas tenha em mente que em uma empresa,
+esta é a filosofia adotada.
 
-A ideia de usar branches é isolar códigos-fonte que estão sendo
-desenvolvidos por equipes (ou pessoas) diferentes. Por exemplo, se
-levássemos em consideração a equipe que desenvolve o aplicativo
-Instagram, existem diversas equipes de desenvolvedores trabalhando ao
-mesmo tempo neste aplicativo. Uma equipe poderia ser responsável por
-atualizar o software da câmera, enquanto outra muda uma parte do layout
-do app. Portanto, usar branches neste cenário é vantajoso, pois as
-modificações feitas pela equipe do layout não irão interferir no código
-das outras equipes.
+Quando criamos um repositório pelo GitHub, o site cria automaticamente uma branch principal para nós, de nome **main**.
+É este o mesmo nome que usamos quando usamos os comandos ``git push origin main`` e ``git pull origin main``. Se por
+outro lado tivermos uma segunda branch em um repositório, de nome **teste**, os comandos seriam ``git pull origin teste``
+e ``git push origin teste``.
 
-Por costume, mantemos sempre na branch main o código-fonte de
-**produção** (ou seja, o código-fonte que está pronto para ser entregue
-ao cliente). Como neste curso não temos clientes para os quais vender um
-produto, não tem problema usar a branch main para desenvolver todo o
-código-fonte de um trabalho. Mas tenha em mente que em uma empresa, esta
-é a filosofia adotada.
-
-Você pode criar quantas branches quiser, com os nomes que quiser.
-Inclusive, você pode ter branches que são branches de outras branches,
-como mostrado na figura abaixo.
+Você pode criar quantas branches quiser, com os nomes que quiser. Inclusive, você pode ter branches que são branches de
+outras branches, como mostrado na figura abaixo.
 
 |image0|
 
 Commit
 ------
 
-Um commit é um *checkpoint*, uma versão do código-fonte em uma
-determinada branch. Ele possui um identificador único, um código
-gigante, chamado de hash.
+Um commit é um *checkpoint*, uma versão do código-fonte em uma determinada branch. Ele possui um identificador único,
+um código de letras e números, chamado de *hash*. A *hash* é única à um commit; nenhum outro commit possuirá a mesma
+*hash*.
 
-Commits são salvos no repositório (tanto local quanto remoto) para
-sempre, a menos que sejam explicitamente deletados por alguém. Com isso,
-os arquivos daquele commit estão salvos, mesmo que posteriormente sejam
-modificados ou deletados. Esta é uma das maiores vantagens de
-utilizar-se o git, pois podemos ver o histórico de um arquivo, podendo
-inclusive ver quem escreveu cada linha de cada arquivo.
+Commits são salvos no repositório (tanto local quanto remoto) para sempre, a menos que sejam explicitamente deletados.
+Com isso, os arquivos daquele commit estão salvos, mesmo que posteriormente sejam modificados ou deletados. Esta é uma
+das vantagens de utilizar-se o git, pois podemos ver o histórico de um arquivo, vendo inclusive quem escreveu cada linha
+de cada arquivo.
 
-Você pode ver a lista de commits de uma determinada branch clicando no
-botão de commits, na página inicial de um repositório:
+Podemos ver a lista de commits de uma determinada branch clicando no botão de commits, na página inicial de um repositório:
 
 |image1|
 
-Você pode ver os commits da branch main deste repositório `neste
-link <https://github.com/CTISM-Prof-Henry/gitEssentials/commits/main>`__.
-Para cada um dos commits neste link, existem três botões:
+Os commits da branch main do repositório que gera este material estão neste link [#]_. Para cada um dos commits
+deste repositório, existem três botões:
 
 |image2|
 
-O primeiro botão copia a hash do commit; o segundo botão mostrará uma
-lista das modificações que foram feitas naquele commit. O terceiro link
-mostra a estrutura do repositório como estava na época deste commit.
+O primeiro botão copia a hash do commit. O segundo botão mostrará uma lista das modificações que foram feitas naquele
+commit. Finalmente, o terceiro link mostra a estrutura do repositório como estava à época deste commit.
 
 Qual a diferença entre repositório remoto e local?
 --------------------------------------------------
 
-Primeiro, vamos por partes: um **repositório** é uma **pasta** que por
-sua vez possui outra pasta dentro de si, oculta, chamada ``.git``.
-Dentro da pasta oculta ``.git``, existem diversos meta-arquivos que
-fazem o controle dos arquivos do **repositório.**
+Um **repositório** é uma **pasta** que por sua vez possui outra pasta dentro de si, oculta, chamada ``.git``.
+Dentro da pasta oculta ``.git``, existem diversos meta-arquivos que fazem o controle dos arquivos do **repositório.**
 
-Um repositório é um repositório independentemente de onde ele esteja:
-seja na máquina local (e daí vem o termo **repositório local**), ou seja
-em algum site (daí vem o termo **repositório remoto**). Sites que
-armazenam repositórios são, por exemplo, o
-`Github <https://github.com>`__,
-`GitKraken <https://www.gitkraken.com>`__,
-`BitBucket <https://bitbucket.org>`__,
-`Gitlab <https://about.gitlab.com>`__, dentre outros.
+Um repositório é um repositório independentemente de onde ele esteja: seja na máquina local (e daí vem o termo
+**repositório local**), seja em algum site (daí vem o termo **repositório remoto**). Sites que armazenam repositórios
+são, por exemplo, o `Github <https://github.com>`__, `GitKraken <https://www.gitkraken.com>`__,
+`BitBucket <https://bitbucket.org>`__, `Gitlab <https://about.gitlab.com>`__, dentre outros.
 
-É possível trabalhar com git sem nunca criar uma conta num repositório
-remoto, porém isso é perigoso, pois caso a máquina local sofra alguma
-falha (seja formatada, falte energia elétrica, etc), podemos perder os
-dados.
-
-Boas práticas no uso do git
----------------------------
-
-Não é preciso seguir estritamente essa sequência de comandos, mas é
-altamente recomendado.
-
-1. Dê um ``git status`` para ver se existem modificações não salvas no
-   seu **repositório local**
-2. Se houverem modificações (arquivos escritos em vermelho), salve-as em
-   um commit:
-
-   .. code:: bash
-
-      git add <param>
-      git commit -m "mensagem do commit dizendo o que foi feito"
-
-   Onde ``<param>`` é um parâmetro válido do ``git add`` (veja a entrada do
-   comando add na página `Comandos <comandos.md#git-add>`__).
-
-   Ou, alternativamente, descarte-as:
-
-.. code:: bash
-
-   git restore <param>
-
-   Onde ``<param>`` é um parâmetro válido do ``git restore`` (veja a entrada do comando restore na página
-   `Comandos <comandos.md#git-restore>`__).
-
-3. Dê um ``git pull origin <nome da branch remota>`` para baixar
-   modificações que estão no repositório remoto
-4. Dê um ``git push origin <nome da branch remota>`` para enviar as
-   modificações ao repositório remoto.
-
-**Nota:** pode ser que **aconteça um conflito** no passo 3. Neste caso,
-`consulte esta página <resolvendo_conflitos.md>`__ para saber como
-resolver.
+É possível trabalhar com git sem nunca criar uma conta num repositório remoto. Todavia, é recomendável trabalhar com
+repositórios remotos, para criar cópias do repositório local em outras máquinas. Caso nossa máquina local sofra alguma
+falha (formatação, falte energia elétrica, etc), nossos dados estarão seguramente armazenados no repositório remoto.
 
 .. |image0| image:: ../imagens/branches.png
 .. |image1| image:: ../imagens/commits_button.png
 .. |image2| image:: ../imagens/commit_buttons.png
+
+.. [#] Disponível em `<https://github.com/CTISM-Prof-Henry/gitEssentials/commits/main>`__. Acesso em 01/12/2022.

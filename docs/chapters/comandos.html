@@ -20,7 +20,7 @@
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Buscar" href="../search.html" />
-    <link rel="next" title="Fazendo fork e pull requests" href="fork_pull_request.html" />
+    <link rel="next" title="Guia rápido" href="guia_r%C3%A1pido.html" />
     <link rel="prev" title="Conceitos" href="conceitos.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -30,7 +30,7 @@
           <a href="../genindex.html" title="Índice Geral"
              accesskey="I">índice</a></li>
         <li class="right" >
-          <a href="fork_pull_request.html" title="Fazendo fork e pull requests"
+          <a href="guia_r%C3%A1pido.html" title="Guia rápido"
              accesskey="N">próximo</a> |</li>
         <li class="right" >
           <a href="conceitos.html" title="Conceitos"
@@ -47,8 +47,11 @@
             
   <section id="comandos">
 <span id="id1"></span><h1>Comandos<a class="headerlink" href="#comandos" title="Link permanente para este cabeçalho">¶</a></h1>
+<p>Nesta seção veremos uma lista (não exaustiva) dos comandos mais utilizados enquanto usamos git. Para uma lista
+exaustiva, consulte a <a class="reference external" href="https://git-scm.com/doc">documentação oficial</a>.</p>
 <section id="comandos-do-sistema-operacional">
 <h2>Comandos do sistema operacional<a class="headerlink" href="#comandos-do-sistema-operacional" title="Link permanente para este cabeçalho">¶</a></h2>
+<p>Os comandos do sistema operacional são independentes do git, e podem ser utilizados inclusive sem git.</p>
 <section id="acessar-um-novo-diretorio">
 <h3>Acessar um novo diretório<a class="headerlink" href="#acessar-um-novo-diretorio" title="Link permanente para este cabeçalho">¶</a></h3>
 <p>Windows, Linux:</p>
@@ -119,18 +122,19 @@ nautilus Downloads
 </section>
 <section id="comandos-do-git">
 <h2>Comandos do git<a class="headerlink" href="#comandos-do-git" title="Link permanente para este cabeçalho">¶</a></h2>
-<p>Esta seção apresenta apenas um <strong>resumo</strong> sobre os comandos do git. Cada
-um destes comandos possui muito mais parâmetros e funções do que as
-listadas aqui, porém espera-se que este resumo seja suficiente para o
-andamento do curso.</p>
-<p><strong>Nota 1:</strong> é preciso estar dentro de uma pasta que é um repositório git
-para estes comandos funcionarem.</p>
-<p><strong>Nota 2:</strong> Alguns destes comandos (marcados com o símbolo <strong>!!!</strong>) dependem
-do <strong>estado atual</strong> do repositório, que pode ser consultado com um <a class="reference external" href="#git-status">git
-status</a>. Em outras palavras, se você der este comando
-fora da sequência correta, ele não terá o efeito desejado. Por outro
-lado, os comandos que <strong>não dependem de estado</strong> são relativamente
-inofensivos caso foram usados fora da ordem correta.</p>
+<p>Esta seção apresenta apenas um <strong>resumo</strong> sobre os comandos do git. Cada um destes comandos possui mais parâmetros e
+funções do que as listadas aqui, porém espera-se que este resumo seja suficiente para programadores iniciantes.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>é preciso estar dentro de uma pasta que é um repositório git para estes comandos funcionarem.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Alguns destes comandos dependem do <strong>estado atual</strong> do repositório, que
+pode ser consultado com um <a class="reference external" href="#git-status">git status</a>. Em outras palavras, se você der este comando fora
+da sequência correta, ele não terá o efeito desejado. Por outro lado, os comandos que <strong>não dependem de
+estado</strong> são relativamente inofensivos caso foram usados fora da ordem correta.</p>
+</div>
 <section id="git-clone">
 <h3>git clone<a class="headerlink" href="#git-clone" title="Link permanente para este cabeçalho">¶</a></h3>
 <p><strong>Copia</strong> um repositório remoto para a máquina local, <strong>se o repositório
@@ -273,6 +277,12 @@ de uma branch para outra.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git branch -d top  <span class="c1"># deleta a branch local top</span>
 </pre></div>
 </div>
+<div role="list" class="citation-list">
+<div class="citation" id="git2022" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">GIT2022</a><span class="fn-bracket">]</span></span>
+<p>Git. Documentação oficial. Disponível em <a class="reference external" href="https://git-scm.com/doc">https://git-scm.com/doc</a>. Acesso em 01/12/2022.</p>
+</div>
+</div>
 </section>
 </section>
 </section>
@@ -291,15 +301,16 @@ de uma branch para outra.</p>
 <li class="toctree-l1"><a class="reference internal" href="instala%C3%A7%C3%A3o.html">Instalação</a></li>
 <li class="toctree-l1"><a class="reference internal" href="criando_reposit%C3%B3rios.html">Criando repositórios</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clonando.html">Clonando um repositório</a></li>
-<li class="toctree-l1"><a class="reference internal" href="comandos_b%C3%A1sicos.html">Comandos Básicos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trabalhando_localmente.html">Trabalhando localmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enviando_para_nuvem.html">Enviando para nuvem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resolvendo_conflitos/index.html">Resolvendo conflitos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fork_pull_request.html">Fazendo fork e pull requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conceitos.html">Conceitos</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Comandos</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#comandos-do-sistema-operacional">Comandos do sistema operacional</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#comandos-do-git">Comandos do git</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="fork_pull_request.html">Fazendo fork e pull requests</a></li>
-<li class="toctree-l1"><a class="reference internal" href="resolvendo_conflitos/index.html">Resolvendo conflitos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="guia_r%C3%A1pido.html">Guia rápido</a></li>
 </ul>
 
@@ -310,8 +321,8 @@ de uma branch para outra.</p>
   </div>
   <div>
     <h4>Próximo tópico</h4>
-    <p class="topless"><a href="fork_pull_request.html"
-                          title="próximo capítulo">Fazendo fork e pull requests</a></p>
+    <p class="topless"><a href="guia_r%C3%A1pido.html"
+                          title="próximo capítulo">Guia rápido</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>Essa Página</h3>
@@ -341,7 +352,7 @@ de uma branch para outra.</p>
           <a href="../genindex.html" title="Índice Geral"
              >índice</a></li>
         <li class="right" >
-          <a href="fork_pull_request.html" title="Fazendo fork e pull requests"
+          <a href="guia_r%C3%A1pido.html" title="Guia rápido"
              >próximo</a> |</li>
         <li class="right" >
           <a href="conceitos.html" title="Conceitos"

@@ -8,21 +8,40 @@ maneira que exista outra cópia dos nossos commits, em outro computador. Convenc
 serviço que é ofertado na Internet. Portanto, para clareza de explicação, iremos nos referir ao GitHub como um servidor
 na nuvem, apesar que, estritamente falando, ele é um servidor remoto para armazenamento de repositórios git.
 
-Para que seja possível enviar os commits para o GitHub, é necessário primeiro que o repositório remoto exista. Como este
-material começa criando um repositório remoto na :numref:`criando-repositorios`, nos resta apenas enviar o código com
-``git push``.
+.. only:: latex
+
+   Para que seja possível enviar os commits para o GitHub, é necessário primeiro que o repositório remoto exista. Como
+   este material começa criando um repositório remoto na :numref:`criando-repositorios`, nos resta apenas enviar o código
+   com ``git push``.
+
+.. only:: html
+
+   Para que seja possível enviar os commits para o GitHub, é necessário primeiro que o repositório remoto exista. Como
+   este material começa criando um repositório remoto na Seção :ref:`criando-repositorios`, nos resta apenas enviar o
+   código com ``git push``.
 
 O fluxograma abaixo foi adaptado do material de Fabrício Cabral no seu repositório [#]_, e mostra como enviamos o
 código-fonte para o repositório remoto:
 
 |image0|
 
-Note que quando **clonamos** um repositório, o nosso repositório remoto já possui uma versão remota. Pode ser que, no
-processo de enviar o código-fonte para o repositório remoto, apareçam conflitos no código. Isto ocorre porque as versões
-local e remota estão **desincronizadas**. Em outras palavras, existem modificações em uma das duas versões que não estão
-presentes na outra versão. Contudo, o git consegue identificar exatamente onde estes conflitos estão, e oferece
-ferramentas para conciliar as versões diferentes. Um guia de como resolver estes conflitos é apresentado na
-:numref:`resolvendo-conflitos`.
+.. only:: latex
+
+   Note que quando **clonamos** um repositório, o nosso repositório remoto já possui uma versão remota. Pode ser que, no
+   processo de enviar o código-fonte para o repositório remoto, apareçam conflitos no código. Isto ocorre porque as
+   versões local e remota estão **desincronizadas**. Em outras palavras, existem modificações em uma das duas versões que
+   não estão presentes na outra versão. Contudo, o git consegue identificar exatamente onde estes conflitos estão, e
+   oferece ferramentas para conciliar as versões diferentes. Um guia de como resolver estes conflitos é apresentado na
+   :numref:`resolvendo-conflitos`.
+
+.. only:: html
+
+   Note que quando **clonamos** um repositório, o nosso repositório remoto já possui uma versão remota. Pode ser que, no
+   processo de enviar o código-fonte para o repositório remoto, apareçam conflitos no código. Isto ocorre porque as
+   versões local e remota estão **desincronizadas**. Em outras palavras, existem modificações em uma das duas versões que
+   não estão presentes na outra versão. Contudo, o git consegue identificar exatamente onde estes conflitos estão, e
+   oferece ferramentas para conciliar as versões diferentes. Um guia de como resolver estes conflitos é apresentado na
+   Seção :ref:`resolvendo-conflitos`.
 
 
 .. |image0| image:: ../imagens/git_fluxo_compartilhamento.png

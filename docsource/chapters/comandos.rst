@@ -3,8 +3,20 @@
 Comandos
 ========
 
+.. only:: latex
+
+   Nesta seção veremos uma lista (não exaustiva) dos comandos mais utilizados enquanto usamos git. Para uma lista
+   exaustiva, consulte a documentação oficial [GIT2022]_.
+
+.. only:: html
+
+   Nesta seção veremos uma lista (não exaustiva) dos comandos mais utilizados enquanto usamos git. Para uma lista
+   exaustiva, consulte a `documentação oficial <https://git-scm.com/doc>`__.
+
 Comandos do sistema operacional
 -------------------------------
+
+Os comandos do sistema operacional são independentes do git, e podem ser utilizados inclusive sem git.
 
 Acessar um novo diretório
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -103,20 +115,27 @@ Linux:
 Comandos do git
 ---------------
 
-Esta seção apresenta apenas um **resumo** sobre os comandos do git. Cada
-um destes comandos possui muito mais parâmetros e funções do que as
-listadas aqui, porém espera-se que este resumo seja suficiente para o
-andamento do curso.
+Esta seção apresenta apenas um **resumo** sobre os comandos do git. Cada um destes comandos possui mais parâmetros e
+funções do que as listadas aqui, porém espera-se que este resumo seja suficiente para programadores iniciantes.
 
-**Nota 1:** é preciso estar dentro de uma pasta que é um repositório git
-para estes comandos funcionarem.
+.. Note::
 
-**Nota 2:** Alguns destes comandos (marcados com o símbolo **!!!**) dependem
-do **estado atual** do repositório, que pode ser consultado com um `git
-status <#git-status>`__. Em outras palavras, se você der este comando
-fora da sequência correta, ele não terá o efeito desejado. Por outro
-lado, os comandos que **não dependem de estado** são relativamente
-inofensivos caso foram usados fora da ordem correta.
+   é preciso estar dentro de uma pasta que é um repositório git para estes comandos funcionarem.
+
+.. Note::
+
+   Alguns destes comandos dependem do **estado atual** do repositório, que pode ser consultado com um
+   ``git status``. Em outras palavras, se você der este comando fora da sequência correta, ele não terá o efeito
+   desejado. Por outro lado, os comandos que **não dependem de estado** são relativamente inofensivos caso foram usados
+   fora da ordem correta.
+
+   .. only:: latex
+
+      Consulte a :numref:`fluxogramas` para visualizar em qual etapa os comandos são mais apropriados.
+
+   .. only:: html
+
+      Consulte a Seção :ref:`fluxogramas` para visualizar em qual etapa os comandos são mais apropriados.
 
 git clone
 ~~~~~~~~~
@@ -314,3 +333,5 @@ Exemplo:
 .. code:: bash
 
    git branch -d top  # deleta a branch local top
+
+.. [GIT2022] Git. Documentação oficial. Disponível em https://git-scm.com/doc. Acesso em 01/12/2022.

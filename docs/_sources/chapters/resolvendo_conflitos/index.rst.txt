@@ -32,9 +32,17 @@ Ou então a tela
 
 aparecer. Dependendo de qual tela aparecer, teremos que seguir caminhos diferentes:
 
--  Primeira tela: siga para a :numref:`resolvendo-conflitos-tela-1`
--  Segunda tela: siga para a :numref:`resolvendo-conflitos-tela-2`
--  Nenhuma das duas: siga para :numref:`resolvendo-conflitos-tela-3`
+.. only:: latex
+
+   -  Primeira tela: siga para a :numref:`resolvendo-conflitos-tela-1`
+   -  Segunda tela: siga para a :numref:`resolvendo-conflitos-tela-2`
+   -  Nenhuma das duas: siga para a :numref:`resolvendo-conflitos-tela-3`
+
+.. only:: html
+
+   -  Primeira tela: siga para a Seção :ref:`resolvendo-conflitos-tela-1`
+   -  Segunda tela: siga para a Seção :ref:`resolvendo-conflitos-tela-2`
+   -  Nenhuma das duas: siga para a Seção :ref:`resolvendo-conflitos-tela-3`
 
 .. toctree::
    :maxdepth: 2

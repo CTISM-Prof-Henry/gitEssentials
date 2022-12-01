@@ -51,18 +51,18 @@
 maneira que exista outra cópia dos nossos commits, em outro computador. Convencionou-se chamar de “nuvem” qualquer
 serviço que é ofertado na Internet. Portanto, para clareza de explicação, iremos nos referir ao GitHub como um servidor
 na nuvem, apesar que, estritamente falando, ele é um servidor remoto para armazenamento de repositórios git.</p>
-<p>Para que seja possível enviar os commits para o GitHub, é necessário primeiro que o repositório remoto exista. Como este
-material começa criando um repositório remoto na <code class="xref std std-numref docutils literal notranslate"><span class="pre">criando-repositorios</span></code>, nos resta apenas enviar o código com
-<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>.</p>
+<p>Para que seja possível enviar os commits para o GitHub, é necessário primeiro que o repositório remoto exista. Como
+este material começa criando um repositório remoto na Seção <a class="reference internal" href="criando_reposit%C3%B3rios.html#criando-repositorios"><span class="std std-ref">Criando repositórios</span></a>, nos resta apenas enviar o
+código com <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>.</p>
 <p>O fluxograma abaixo foi adaptado do material de Fabrício Cabral no seu repositório <a class="footnote-reference brackets" href="#id3" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>, e mostra como enviamos o
 código-fonte para o repositório remoto:</p>
 <p><a class="reference internal" href="../_images/git_fluxo_compartilhamento.png"><img alt="image0" src="../_images/git_fluxo_compartilhamento.png" style="width: 695.0px; height: 1984.0px;" /></a></p>
 <p>Note que quando <strong>clonamos</strong> um repositório, o nosso repositório remoto já possui uma versão remota. Pode ser que, no
-processo de enviar o código-fonte para o repositório remoto, apareçam conflitos no código. Isto ocorre porque as versões
-local e remota estão <strong>desincronizadas</strong>. Em outras palavras, existem modificações em uma das duas versões que não estão
-presentes na outra versão. Contudo, o git consegue identificar exatamente onde estes conflitos estão, e oferece
-ferramentas para conciliar as versões diferentes. Um guia de como resolver estes conflitos é apresentado na
-<code class="xref std std-numref docutils literal notranslate"><span class="pre">resolvendo-conflitos</span></code>.</p>
+processo de enviar o código-fonte para o repositório remoto, apareçam conflitos no código. Isto ocorre porque as
+versões local e remota estão <strong>desincronizadas</strong>. Em outras palavras, existem modificações em uma das duas versões que
+não estão presentes na outra versão. Contudo, o git consegue identificar exatamente onde estes conflitos estão, e
+oferece ferramentas para conciliar as versões diferentes. Um guia de como resolver estes conflitos é apresentado na
+Seção <a class="reference internal" href="resolvendo_conflitos/index.html#resolvendo-conflitos"><span class="std std-ref">Resolvendo conflitos</span></a>.</p>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id3" role="note">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>

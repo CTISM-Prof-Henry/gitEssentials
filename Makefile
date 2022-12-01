@@ -14,6 +14,10 @@ help:
 
 .PHONY: help Makefile
 
+# .PHONY: internalhtml
+#  internalhtml:
+#  $(SPHINXBUILD) -b html $(ALLSPHINXOPTS) -t Internal $(INTERNALBUILDDIR)
+
 
 github:
 	@make html
