@@ -30,3 +30,8 @@ Recursos adicionais
    Markdown <https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open>`__
 -  `Biblioteca para grafos em
    Markdown <https://mermaid-js.github.io/mermaid/#/>`__
+
+.. referências bibliográficas devem ser inseridas aqui
+
+.. [CABRAL2022] Cabral, Fabrício. Git flowchart. Disponível em `<https://github.com/fabriciofx/gitflowchart>`__.
+   Acesso em 30/11/2022.

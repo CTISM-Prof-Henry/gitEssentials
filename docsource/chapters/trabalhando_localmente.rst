@@ -41,6 +41,3 @@ Trabalhando localmente
       :scale: 100 %
 
 .. [#] Disponível em `<https://github.com/fabriciofx/gitflowchart>`__. Acesso em 30/11/2022.
-
-.. [CABRAL2022] Cabral, Fabrício. Git flowchart. Disponível em `<https://github.com/fabriciofx/gitflowchart>`__.
-   Acesso em 30/11/2022.

@@ -28,6 +28,3 @@ Fluxo de compartilhamento
 
 .. |image1| image:: ../imagens/git_fluxo_compartilhamento.png
    :scale: 100 %
-
-.. [CABRAL2022] Cabral, Fabrício. Git flowchart. Disponível em `<https://github.com/fabriciofx/gitflowchart>`__.
-   Acesso em 30/11/2022.
