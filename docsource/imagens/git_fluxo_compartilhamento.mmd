@@ -1,0 +1,69 @@
+graph TD
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% MAIN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% fluxo
+sharing_workflow["<b>Fluxo de compartilhamento</b>"]
+common_workflow["<b>Fluxo de trabalho comum</b>"]
+
+%% decisões
+have_an_account{"<b>Possui uma conta?</b>"}
+created_a_remote_repository{"<b>Criou um repositório remoto?</b>"}
+added_remote{"<b>Adicionou um remoto?</b>"}
+add_remote["<b>Adicionar um repositório remoto</b><br/>git remote add &lt;nome-remoto&gt; &lt;URL&gt;"]
+sent_anything{"<b>Enviou alguma coisa?</b>"}
+are_there_conflicts["<b>Ocorreram conflitos?</b>"]
+
+%% comandos
+git_pull["<b>Receber modificações de um repositório<br/>remoto para verificar possíveis conflitos</b><br/>git pull &lt;nome-remoto&gt; &lt;branch&gt;"]
+git_push["<b>Enviar modificações à um repositório remoto</b><br/>git push &lt;nome-remoto&gt; &lt;branch&gt;"]
+
+%% relacionamentos
+sharing_workflow --> have_an_account
+have_an_account -- "sim" --> created_a_remote_repository
+created_a_remote_repository -- "sim" --> added_remote
+added_remote -- "sim" --> sent_anything
+sent_anything -- "sim" --> git_pull
+git_pull --> are_there_conflicts
+are_there_conflicts -- "não" --> git_push
+git_push --> common_workflow
+
+sent_anything -- "não" --> git_push
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LEFT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% workflow
+fix_conflicts_workflow["<b>Fluxo de resolver conflitos</b>"]
+
+%% actions
+create_an_account["<b>Criar uma conta no GitHub/Gitlab/BitBucket</b>"]
+
+%% commands
+git_remote["<b>Adicionar um repositório remoto</b><br/>git remote add &lt;nome-remoto&gt; &lt;URL&gt;"]
+
+%% relations
+have_an_account -- "não" --> create_an_account
+create_an_account --> created_a_remote_repository
+git_remote -- "não" --> added_remote
+
+
+fix_conflicts_workflow -- "sim" --> are_there_conflicts
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% direita
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ações
+create_a_remote_repository["<b>Criar um repositório remoto</b>"]
+fluxo_conflito[\"fluxo resolver conflitos"/]
+
+%% relations
+created_a_remote_repository -- "não" --> create_a_remote_repository
+create_a_remote_repository --> added_remote
+added_remote -- "não" --> add_remote
+add_remote --> sent_anything
+are_there_conflicts -- "sim" --> fluxo_conflito
+fluxo_conflito --> git_push

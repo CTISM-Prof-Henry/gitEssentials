@@ -12,12 +12,10 @@ Para que seja possível enviar os commits para o GitHub, é necessário primeiro
 material começa criando um repositório remoto na :numref:`criando-repositorios`, nos resta apenas enviar o código com
 ``git push``.
 
-O fluxograma abaixo foi adaptado do material de Fabrício Cabral no seu repositório [#]_, e mostra como enviamos o
+O fluxograma abaixo foi adaptado do material de Fabrício Cabral no seu repositório [#]_, é mostra como enviamos o
 código-fonte para o repositório remoto:
 
 |image0|
-
-Note que quando **clonamos** um repositório, isto equivale a já ter adicionado um remoto à um repositório local.
 
 .. |image0| image:: ../imagens/git_fluxo_compartilhamento.png
    :scale: 100 %

@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Trabalhando localmente &#8212; documentação pythonEssentials 1.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Buscar" href="../search.html" />
+    <link rel="next" title="Enviando para nuvem" href="enviando_para_nuvem.html" />
+    <link rel="prev" title="Clonando um repositório" href="clonando.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             accesskey="I">índice</a></li>
+        <li class="right" >
+          <a href="enviando_para_nuvem.html" title="Enviando para nuvem"
+             accesskey="N">próximo</a> |</li>
+        <li class="right" >
+          <a href="clonando.html" title="Clonando um repositório"
+             accesskey="P">anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Trabalhando localmente</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="trabalhando-localmente">
+<span id="id1"></span><h1>Trabalhando localmente<a class="headerlink" href="#trabalhando-localmente" title="Link permanente para este cabeçalho">¶</a></h1>
+<p>Uma vez que um repositório é clonado, utilizaremos um conjunto restrito de comandos para trabalhar localmente (ou seja,
+sem enviar os dados para a nuvem, apenas no nosso computador). Na linha de comando do computador, e dentro da pasta do
+repositório, utilizaremos os comandos <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">restore</span></code>, e <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code>. Você pode ver uma
+explicação detalhada para cada um deles na <code class="xref std std-numref docutils literal notranslate"><span class="pre">comandos</span></code>. No momento, é mais interessante saber que cada um
+dos comandos desempenha uma função diferente, e que a <strong>ordem</strong> em que eles são usados importa. Ou seja, utilizar o comando
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> (que cria um checkpoint) sem antes preparar os arquivos com <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code> não fará sentido.</p>
+<p>Para auxiliar na compreensão da ordem de uso dos comandos, o seguinte fluxograma, adaptado do material de Fabrício Cabral
+no seu repositório <a class="footnote-reference brackets" href="#id3" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>, é mostrado abaixo:</p>
+<p><a class="reference internal" href="../_images/git_fluxo_comum.png"><img alt="image0" src="../_images/git_fluxo_comum.png" style="width: 638.0px; height: 1398.0px;" /></a></p>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id3" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
+<p>Disponível em <a class="reference external" href="https://github.com/fabriciofx/gitflowchart">https://github.com/fabriciofx/gitflowchart</a>. Acesso em 30/11/2022.</p>
+</aside>
+</aside>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../index.html">Tabela de Conteúdo</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Sumário</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introdu%C3%A7%C3%A3o.html">Introdução</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instala%C3%A7%C3%A3o.html">Instalação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="criando_reposit%C3%B3rios.html">Criando repositórios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clonando.html">Clonando um repositório</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Trabalhando localmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enviando_para_nuvem.html">Enviando para nuvem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conceitos.html">Conceitos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comandos.html">Comandos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fork_pull_request.html">Fazendo fork e pull requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resolvendo_conflitos/index.html">Resolvendo conflitos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guia_r%C3%A1pido.html">Guia rápido</a></li>
+</ul>
+
+  <div>
+    <h4>Tópico anterior</h4>
+    <p class="topless"><a href="clonando.html"
+                          title="capítulo anterior">Clonando um repositório</a></p>
+  </div>
+  <div>
+    <h4>Próximo tópico</h4>
+    <p class="topless"><a href="enviando_para_nuvem.html"
+                          title="próximo capítulo">Enviando para nuvem</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>Essa Página</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/chapters/trabalhando_localmente.rst.txt"
+            rel="nofollow">Exibir Fonte</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Busca rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navegação</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Índice Geral"
+             >índice</a></li>
+        <li class="right" >
+          <a href="enviando_para_nuvem.html" title="Enviando para nuvem"
+             >próximo</a> |</li>
+        <li class="right" >
+          <a href="clonando.html" title="Clonando um repositório"
+             >anterior</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">documentação pythonEssentials 1.0</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Trabalhando localmente</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Henry Cagnini.
+      Criada usando <a href="https://www.sphinx-doc.org/pt_BR/master">Sphinx</a> 5.3.0.
+    </div>
+  </body>
+</html>
