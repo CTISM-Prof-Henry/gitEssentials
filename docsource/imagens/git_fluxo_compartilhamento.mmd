@@ -41,13 +41,9 @@ fix_conflicts_workflow["<b>Fluxo de resolver conflitos</b>"]
 %% actions
 create_an_account["<b>Criar uma conta no GitHub/Gitlab/BitBucket</b>"]
 
-%% commands
-git_remote["<b>Adicionar um repositório remoto</b><br/>git remote add &lt;nome-remoto&gt; &lt;URL&gt;"]
-
 %% relations
 have_an_account -- "não" --> create_an_account
 create_an_account --> created_a_remote_repository
-git_remote -- "não" --> added_remote
 
 
 fix_conflicts_workflow -- "sim" --> are_there_conflicts
