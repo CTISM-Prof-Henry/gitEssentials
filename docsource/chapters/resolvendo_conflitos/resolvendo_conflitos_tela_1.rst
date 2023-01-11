@@ -12,7 +12,7 @@ Nesta imagem, o git não sabe como os conflitos devem ser conciliados, e está n
 
    git config pull.rebase false
 
-Rode novamente o comando ``git pull origin main``:
+Execute novamente o comando ``git pull origin main``:
 
 |image1|
 

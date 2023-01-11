@@ -5,7 +5,7 @@ Trabalhando localmente
 
 .. only:: latex
 
-   Uma vez que um repositório é clonado, utilizaremos um conjunto restrito de comandos para trabalhar localmente (ou
+   Uma vez clonado um repositório, utilizaremos um conjunto restrito de comandos para trabalhar localmente (ou
    seja, sem enviar os dados para a nuvem, apenas no nosso computador). Na linha de comando do computador, e dentro da
    pasta do repositório, utilizaremos os comandos ``git status``, ``git add``, ``git restore``, e ``git commit``. Você
    pode ver uma explicação detalhada para cada um deles na :numref:`comandos`. No momento, é mais interessante saber que

@@ -25,11 +25,19 @@ gitEssentials
 Recursos adicionais
 -------------------
 
--  `StackEdit <https://stackedit.io>`__
+.. only:: latex
+
+   Esta seção apresenta recursos adicionais que poderão ser utilizados para auxiliar no desenvolvimento de código-fonte
+   com o git e GitHub.
+
+
+-  `StackEdit <https://stackedit.io>`__: editor online de texto Markdown (utilizado para escrever documentação no GitHub).
 -  `Guia Básico de
-   Markdown <https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open>`__
+   Markdown <https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open>`__:
+   Manual com listagem de comandos da linguagem Markdown.
 -  `Biblioteca para grafos em
-   Markdown <https://mermaid-js.github.io/mermaid/#/>`__
+   Markdown <https://mermaid-js.github.io/mermaid/#/>`__: Extensão do Markdown utilizada para construir grafos, como os
+   que foram utilizados neste guia.
 
 .. referências bibliográficas devem ser inseridas aqui
 

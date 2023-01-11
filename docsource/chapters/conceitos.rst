@@ -46,7 +46,13 @@ e ``git push origin teste``.
 Você pode criar quantas branches quiser, com os nomes que quiser. Inclusive, você pode ter branches que são branches de
 outras branches, como mostrado na figura abaixo.
 
-|image0|
+.. only:: html
+
+   |image0_html|
+
+.. only:: latex
+
+   |image0_latex|
 
 Commit
 ------
@@ -87,7 +93,10 @@ são, por exemplo, o `Github <https://github.com>`__, `GitKraken <https://www.gi
 repositórios remotos, para criar cópias do repositório local em outras máquinas. Caso nossa máquina local sofra alguma
 falha (formatação, falte energia elétrica, etc), nossos dados estarão seguramente armazenados no repositório remoto.
 
-.. |image0| image:: ../imagens/branches.png
+.. |image0_html| image:: ../imagens/branches.png
+   :scale: 100%
+.. |image0_latex| image:: ../imagens/branches.png
+   :scale: 70%
 .. |image1| image:: ../imagens/commits_button.png
 .. |image2| image:: ../imagens/commit_buttons.png
 

@@ -17,7 +17,7 @@ Passo-a-passo
 A seguir são descritos os passos necessários para fazer um fork e posteriormente um pull request em um repositório de
 outro usuário do GitHub.
 
-1. Entrar na página do repositório que deseja-se fazer o fork, no
+1. Acessar a página do repositório que deseja-se fazer o fork, no
    github. Vamos chamá-lo de
    ``https://github.com/CTISM-Prof-Henry/gitEssentials``;
 2. Clicar no botão “fork”, no canto superior direito;

@@ -22,7 +22,7 @@ desenvolver o Linux, dado que ele precisava, justamente, controlar as
 diversas versões das funcionalidades implementadas neste sistema operacional.
 
 O git é um programa instalado no seu computador. A maneira mais popular de
-usar o git é pela linha de comando, através de sua CLI (command line interface).
+usar o git é pela linha de comando, através de sua CLI (*command line interface*).
 É possível também usar o git com programas com interfaces gráficas, e também dentro
 de ambientes de desenvolvimento integrado (IDEs, na sigla em inglês), como Pycharm,
 VS Code, etc, porém este material lhe ensinará a mexer no git pela linha de comando.
