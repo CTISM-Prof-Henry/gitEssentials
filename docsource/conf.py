@@ -8,7 +8,8 @@
 
 project = 'pythonEssentials'
 copyright = '2022, Henry Cagnini'
-author = 'Henry Cagnini'
+author = 'Henry E.L. Cagnini, Thiago C. Naidon'
+version = '1.0'
 release = '1.0'
 
 # -- General configuration ---------------------------------------------------
@@ -32,9 +33,14 @@ language = 'pt_BR'
 
 latex_engine = 'pdflatex'
 
+latex_documents = {
+    'author': author.replace(',', ' \\and')
+}
+
 latex_elements = {
     'babel': r'\usepackage[brazil]{babel}',
-    'inputenc': r'\usepackage[utf8]{inputenc}'
+    'inputenc': r'\usepackage[utf8]{inputenc}',
+    'releasename': 'Versão'
     # The paper size ('letterpaper' or 'a4paper').
     #
     # 'papersize': 'letterpaper',
@@ -56,8 +62,7 @@ latex_elements = {
 # (chapters start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'main.tex', 'Python Essentials',
-     'Henry Cagnini', 'manual'),
+    (master_doc, 'main.tex', 'Python Essentials', author, 'manual'),
 ]
 
 # -- Options for HTML output -------------------------------------------------
