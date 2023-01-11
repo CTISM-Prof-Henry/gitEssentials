@@ -3,18 +3,13 @@
 Introdução
 ==========
 
-Este material organiza o conhecimento sobre o uso de git e Github.
-
-O git é uma ferramenta de **versionamento**. Quando estamos trabalhando
-no desenvolvimento de um trabalho que demora muito tempo para ser
-concluído (por exemplo, desenvolver um algoritmo, um software, ou até
-mesmo escrever um relatório de estágio), é desejável que possamos salvar
-versões **intermediárias** do nosso trabalho, de maneira que possamos
-recuperá-lo no futuro. Por exemplo, a primeira versão de um software
-pode possuir uma funcionalidade que foi removida em uma segunda versão;
-se, todavia, deseja-se reimplementar esta funcionalidade na terceira
-versão do software, como faríamos para recuperar o código-fonte, se
-ele já foi excluído? Com o git, isto é possível!
+Este material organiza o conhecimento sobre o uso de git e Github. O git é uma ferramenta de **versionamento**. Quando
+estamos trabalhando no desenvolvimento de um trabalho que demora muito tempo para ser concluído (por exemplo,
+desenvolver um algoritmo, um software, ou até mesmo escrever um relatório de estágio), é desejável que possamos salvar
+versões **intermediárias** do nosso trabalho, de maneira que possamos recuperá-lo no futuro. Por exemplo, a primeira
+versão de um software pode possuir uma funcionalidade que foi removida em uma segunda versão; se, todavia, deseja-se
+reimplementar esta funcionalidade na terceira versão do software, como faríamos para recuperar o código-fonte, se ele
+já foi excluído? Com o git, isto é possível!
 
 O git foi desenvolvido por `Linus
 Torvalds <https://en.wikipedia.org/wiki/Linus_Torvalds>`__ em 2005 para
@@ -38,7 +33,7 @@ no nosso computador, localmente. Se nosso computador estragar, perderemos todo
 nosso trabalho!
 
 Para isto, foram criados sites para salvar commits na nuvem. O GitHub é, na data
-de escrita deste material, o site mais popular neste sentido. Outros existem, como
+de escrita deste material, o site mais popular neste sentido. Existem outros, como
 GitLab, GitKraken, BitBucket, etc. Este material, no entanto, usará o GitHub como
 padrão.
 

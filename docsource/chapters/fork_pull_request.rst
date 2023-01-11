@@ -83,7 +83,7 @@ outro usuário do GitHub.
     |image1|
 
 13. Enviaremos as modificações que fizemos no repositório copiado para o repositório original.
-    **Atenção:** iremos afzer isto apenas quando tivermos terminado de fazer **todas** as modificações necessárias
+    **Atenção:** iremos fazer isto apenas quando tivermos terminado de fazer **todas** as modificações necessárias
     no nosso repositório copiado. No nosso repositório copiado, como mostrado na figura acima, vamos clicar no botão
     **Pull requests**;
 14. Clicamos no botão **new pull request**;

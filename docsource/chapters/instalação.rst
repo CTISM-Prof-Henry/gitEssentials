@@ -20,7 +20,13 @@ Instruções para o Windows
 3. Verifique se o programa foi instalado corretamente. Aperte as teclas **Logotipo do Windows** + **R** ao mesmo tempo,
    escreva `cmd` na janela que aparecer, e então **OK**:
 
-   |image1|
+   .. only:: latex
+
+      |image1_latex|
+
+   .. only:: html
+
+      |image1_html|
 
 4. Se o programa não funcionar, será necessário adicionar o programa ao PATH do sistema manualmente:
     1. Clique no Menu Iniciar;
@@ -49,11 +55,20 @@ Instruções para o Linux
 5. Teste o programa digitando `git --help`. Se uma janela como a abaixo aparecer, estará tudo certo:
 
 
-|image0|
+.. only:: latex
+
+  |image0_latex|
+
+.. only:: html
+
+  |image0_html|
 
 
-.. |image0| image:: ../imagens/instalação_git_linux_01.png
-   :scale: 50 %
-
-.. |image1| image:: ../imagens/executar.png
-   :scale: 67 %
+.. |image0_html| image:: ../imagens/instalação_git_linux_01.png
+   :scale: 90%
+.. |image1_html| image:: ../imagens/executar.png
+   :scale: 100%
+.. |image0_latex| image:: ../imagens/instalação_git_linux_01.png
+   :scale: 57%
+.. |image1_latex| image:: ../imagens/executar.png
+   :scale: 80%

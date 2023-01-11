@@ -24,10 +24,10 @@ que cada um deles faz:
 4. **Descrição:** uma pequena descrição textual para dizer do que se
    trata o repositório. É opcional, mas sempre é bom preenchê-la.
 5. **Público ou privado:** um repositório *público* está acessível para
-   qualquer pessoa na internet; todo mundo pode vê-lo (inclusive seus
-   colegas!). Já um repositório privado é acessível apenas para você e
-   quem você incluí-lo ( através das configurações do repositório).
-   Prefira sempre fazer repositórios privados.
+   qualquer pessoa na internet; todo mundo pode vê-lo. Já um repositório
+   privado é acessível apenas para você e quem você incluí-lo
+   ( através das configurações do repositório). Prefira sempre fazer
+   repositórios privados.
 6. **Adicionar arquivo README:** É um arquivo Markdown com uma descrição
    mais detalhada sobre as coisas que estão contidas no repositório.
    Apesar de opcional, é recomendável sempre incluir um arquivo README.

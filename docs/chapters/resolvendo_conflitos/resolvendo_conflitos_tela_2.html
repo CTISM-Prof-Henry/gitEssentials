@@ -50,16 +50,16 @@
 <span id="resolvendo-conflitos-tela-2"></span><h1>Finalizando<a class="headerlink" href="#finalizando" title="Link permanente para este cabeçalho">¶</a></h1>
 <p>A mensagem <em>Automatic merge failed; fix conflicts and then commit the result</em> quer dizer que teremos que abrir os
 arquivos que resultaram em conflitos e deixá-los da maneira que eles devem ficar corretamente:</p>
-<p><img alt="image0" src="../../_images/conflito_3.png" /></p>
+<p><a class="reference internal" href="../../_images/conflito_3.png"><img alt="image0_html" src="../../_images/conflito_3.png" style="width: 677.0px; height: 111.0px;" /></a></p>
 <p>Saberemos quais arquivos possuem conflitos pela mensagem do git: na imagem acima, o conflito está no arquivo <code class="docutils literal notranslate"><span class="pre">README.md</span></code>.</p>
 <p>Abrindo o arquivo README.md por um editor de textos (a sugestão dos autores é pelo Sublime Text <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>), vemos que ele
 se apresenta da seguinte forma:</p>
 <p><a class="reference internal" href="../../_images/conflito_4.png"><img alt="image1_html" src="../../_images/conflito_4.png" style="width: 565.5px; height: 170.25px;" /></a></p>
 <ul class="simple">
-<li><p>Os caracteres <code class="docutils literal notranslate"><span class="pre">&lt;&lt;&lt;&lt;</span></code> arcam o começo da região que resultou em um conflito;</p></li>
+<li><p>Os caracteres <code class="docutils literal notranslate"><span class="pre">&lt;&lt;&lt;&lt;</span></code> marcam o começo da região que resultou em um conflito;</p></li>
 <li><p>Os caracteres <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;&gt;</span></code> marcam o fim da região conflitante;</p></li>
 <li><p>Os caracteres <code class="docutils literal notranslate"><span class="pre">====</span></code> marcam a divisão do código;</p></li>
-<li><p>A seção que começa com <code class="docutils literal notranslate"><span class="pre">HEAD</span></code> delimita o código-fonte como apresentado no repositório local (do nosso computador);A</p></li>
+<li><p>A seção que começa com <code class="docutils literal notranslate"><span class="pre">HEAD</span></code> delimita o código-fonte como apresentado no repositório local (do nosso computador);</p></li>
 <li><p>A seção marcada pela hash (que varia de acordo com o commit; neste exemplo é a hash
 <code class="docutils literal notranslate"><span class="pre">8fa75db4cccadfec3d45a5e8a8ee10c9c6fb1697</span></code>) é o código-fonte encontrado no repositório remoto. Na verdade, este hash
 é o identificador único do commit no repositório remoto.</p></li>

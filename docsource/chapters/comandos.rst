@@ -129,10 +129,6 @@ funções do que as listadas aqui, porém espera-se que este resumo seja suficie
    desejado. Por outro lado, os comandos que **não dependem de estado** são relativamente inofensivos caso foram usados
    fora da ordem correta.
 
-   .. only:: latex
-
-      Consulte a :numref:`fluxogramas` para visualizar em qual etapa os comandos são mais apropriados.
-
    .. only:: html
 
       Consulte a Seção :ref:`fluxogramas` para visualizar em qual etapa os comandos são mais apropriados.
@@ -170,7 +166,7 @@ Sintaxe e exemplo:
 git add
 ~~~~~~~
 
-**!!!** Adiciona arquivos à lista de modificações-candidatas a serem salvas.
+Adiciona arquivos à lista de modificações-candidatas a serem salvas.
 Não confundir com a funcionalidade do `git commit <#git-commit>`__.
 
 Sintaxe:
@@ -209,7 +205,7 @@ Exemplo:
 git commit
 ~~~~~~~~~~
 
-**!!!** **Salva** as modificações feitas no repositório local, em um
+**Salva** as modificações feitas no repositório local, em um
 checkpoint (também chamado de commit).
 
 **Nota:** só pode ser utilizado após um `git add <#git-add>`__.
@@ -223,7 +219,7 @@ Sintaxe e exemplo:
 git push
 ~~~~~~~~
 
-**!!!** **Uso 1:** Envia modificações da atual branch local para uma branch do
+**Uso 1:** Envia modificações da atual branch local para uma branch do
 repositório remoto, dado que as modificações já foram salvas.
 
 **Nota 1:** só pode ser utilizado após um `git commit <#git-commit>`__.
@@ -268,7 +264,7 @@ Exemplo:
 git pull
 ~~~~~~~~
 
-**!!!** **Baixa** as modificações da branch de um repositório remoto para a
+**Baixa** as modificações da branch de um repositório remoto para a
 atual branch da máquina local, **se o repositório já existir na máquina
 local.** Não confundir com a funcionalidade do `git
 clone <#git-clone>`__.
@@ -289,7 +285,7 @@ Exemplo:
 git checkout
 ~~~~~~~~~~~~
 
-**!!!** Muda de uma branch local para outra.
+Muda de uma branch local para outra.
 
 Sintaxe:
 
@@ -307,7 +303,7 @@ Exemplo:
 git branch
 ~~~~~~~~~~
 
-**!!!** **Uso 1:** lista as branches locais.
+**Uso 1:** lista as branches locais.
 
 Sintaxe e exemplo:
 
