@@ -39,8 +39,8 @@ Instruções para o Windows
     7. Clique duas vezes sobre ela;
     8. Selecione o botão **Novo**;
     9. Escreva o caminho onde o programa `git` se encontra no seu computador, **mais** a pasta `bin`;
-        * Por padrão, o instalador coloca o git na pasta `C:\Program Files\Git`, portanto você deve digitar o endereço
-          `C:\Program Files\Git\bin` na caixa de texto.
+        * Por padrão, o instalador coloca o git na pasta `C:\\Program Files\\Git`, portanto você deve digitar o endereço
+          `C:\\Program Files\\Git\\bin` na caixa de texto.
     10. Dê **Ok** em todas as janelas abertas.
 
 5. Feche o prompt de comando e repita o passo 3 novamente.

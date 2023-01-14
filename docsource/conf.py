@@ -40,14 +40,14 @@ latex_documents = {
 latex_elements = {
     'babel': r'\usepackage[brazil]{babel}',
     'inputenc': r'\usepackage[utf8]{inputenc}',
-    'releasename': 'Versão'
+    'releasename': 'Versão',
     # The paper size ('letterpaper' or 'a4paper').
     #
     # 'papersize': 'letterpaper',
 
     # The font size ('10pt', '11pt' or '12pt').
     #
-    # 'pointsize': '10pt',
+    'pointsize': '12pt',
 
     # Additional stuff for the LaTeX preamble.
     #
@@ -62,7 +62,7 @@ latex_elements = {
 # (chapters start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'main.tex', 'Python Essentials', author, 'manual'),
+    (master_doc, 'main.tex', 'Git Essentials', author, 'manual'),
 ]
 
 # -- Options for HTML output -------------------------------------------------
