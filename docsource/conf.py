@@ -33,9 +33,7 @@ language = 'pt_BR'
 
 latex_engine = 'pdflatex'
 
-latex_documents = {
-    'author': author.replace(',', ' \\and')
-}
+latex_additional_files = ['mystyle.tex.txt']
 
 latex_elements = {
     'babel': r'\usepackage[brazil]{babel}',
@@ -51,7 +49,7 @@ latex_elements = {
 
     # Additional stuff for the LaTeX preamble.
     #
-    # 'preamble': '',
+    'preamble': r'\input{mystyle.tex.txt}',
 
     # Latex figure (float) alignment
     #
@@ -62,7 +60,7 @@ latex_elements = {
 # (chapters start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'main.tex', 'Git Essentials', author, 'manual'),
+    (master_doc, 'main.tex', 'Git Essentials', author.replace(', ', '\\\\'), 'manual'),
 ]
 
 # -- Options for HTML output -------------------------------------------------
@@ -74,7 +72,7 @@ latex_documents = [
 # a list of builtin themes.
 html_theme = 'nature'
 
-html_static_path = ['_static']
+# html_static_path = ['_static']
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
