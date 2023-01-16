@@ -50,7 +50,7 @@ latex_elements = {
     # Additional stuff for the LaTeX preamble.
     #
     'preamble': r'\input{mystyle.tex.txt}',
-
+    'papersize': 'a4paper'
     # Latex figure (float) alignment
     #
     # 'figure_align': 'htbp',
