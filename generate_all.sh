@@ -9,6 +9,7 @@ mmdc -i docsource/imagens/git_fluxo_comum.mmd -o docsource/imagens/git_fluxo_com
 make remove_latex_files
 make github
 make latex
+python replace.py
 (cd _build/latex && pdflatex main.tex)
 (cd _build/latex && pdflatex main.tex)
 

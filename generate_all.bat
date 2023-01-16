@@ -6,6 +6,7 @@
 @call make.bat github
 @echo 'Generating LaTeX files'
 @call make.bat latex
+@call python replace.py
 @echo 'Building PDF...'
 @cd _build\latex
 @pdflatex main.tex

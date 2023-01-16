@@ -60,7 +60,7 @@ latex_elements = {
 # (chapters start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'main.tex', 'Git Essentials', author.replace(', ', '\\\\'), 'manual'),
+    (master_doc, 'main.tex', 'git Essentials', author.replace(', ', '\\\\'), 'manual'),
 ]
 
 # -- Options for HTML output -------------------------------------------------

@@ -34,8 +34,7 @@ Instruções para o Windows
     3. No ícone que aparecer, selecione a opção **Propriedades**;
     4. Na lista de opções da direita, selecione a opção **Configurações Avançadas do Sistema**;
     5. Clique no botão **Variáveis do ambiente**;
-    6. Na seção *Variáveis do ambiente para o usuário `<nome do usuário>`*, onde `<nome do usuário>` é o nome do usuário
-       do Windows, encontre a variável de nome `PATH`;
+    6. Na seção *Variáveis do ambiente para o usuário* `<nome do usuário>`, encontre a variável de nome `PATH`;
     7. Clique duas vezes sobre ela;
     8. Selecione o botão **Novo**;
     9. Escreva o caminho onde o programa `git` se encontra no seu computador, **mais** a pasta `bin`;

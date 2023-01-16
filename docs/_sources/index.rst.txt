@@ -41,5 +41,5 @@ Recursos adicionais
 
 .. referências bibliográficas devem ser inseridas aqui
 
-.. [CABRAL2022] Cabral, Fabrício. Git flowchart. Disponível em `<https://github.com/fabriciofx/gitflowchart>`__.
+.. [CABRAL2022] Cabral, Fabrício. git flowchart. Disponível em `<https://github.com/fabriciofx/gitflowchart>`__.
    Acesso em 30/11/2022.
