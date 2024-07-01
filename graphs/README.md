@@ -14,15 +14,17 @@ Serve para copiar o repositório, sem esse comando não
 *Adiciona o arquivo editado ou criado ao repositório. 
 O git add ponto serve para salvar todos os arquivos da pasta existente no seu repositório.É necessário para preparar todas as alterações no diretório atual para o próximo commit, permitindo um controle organizado sobre as mudanças que serão incluídas.*
 
+```bash
 git add . 
+```
 
 git add (serve para adicionar arquivos específicos, mas é usado em poucos casos porque geralmente é o arquivo todo que é editado)
 
 *Mostra as atualizações feitas, exibindo informações detalhadas sobre as alterações que foram feitas.
 O git status é essencial para saber o que está acontecendo no seu repositório antes de fazer qualquer commit.*
-
+```bash
 git status
-
+```
 *Cria um commit com uma mensagem especificada, deixando registrado as alterações feitas no código.
  A mensagem descreve as mudanças feitas. Isso facilita no rastreamento do histórico do projeto feito.
  Sem esse comando as alterações feitas não são definitivamente salvas.*
