@@ -194,7 +194,8 @@ git add .
 ```
 
 ```bash
-git add (serve para adicionar arquivos específicos, mas é usado em poucos casos porque geralmente é o arquivo todo que é editado)
+git add (serve para adicionar arquivos específicos,
+mas é usado em poucos casos porque geralmente é o arquivo todo que é editado)
 ```
 * Salva as mudanças selecionadas com uma mensagem descritiva ("Initial commit"), criando um ponto de recuperação no histórico do projeto criado.*
 
@@ -215,7 +216,7 @@ git remote add origin + URL do repositório
 git push -u origin master
 ```
 
-*APLICAÇÃO NO PC 1*
+**APLICAÇÃO NO PC 1**
 
 *Adiciona o arquivo editado ou criado ao repositório. 
 O git add ponto serve para salvar todos os arquivos da pasta existente no seu repositório.É necessário para preparar todas as alterações no diretório atual para o próximo commit, permitindo um controle organizado sobre as mudanças que serão incluídas.*
@@ -225,7 +226,8 @@ git add .
 ```
 
 ```bash
-git add (serve para adicionar arquivos específicos, mas é usado em poucos casos porque geralmente é o arquivo todo que é editado)
+git add (serve para adicionar arquivos específicos,
+ mas é usado em poucos casos porque geralmente é o arquivo todo que é editado)
 ```
 
 *Mostra as atualizações feitas, exibindo informações detalhadas sobre as alterações que foram feitas.
@@ -255,7 +257,7 @@ git push origin main
 ```
 
 
-*NO PC 2*
+**NO PC 2**
 
 *Serve para copiar o repositório, sem esse comando não 
 é possível criar ou editar o seu repositório.*
@@ -273,7 +275,8 @@ git add .
 ```
 
 ```bash
-git add (serve para adicionar arquivos específicos, mas é usado em poucos casos porque geralmente é o arquivo todo que é editado)
+git add (serve para adicionar arquivos específicos,
+mas é usado em poucos casos porque geralmente é o arquivo todo que é editado)
 ```
 
 * Salva as mudanças selecionadas com uma mensagem descritiva.*
