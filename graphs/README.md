@@ -18,8 +18,11 @@ O git add ponto serve para salvar todos os arquivos da pasta existente no seu re
 ```bash
 git add . 
 ```
+```bash
+git add (serve para adicionar arquivos específicos,
+ mas é usado em poucos casos porque geralmente é o arquivo todo que é editado)
+```
 
-git add (serve para adicionar arquivos específicos, mas é usado em poucos casos porque geralmente é o arquivo todo que é editado)
 
 *Mostra as atualizações feitas, exibindo informações detalhadas sobre as alterações que foram feitas.
 O git status é essencial para saber o que está acontecendo no seu repositório antes de fazer qualquer commit.*
