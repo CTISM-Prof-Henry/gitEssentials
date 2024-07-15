@@ -54,9 +54,10 @@ git pull origin main
 
 ```bash
 git push origin main
-``
-## Trabalhando sozinho em um computador
+```
 
+
+## Trabalhando sozinho em um computador
 
 ```mermaid
 flowchart TD
@@ -80,7 +81,6 @@ flowchart TD
   D --> E
   E --> F
   F --> G
-
 ```
 
 ## Trabalhando sozinho em dois computadores
@@ -119,7 +119,7 @@ flowchart TD
     (git push)"]
 
     P["Sincronização do Código"]
-    Q["Puxar atualizações
+    Q["Puxar atualizações]
     (git pull)"]
 
     A --> B
@@ -139,7 +139,9 @@ flowchart TD
     L --> M
     M --> N
     N --> O
+    O --> Q
     O --> P
+
 ```
 
 ## Trabalhando em grupo em um computador cada um
@@ -184,9 +186,9 @@ flowchart TD
 
 *Comandos para trabalhar sozinho com 2 pcs*
 
-*Inicio do Projeto no PC 1*
+**Inicio do Projeto no PC 1**
 
-* Começa um novo repositório Git no diretório atual. Cria uma pasta oculta chamada .git, onde o Git guarda informações sobre o histórico do projeto e rastreia todas as alterações feitas.*
+*Começa um novo repositório Git no diretório atual. Cria uma pasta oculta chamada .git, onde o Git guarda informações sobre o histórico do projeto e rastreia todas as alterações feitas.*
 
 ```bash
 git init
@@ -203,7 +205,7 @@ git add .
 ```bash
 git add 
 ```
-* Salva as mudanças selecionadas com uma mensagem descritiva ("Initial commit"), criando um ponto de recuperação no histórico do projeto criado.*
+*Salva as mudanças selecionadas com uma mensagem descritiva ("Initial commit"), criando um ponto de recuperação no histórico do projeto criado.*
 
 ```bash
 git commit -m "Initial commit" 
@@ -256,7 +258,7 @@ git commit -m "mensagem"
 
 *Envia as atualizações para a branch principal (main).
  Esse comando transfere as alterações feitas localmente
-  para o repositório compartilhado, mantendo  a sincronização do código.*
+ para o repositório compartilhado, mantendo  a sincronização do código.*
 
 
 ```bash
@@ -287,7 +289,7 @@ git add .
 git add 
 ```
 
-* Salva as mudanças selecionadas com uma mensagem descritiva.*
+*Salva as mudanças selecionadas com uma mensagem descritiva.*
 
 ```bash
 git commit -m "mensagem"
