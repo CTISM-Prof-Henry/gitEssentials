@@ -18,9 +18,11 @@ O git add ponto serve para salvar todos os arquivos da pasta existente no seu re
 ```bash
 git add . 
 ```
+
+*serve para adicionar arquivos específicos, mas é usado em poucos casos porque geralmente é o arquivo todo que é editado.*
+
 ```bash
-git add (serve para adicionar arquivos específicos,
- mas é usado em poucos casos porque geralmente é o arquivo todo que é editado)
+git add
 ```
 
 
@@ -50,8 +52,9 @@ git pull origin main
 *Envia as atualizações para a branch principal (main).
  Esse comando transfere as alterações feitas localmente para o repositório compartilhado, mantendo  a sincronização do código.*
 
+```bash
 git push origin main
-
+``
 ## Trabalhando sozinho em um computador
 
 
@@ -195,10 +198,10 @@ O git add ponto serve para salvar todos os arquivos da pasta existente no seu re
 ```bash
 git add . 
 ```
+*serve para adicionar arquivos específicos, mas é usado em poucos casos porque geralmente é o arquivo todo que é editado.*
 
 ```bash
-git add (serve para adicionar arquivos específicos,
-mas é usado em poucos casos porque geralmente é o arquivo todo que é editado)
+git add 
 ```
 * Salva as mudanças selecionadas com uma mensagem descritiva ("Initial commit"), criando um ponto de recuperação no histórico do projeto criado.*
 
@@ -228,9 +231,10 @@ O git add ponto serve para salvar todos os arquivos da pasta existente no seu re
 git add . 
 ```
 
+*serve para adicionar arquivos específicos, mas é usado em poucos casos porque geralmente é o arquivo todo que é editado.*
+
 ```bash
-git add (serve para adicionar arquivos específicos,
- mas é usado em poucos casos porque geralmente é o arquivo todo que é editado)
+git add 
 ```
 
 *Mostra as atualizações feitas, exibindo informações detalhadas sobre as alterações que foram feitas.
@@ -277,9 +281,10 @@ O git add ponto serve para salvar todos os arquivos da pasta existente no seu re
 git add . 
 ```
 
+*serve para adicionar arquivos específicos, mas é usado em poucos casos porque geralmente é o arquivo todo que é editado.*
+
 ```bash
-git add (serve para adicionar arquivos específicos,
-mas é usado em poucos casos porque geralmente é o arquivo todo que é editado)
+git add 
 ```
 
 * Salva as mudanças selecionadas com uma mensagem descritiva.*
