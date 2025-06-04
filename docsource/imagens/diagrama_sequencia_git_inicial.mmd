@@ -1,0 +1,12 @@
+sequenceDiagram
+    GitHub->>+Jorge (em casa): git clone
+    Note right of Jorge (em casa): Cria, modifica<br>e remove arquivos
+    Note right of Jorge (em casa): git add 
+    Note right of Jorge (em casa) : git commit
+    Jorge (em casa)->>-GitHub: git push
+    GitHub->>+Jorge (na Faculdade): git clone
+    Note right of Jorge (na Faculdade): Cria, modifica<br>e remove arquivos
+    Note right of Jorge (na Faculdade): git add 
+    Note right of Jorge (na Faculdade) : git commit
+    Jorge (na Faculdade)->>-GitHub: git push
+    GitHub->>Jorge (em casa): git pull
